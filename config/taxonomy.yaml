@@ -1,0 +1,243 @@
+# ⚙️ Research Taxonomy & Discovery Config — Neuromorphic Computing Research
+#
+# This is the ONLY file you need to adapt for your own research topic.
+# Edit categories/subcategories + discovery queries, then re-run the pipeline.
+#
+# Pipeline:  config/taxonomy.yaml → papers.yaml → validate → README → reports
+
+# ── Topic ────────────────────────────────────────────────────────────────────
+topic:
+  name: "Neuromorphic Computing Research"
+  short: "neuromorphic-computing"
+  description: "Neuromorphic computing research corpus: spiking neural networks, neuromorphic hardware, memristive systems, brain-inspired computing, and edge intelligence."
+  openalex_mailto: "research+neuromorphic@tobias-weiss-ai-xr.de"
+
+# ── Taxonomy ─────────────────────────────────────────────────────────────────
+taxonomy:
+  categories:
+    - id: spiking-neural-networks
+      display: "Spiking Neural Networks"
+    - id: neuromorphic-hardware
+      display: "Neuromorphic Hardware"
+    - id: neuromorphic-algorithms
+      display: "Neuromorphic Algorithms"
+    - id: memristive
+      display: "Memristive Systems"
+    - id: neuromorphic-sensors
+      display: "Neuromorphic Sensors & Perception"
+    - id: brain-inspired
+      display: "Brain-Inspired Computing"
+    - id: edge-computing
+      display: "Edge & Low-Power Computing"
+    - id: survey
+      display: "Surveys & Taxonomies"
+  subcategories:
+    - id: theory
+      display: "Theory"
+    - id: method
+      display: "Method"
+    - id: application
+      display: "Application"
+    - id: development
+      display: "Development"
+    - id: systems
+      display: "Systems & Technology"
+    - id: evaluation
+      display: "Evaluation & Benchmarks"
+    - id: review
+      display: "Reviews & Surveys"
+
+# ── Discovery: arXiv queries (fetch_new_papers.py) ───────────────────────────
+arxiv_queries:
+  - query: 'cat:cs.NE AND (abs:"spiking neural network" OR abs:"SNN" OR abs:"neuromorphic" OR abs:"spike-timing")'
+    category: spiking-neural-networks
+    subcategory_hint: method
+  - query: 'cat:cs.ET AND (abs:"neuromorphic" OR abs:"spiking" OR abs:"memristor" OR abs:"Loihi" OR abs:"SpiNNaker" OR abs:"BrainScaleS")'
+    category: neuromorphic-hardware
+    subcategory_hint: systems
+  - query: 'cat:cs.NE AND (abs:"neuromorphic algorithm" OR abs:"local learning" OR abs:"STDP" OR abs:"spike-timing-dependent plasticity" OR abs:"event-driven")'
+    category: neuromorphic-algorithms
+    subcategory_hint: method
+  - query: 'cat:cs.ET AND (abs:"memristor" OR abs:"memristive" OR abs:"resistive switching" OR abs:"ReRAM" OR abs:"analog memory")'
+    category: memristive
+    subcategory_hint: systems
+  - query: 'cat:cs.NE AND (abs:"event camera" OR abs:"neuromorphic sensor" OR abs:"event-based vision" OR abs:"silicon retina" OR abs:"DVS")'
+    category: neuromorphic-sensors
+    subcategory_hint: application
+  - query: 'cat:cs.NE AND (abs:"brain-inspired" OR abs:"neuromorphic computing" OR abs:"biologically plausible" OR abs:"cortical" OR abs:"neural dynamics")'
+    category: brain-inspired
+    subcategory_hint: theory
+  - query: 'cat:cs.NE AND (abs:"edge computing" OR abs:"low-power" OR abs:"energy-efficient" OR abs:"on-chip learning" OR abs:"embedded AI")'
+    category: edge-computing
+    subcategory_hint: application
+  - query: 'cat:cs.NE AND (abs:"survey" OR abs:"review" OR abs:"taxonomy" OR abs:"benchmark")'
+    category: survey
+    subcategory_hint: review
+  - query: 'cat:cs.AR AND (abs:"neuromorphic" OR abs:"spiking" OR abs:"SNN")'
+    category: spiking-neural-networks
+    subcategory_hint: method
+  - query: 'cat:eess.SY AND (abs:"neuromorphic" OR abs:"memristor" OR abs:"analog neural")'
+    category: neuromorphic-hardware
+    subcategory_hint: systems
+
+# ── Discovery: multi-source queries (fetch_other_sources.py) ─────────────────
+other_sources_queries:
+  - source: dblp
+    query: spiking neural network neuromorphic
+    category: spiking-neural-networks
+    subcategory_hint: method
+  - source: dblp
+    query: neuromorphic hardware Loihi SpiNNaker
+    category: neuromorphic-hardware
+    subcategory_hint: systems
+  - source: dblp
+    query: memristor neuromorphic computing
+    category: memristive
+    subcategory_hint: systems
+  - source: crossref
+    query: spiking neural network survey
+    category: survey
+    subcategory_hint: review
+  - source: crossref
+    query: neuromorphic computing survey review
+    category: survey
+    subcategory_hint: review
+  - source: crossref
+    query: event camera neuromorphic vision
+    category: neuromorphic-sensors
+    subcategory_hint: application
+  - source: crossref
+    query: memristive neural network in-memory computing
+    category: memristive
+    subcategory_hint: systems
+  - source: europepmc
+    query: neuromorphic computing spiking
+    category: spiking-neural-networks
+    subcategory_hint: method
+
+# ── OpenAlex bulk fetch (fetch_openalex_bulk.py) ─────────────────────────────
+openalex_queries:
+  - category: spiking-neural-networks
+    query: "spiking neural network SNN spike-timing"
+  - category: neuromorphic-hardware
+    query: "neuromorphic hardware Loihi SpiNNaker BrainScaleS"
+  - category: neuromorphic-algorithms
+    query: "neuromorphic algorithm local learning STDP"
+  - category: memristive
+    query: "memristor memristive resistive switching ReRAM"
+  - category: neuromorphic-sensors
+    query: "event camera neuromorphic sensor silicon retina"
+  - category: brain-inspired
+    query: "brain-inspired computing biologically plausible neural"
+  - category: edge-computing
+    query: "neuromorphic edge computing low-power energy-efficient"
+  - category: survey
+    query: "neuromorphic computing survey review"
+
+# ── Trend / burst keywords ───────────────────────────────────────────────────
+trend_keywords:
+  - "spiking neural network"
+  - "SNN"
+  - "neuromorphic"
+  - "spike-timing"
+  - "STDP"
+  - "spike-timing-dependent plasticity"
+  - "event-driven"
+  - "Loihi"
+  - "SpiNNaker"
+  - "BrainScaleS"
+  - "memristor"
+  - "memristive"
+  - "resistive switching"
+  - "ReRAM"
+  - "analog memory"
+  - "in-memory computing"
+  - "event camera"
+  - "neuromorphic sensor"
+  - "event-based vision"
+  - "silicon retina"
+  - "DVS"
+  - "brain-inspired"
+  - "biologically plausible"
+  - "cortical"
+  - "neural dynamics"
+  - "edge computing"
+  - "low-power"
+  - "energy-efficient"
+  - "on-chip learning"
+  - "embedded AI"
+  - "neuromorphic algorithm"
+  - "local learning"
+  - "surrogate gradient"
+  - "benchmark"
+  - "neuromorphic processor"
+
+# ── Subclassification keywords ───────────────────────────────────────────────
+subcategory_keywords:
+  - id: theory
+    keywords: ["theory", "theoretical", "formal", "proof", "convergence", "bound", "analysis", "dynamics"]
+  - id: method
+    keywords: ["method", "algorithm", "approach", "technique", "framework", "novel", "propose", "learning rule", "training"]
+  - id: application
+    keywords: ["application", "applied", "deploy", "real-world", "experiment", "demonstration", "case study", "recognition", "detection"]
+  - id: development
+    keywords: ["implementation", "system", "platform", "toolkit", "library", "open-source", "software", "SDK", "API", "framework", "compiler"]
+  - id: systems
+    keywords: ["hardware", "chip", "processor", "architecture", "device", "silicon", "integrated", "Loihi", "SpiNNaker", "memristor", "ReRAM"]
+  - id: evaluation
+    keywords: ["benchmark", "evaluation", "comparison", "baseline", "state-of-the-art", "metric", "ablation", "accuracy", "latency", "energy"]
+  - id: review
+    keywords: ["survey", "review", "literature", "systematic review", "meta-analysis", "overview", "taxonomy", "benchmark"]
+
+# ── GitHub repository discovery (fetch_github_repos.py) ─────────────────────
+github_queries:
+  - query: "topic:neuromorphic+stars:>50"
+    category: neuromorphic-hardware
+  - query: "spiking+neural+network+stars:>100"
+    category: spiking-neural-networks
+  - query: "neuromorphic+simulator+stars:>50"
+    category: neuromorphic-algorithms
+    subcategory_hint: development
+  - query: "memristor+crossbar+stars:>20"
+    category: memristive
+  - query: "event+camera+neuromorphic+stars:>50"
+    category: neuromorphic-sensors
+  - query: "SNN+framework+stars:>100"
+    category: spiking-neural-networks
+    subcategory_hint: development
+  - query: "awesome+neuromorphic+stars:>20"
+    category: survey
+    subcategory_hint: review
+
+# ── GitLab repository discovery (fetch_gitlab_repos.py) ──────────────────────
+gitlab_queries:
+  - query: "neuromorphic computing"
+    category: neuromorphic-hardware
+  - query: "spiking neural network"
+    category: spiking-neural-networks
+  - query: "memristor"
+    category: memristive
+
+# ── Codeberg repository discovery (fetch_codeberg_repos.py) ──────────────────
+codeberg_queries:
+  - query: "neuromorphic"
+    category: neuromorphic-hardware
+  - query: "spiking"
+    category: spiking-neural-networks
+
+# ── Relevance signals for repo fetchers ──────────────────────────────────────
+repo_signals:
+  - "neuromorphic"
+  - "spiking"
+  - "SNN"
+  - "memristor"
+  - "memristive"
+  - "Loihi"
+  - "SpiNNaker"
+  - "BrainScaleS"
+  - "event camera"
+  - "silicon retina"
+  - "brain-inspired"
+  - "low-power"
+  - "energy-efficient"
+  - "on-chip"

@@ -1,0 +1,148 @@
+{
+ "categories": [
+  {
+   "id": "memristive",
+   "name": "Memristive Systems",
+   "count": 1,
+   "trajectory": {
+    "2020": 1
+   },
+   "momentum": {
+    "id": "memristive",
+    "name": "Memristive",
+    "total": 1,
+    "recent": 0,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 0.0,
+    "papers_per_month": 0.0,
+    "score": 0.0
+   }
+  },
+  {
+   "id": "neuromorphic-hardware",
+   "name": "Neuromorphic Hardware",
+   "count": 1,
+   "trajectory": {
+    "2018": 1
+   },
+   "momentum": {
+    "id": "neuromorphic-hardware",
+    "name": "Neuromorphic Hardware",
+    "total": 1,
+    "recent": 0,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 0.0,
+    "papers_per_month": 0.0,
+    "score": 0.0
+   }
+  },
+  {
+   "id": "neuromorphic-sensors",
+   "name": "Neuromorphic Sensors & Perception",
+   "count": 1,
+   "trajectory": {
+    "2020": 1
+   },
+   "momentum": {
+    "id": "neuromorphic-sensors",
+    "name": "Neuromorphic Sensors",
+    "total": 1,
+    "recent": 0,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 0.0,
+    "papers_per_month": 0.0,
+    "score": 0.0
+   }
+  },
+  {
+   "id": "spiking-neural-networks",
+   "name": "Spiking Neural Networks",
+   "count": 2,
+   "trajectory": {
+    "2019": 1,
+    "2021": 1
+   },
+   "momentum": {
+    "id": "spiking-neural-networks",
+    "name": "Spiking Neural Networks",
+    "total": 2,
+    "recent": 0,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 0.0,
+    "papers_per_month": 0.0,
+    "score": 0.0
+   }
+  }
+ ],
+ "subcategories": [
+  {
+   "id": "method",
+   "name": "Method",
+   "count": 1
+  },
+  {
+   "id": "review",
+   "name": "Reviews & Surveys",
+   "count": 2
+  },
+  {
+   "id": "systems",
+   "name": "Systems & Technology",
+   "count": 2
+  }
+ ],
+ "timeline": [
+  [
+   "2018-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2019-07",
+   "spiking-neural-networks",
+   "review"
+  ],
+  [
+   "2020-01",
+   "neuromorphic-sensors",
+   "review"
+  ],
+  [
+   "2020-10",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2021-09",
+   "spiking-neural-networks",
+   "method"
+  ]
+ ],
+ "venues": [
+  {
+   "name": "Proceedings of the IEEE",
+   "papers": 1
+  },
+  {
+   "name": "IEEE Micro 38, 82-99 (2018)",
+   "papers": 1
+  },
+  {
+   "name": "Nature Machine Intelligence 1, 421-434 (2019)",
+   "papers": 1
+  },
+  {
+   "name": "Nature Nanotechnology",
+   "papers": 1
+  },
+  {
+   "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+   "papers": 1
+  }
+ ],
+ "keyword_bursts": []
+}
