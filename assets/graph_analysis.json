@@ -3,52 +3,111 @@
   {
    "id": "brain-inspired",
    "name": "Brain-Inspired Computing",
-   "count": 10,
+   "count": 43,
    "trajectory": {
-    "2026": 10
+    "2026": 43
    },
    "momentum": {
     "id": "brain-inspired",
     "name": "Brain Inspired",
-    "total": 10,
-    "recent": 10,
+    "total": 43,
+    "recent": 43,
     "prior": 0,
     "growth_pct": null,
     "recent_share": 1.0,
-    "papers_per_month": 0.8,
+    "papers_per_month": 3.6,
     "score": 100.0
    }
   },
   {
    "id": "edge-computing",
    "name": "Edge & Low-Power Computing",
-   "count": 52,
+   "count": 75,
    "trajectory": {
-    "2026": 52
+    "2026": 75
    },
    "momentum": {
     "id": "edge-computing",
     "name": "Edge Computing",
-    "total": 52,
-    "recent": 52,
+    "total": 75,
+    "recent": 75,
     "prior": 0,
     "growth_pct": null,
     "recent_share": 1.0,
-    "papers_per_month": 4.3,
+    "papers_per_month": 6.2,
     "score": 100.0
    }
   },
   {
    "id": "memristive",
    "name": "Memristive Systems",
+   "count": 14,
+   "trajectory": {
+    "2020": 1,
+    "2026": 13
+   },
+   "momentum": {
+    "id": "memristive",
+    "name": "Memristive",
+    "total": 14,
+    "recent": 13,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 0.929,
+    "papers_per_month": 1.1,
+    "score": 92.9
+   }
+  },
+  {
+   "id": "neuromorphic-algorithms",
+   "name": "Neuromorphic Algorithms",
+   "count": 24,
+   "trajectory": {
+    "2026": 24
+   },
+   "momentum": {
+    "id": "neuromorphic-algorithms",
+    "name": "Neuromorphic Algorithms",
+    "total": 24,
+    "recent": 24,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 1.0,
+    "papers_per_month": 2.0,
+    "score": 100.0
+   }
+  },
+  {
+   "id": "neuromorphic-hardware",
+   "name": "Neuromorphic Hardware",
+   "count": 49,
+   "trajectory": {
+    "2018": 1,
+    "2026": 48
+   },
+   "momentum": {
+    "id": "neuromorphic-hardware",
+    "name": "Neuromorphic Hardware",
+    "total": 49,
+    "recent": 48,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 0.98,
+    "papers_per_month": 4.0,
+    "score": 98.0
+   }
+  },
+  {
+   "id": "neuromorphic-sensors",
+   "name": "Neuromorphic Sensors & Perception",
    "count": 4,
    "trajectory": {
     "2020": 1,
     "2026": 3
    },
    "momentum": {
-    "id": "memristive",
-    "name": "Memristive",
+    "id": "neuromorphic-sensors",
+    "name": "Neuromorphic Sensors",
     "total": 4,
     "recent": 3,
     "prior": 0,
@@ -59,99 +118,42 @@
    }
   },
   {
-   "id": "neuromorphic-algorithms",
-   "name": "Neuromorphic Algorithms",
-   "count": 1,
-   "trajectory": {
-    "2026": 1
-   },
-   "momentum": {
-    "id": "neuromorphic-algorithms",
-    "name": "Neuromorphic Algorithms",
-    "total": 1,
-    "recent": 1,
-    "prior": 0,
-    "growth_pct": null,
-    "recent_share": 1.0,
-    "papers_per_month": 0.1,
-    "score": 100.0
-   }
-  },
-  {
-   "id": "neuromorphic-hardware",
-   "name": "Neuromorphic Hardware",
-   "count": 1,
-   "trajectory": {
-    "2018": 1
-   },
-   "momentum": {
-    "id": "neuromorphic-hardware",
-    "name": "Neuromorphic Hardware",
-    "total": 1,
-    "recent": 0,
-    "prior": 0,
-    "growth_pct": null,
-    "recent_share": 0.0,
-    "papers_per_month": 0.0,
-    "score": 0.0
-   }
-  },
-  {
-   "id": "neuromorphic-sensors",
-   "name": "Neuromorphic Sensors & Perception",
-   "count": 1,
-   "trajectory": {
-    "2020": 1
-   },
-   "momentum": {
-    "id": "neuromorphic-sensors",
-    "name": "Neuromorphic Sensors",
-    "total": 1,
-    "recent": 0,
-    "prior": 0,
-    "growth_pct": null,
-    "recent_share": 0.0,
-    "papers_per_month": 0.0,
-    "score": 0.0
-   }
-  },
-  {
    "id": "spiking-neural-networks",
    "name": "Spiking Neural Networks",
-   "count": 71,
+   "count": 196,
    "trajectory": {
     "2019": 1,
     "2021": 1,
-    "2026": 69
+    "2026": 194
    },
    "momentum": {
     "id": "spiking-neural-networks",
     "name": "Spiking Neural Networks",
-    "total": 71,
-    "recent": 69,
+    "total": 196,
+    "recent": 194,
     "prior": 0,
     "growth_pct": null,
-    "recent_share": 0.972,
-    "papers_per_month": 5.8,
-    "score": 97.2
+    "recent_share": 0.99,
+    "papers_per_month": 16.2,
+    "score": 99.0
    }
   },
   {
    "id": "survey",
    "name": "Surveys & Taxonomies",
-   "count": 28,
+   "count": 113,
    "trajectory": {
-    "2026": 28
+    "2026": 113
    },
    "momentum": {
     "id": "survey",
     "name": "Survey",
-    "total": 28,
-    "recent": 28,
+    "total": 113,
+    "recent": 113,
     "prior": 0,
     "growth_pct": null,
     "recent_share": 1.0,
-    "papers_per_month": 2.3,
+    "papers_per_month": 9.4,
     "score": 100.0
    }
   }
@@ -160,7 +162,7 @@
   {
    "id": "application",
    "name": "Application",
-   "count": 14
+   "count": 40
   },
   {
    "id": "development",
@@ -175,22 +177,22 @@
   {
    "id": "method",
    "name": "Method",
-   "count": 56
+   "count": 204
   },
   {
    "id": "review",
    "name": "Reviews & Surveys",
-   "count": 2
+   "count": 87
   },
   {
    "id": "systems",
    "name": "Systems & Technology",
-   "count": 5
+   "count": 63
   },
   {
    "id": "theory",
    "name": "Theory",
-   "count": 88
+   "count": 121
   }
  ],
  "timeline": [
@@ -221,7 +223,27 @@
   ],
   [
    "2026-02",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-02",
    "edge-computing",
+   "application"
+  ],
+  [
+   "2026-02",
+   "edge-computing",
+   "method"
+  ],
+  [
+   "2026-02",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-02",
+   "neuromorphic-algorithms",
    "method"
   ],
   [
@@ -257,12 +279,42 @@
   [
    "2026-02",
    "survey",
+   "review"
+  ],
+  [
+   "2026-02",
+   "survey",
    "theory"
   ],
   [
    "2026-03",
    "brain-inspired",
    "theory"
+  ],
+  [
+   "2026-03",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-03",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-03",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-03",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-03",
+   "edge-computing",
+   "application"
   ],
   [
    "2026-03",
@@ -331,8 +383,173 @@
   ],
   [
    "2026-03",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-03",
    "spiking-neural-networks",
    "application"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-03",
+   "spiking-neural-networks",
+   "method"
   ],
   [
    "2026-03",
@@ -432,6 +649,66 @@
   [
    "2026-03",
    "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-03",
+   "survey",
    "theory"
   ],
   [
@@ -443,6 +720,66 @@
    "2026-04",
    "brain-inspired",
    "theory"
+  ],
+  [
+   "2026-04",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-04",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-04",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-04",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-04",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-04",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-04",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-04",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-04",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-04",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-04",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-04",
+   "edge-computing",
+   "application"
   ],
   [
    "2026-04",
@@ -483,6 +820,226 @@
    "2026-04",
    "edge-computing",
    "theory"
+  ],
+  [
+   "2026-04",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-04",
+   "spiking-neural-networks",
+   "method"
   ],
   [
    "2026-04",
@@ -557,7 +1114,82 @@
   [
    "2026-04",
    "survey",
-   "theory"
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "review"
   ],
   [
    "2026-04",
@@ -570,6 +1202,71 @@
    "theory"
   ],
   [
+   "2026-04",
+   "survey",
+   "theory"
+  ],
+  [
+   "2026-05",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-05",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-05",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-05",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-05",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-05",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-05",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-05",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-05",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-05",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-05",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-05",
+   "edge-computing",
+   "application"
+  ],
+  [
    "2026-05",
    "edge-computing",
    "method"
@@ -623,6 +1320,66 @@
    "2026-05",
    "edge-computing",
    "theory"
+  ],
+  [
+   "2026-05",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-05",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-05",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-05",
+   "neuromorphic-hardware",
+   "systems"
   ],
   [
    "2026-05",
@@ -642,6 +1399,161 @@
   [
    "2026-05",
    "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-05",
+   "spiking-neural-networks",
    "theory"
   ],
   [
@@ -708,6 +1620,126 @@
    "2026-05",
    "survey",
    "method"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-05",
+   "survey",
+   "review"
   ],
   [
    "2026-05",
@@ -726,6 +1758,71 @@
   ],
   [
    "2026-06",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-06",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-06",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-06",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-06",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-06",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-06",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-06",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-06",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-06",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-06",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-06",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-06",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-06",
    "edge-computing",
    "application"
   ],
@@ -771,8 +1868,208 @@
   ],
   [
    "2026-06",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-sensors",
+   "application"
+  ],
+  [
+   "2026-06",
+   "neuromorphic-sensors",
+   "application"
+  ],
+  [
+   "2026-06",
    "spiking-neural-networks",
    "application"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-06",
+   "spiking-neural-networks",
+   "method"
   ],
   [
    "2026-06",
@@ -852,6 +2149,61 @@
   [
    "2026-06",
    "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-06",
+   "survey",
    "theory"
   ],
   [
@@ -883,6 +2235,41 @@
    "2026-07",
    "brain-inspired",
    "theory"
+  ],
+  [
+   "2026-07",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-07",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-07",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-07",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-07",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-07",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-07",
+   "edge-computing",
+   "application"
   ],
   [
    "2026-07",
@@ -938,6 +2325,106 @@
    "2026-07",
    "edge-computing",
    "theory"
+  ],
+  [
+   "2026-07",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "memristive",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-07",
+   "neuromorphic-hardware",
+   "systems"
   ],
   [
    "2026-07",
@@ -957,6 +2444,61 @@
   [
    "2026-07",
    "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-07",
+   "spiking-neural-networks",
    "theory"
   ],
   [
@@ -1000,18 +2542,198 @@
    "method"
   ],
   [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-07",
+   "survey",
+   "review"
+  ],
+  [
    "2026-08",
    "brain-inspired",
    "method"
   ],
   [
    "2026-08",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-08",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-08",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-08",
+   "brain-inspired",
+   "theory"
+  ],
+  [
+   "2026-08",
+   "edge-computing",
+   "application"
+  ],
+  [
+   "2026-08",
    "edge-computing",
    "method"
   ],
   [
    "2026-08",
    "edge-computing",
+   "method"
+  ],
+  [
+   "2026-08",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-08",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-08",
+   "neuromorphic-sensors",
+   "application"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
    "method"
   ],
   [
@@ -1028,6 +2750,36 @@
    "2026-08",
    "survey",
    "method"
+  ],
+  [
+   "2026-08",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-08",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-08",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-08",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-08",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-08",
+   "survey",
+   "review"
   ],
   [
    "2026-08",
@@ -1099,109 +2851,109 @@
  ],
  "keyword_bursts": [
   {
-   "keyword": "energy-efficient",
-   "recent": 61,
-   "total": 61,
-   "burst_score": 1.03,
-   "recent_share": 0.3742
+   "keyword": "benchmark",
+   "recent": 153,
+   "total": 153,
+   "burst_score": 1.01,
+   "recent_share": 0.2982
   },
   {
-   "keyword": "low-power",
-   "recent": 52,
-   "total": 52,
-   "burst_score": 1.03,
-   "recent_share": 0.319
+   "keyword": "energy-efficient",
+   "recent": 136,
+   "total": 136,
+   "burst_score": 1.01,
+   "recent_share": 0.2651
   },
   {
    "keyword": "event-driven",
-   "recent": 38,
-   "total": 38,
-   "burst_score": 1.03,
-   "recent_share": 0.2331
+   "recent": 90,
+   "total": 90,
+   "burst_score": 1.01,
+   "recent_share": 0.1754
+  },
+  {
+   "keyword": "low-power",
+   "recent": 87,
+   "total": 87,
+   "burst_score": 1.01,
+   "recent_share": 0.1696
   },
   {
    "keyword": "spike-timing",
-   "recent": 34,
-   "total": 34,
-   "burst_score": 1.03,
-   "recent_share": 0.2086
+   "recent": 42,
+   "total": 42,
+   "burst_score": 1.01,
+   "recent_share": 0.0819
   },
   {
    "keyword": "spike-timing-dependent plasticity",
-   "recent": 29,
-   "total": 29,
-   "burst_score": 1.03,
-   "recent_share": 0.1779
-  },
-  {
-   "keyword": "benchmark",
-   "recent": 23,
-   "total": 23,
-   "burst_score": 1.03,
-   "recent_share": 0.1411
-  },
-  {
-   "keyword": "edge computing",
-   "recent": 18,
-   "total": 18,
-   "burst_score": 1.03,
-   "recent_share": 0.1104
+   "recent": 36,
+   "total": 36,
+   "burst_score": 1.01,
+   "recent_share": 0.0702
   },
   {
    "keyword": "brain-inspired",
-   "recent": 11,
-   "total": 11,
-   "burst_score": 1.03,
-   "recent_share": 0.0675
+   "recent": 26,
+   "total": 26,
+   "burst_score": 1.01,
+   "recent_share": 0.0507
+  },
+  {
+   "keyword": "edge computing",
+   "recent": 24,
+   "total": 24,
+   "burst_score": 1.01,
+   "recent_share": 0.0468
   },
   {
    "keyword": "biologically plausible",
-   "recent": 9,
-   "total": 9,
-   "burst_score": 1.03,
-   "recent_share": 0.0552
+   "recent": 23,
+   "total": 23,
+   "burst_score": 1.01,
+   "recent_share": 0.0448
+  },
+  {
+   "keyword": "neuromorphic processor",
+   "recent": 17,
+   "total": 17,
+   "burst_score": 1.01,
+   "recent_share": 0.0331
+  },
+  {
+   "keyword": "cortical",
+   "recent": 16,
+   "total": 16,
+   "burst_score": 1.01,
+   "recent_share": 0.0312
+  },
+  {
+   "keyword": "neural dynamics",
+   "recent": 15,
+   "total": 15,
+   "burst_score": 1.01,
+   "recent_share": 0.0292
   },
   {
    "keyword": "local learning",
-   "recent": 6,
-   "total": 6,
-   "burst_score": 1.03,
-   "recent_share": 0.0368
+   "recent": 14,
+   "total": 14,
+   "burst_score": 1.01,
+   "recent_share": 0.0273
   },
   {
    "keyword": "resistive switching",
    "recent": 5,
    "total": 5,
-   "burst_score": 1.03,
-   "recent_share": 0.0307
-  },
-  {
-   "keyword": "neural dynamics",
-   "recent": 5,
-   "total": 5,
-   "burst_score": 1.03,
-   "recent_share": 0.0307
-  },
-  {
-   "keyword": "neuromorphic processor",
-   "recent": 5,
-   "total": 5,
-   "burst_score": 1.03,
-   "recent_share": 0.0307
-  },
-  {
-   "keyword": "cortical",
-   "recent": 2,
-   "total": 2,
-   "burst_score": 1.03,
-   "recent_share": 0.0123
+   "burst_score": 1.01,
+   "recent_share": 0.0097
   },
   {
    "keyword": "neuromorphic algorithm",
-   "recent": 2,
-   "total": 2,
-   "burst_score": 1.03,
-   "recent_share": 0.0123
+   "recent": 4,
+   "total": 4,
+   "burst_score": 1.01,
+   "recent_share": 0.0078
   }
  ]
 }
