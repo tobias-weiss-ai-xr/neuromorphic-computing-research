@@ -61,19 +61,19 @@
   {
    "id": "neuromorphic-algorithms",
    "name": "Neuromorphic Algorithms",
-   "count": 24,
+   "count": 25,
    "trajectory": {
-    "2026": 24
+    "2026": 25
    },
    "momentum": {
     "id": "neuromorphic-algorithms",
     "name": "Neuromorphic Algorithms",
-    "total": 24,
-    "recent": 24,
+    "total": 25,
+    "recent": 25,
     "prior": 0,
     "growth_pct": null,
     "recent_share": 1.0,
-    "papers_per_month": 2.0,
+    "papers_per_month": 2.1,
     "score": 100.0
    }
   },
@@ -177,7 +177,7 @@
   {
    "id": "method",
    "name": "Method",
-   "count": 204
+   "count": 205
   },
   {
    "id": "review",
@@ -2663,6 +2663,11 @@
   ],
   [
    "2026-08",
+   "neuromorphic-algorithms",
+   "method"
+  ],
+  [
+   "2026-08",
    "neuromorphic-hardware",
    "systems"
   ],
@@ -2855,63 +2860,63 @@
    "recent": 153,
    "total": 153,
    "burst_score": 1.01,
-   "recent_share": 0.2982
+   "recent_share": 0.2977
   },
   {
    "keyword": "energy-efficient",
    "recent": 136,
    "total": 136,
    "burst_score": 1.01,
-   "recent_share": 0.2651
+   "recent_share": 0.2646
   },
   {
    "keyword": "event-driven",
-   "recent": 90,
-   "total": 90,
+   "recent": 91,
+   "total": 91,
    "burst_score": 1.01,
-   "recent_share": 0.1754
+   "recent_share": 0.177
   },
   {
    "keyword": "low-power",
    "recent": 87,
    "total": 87,
    "burst_score": 1.01,
-   "recent_share": 0.1696
+   "recent_share": 0.1693
   },
   {
    "keyword": "spike-timing",
    "recent": 42,
    "total": 42,
    "burst_score": 1.01,
-   "recent_share": 0.0819
+   "recent_share": 0.0817
   },
   {
    "keyword": "spike-timing-dependent plasticity",
    "recent": 36,
    "total": 36,
    "burst_score": 1.01,
-   "recent_share": 0.0702
+   "recent_share": 0.07
   },
   {
    "keyword": "brain-inspired",
    "recent": 26,
    "total": 26,
    "burst_score": 1.01,
-   "recent_share": 0.0507
+   "recent_share": 0.0506
   },
   {
    "keyword": "edge computing",
    "recent": 24,
    "total": 24,
    "burst_score": 1.01,
-   "recent_share": 0.0468
+   "recent_share": 0.0467
   },
   {
    "keyword": "biologically plausible",
    "recent": 23,
    "total": 23,
    "burst_score": 1.01,
-   "recent_share": 0.0448
+   "recent_share": 0.0447
   },
   {
    "keyword": "neuromorphic processor",
@@ -2925,7 +2930,7 @@
    "recent": 16,
    "total": 16,
    "burst_score": 1.01,
-   "recent_share": 0.0312
+   "recent_share": 0.0311
   },
   {
    "keyword": "neural dynamics",
@@ -2939,7 +2944,7 @@
    "recent": 14,
    "total": 14,
    "burst_score": 1.01,
-   "recent_share": 0.0273
+   "recent_share": 0.0272
   },
   {
    "keyword": "resistive switching",
