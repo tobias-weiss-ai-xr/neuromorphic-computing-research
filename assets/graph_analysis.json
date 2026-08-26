@@ -80,20 +80,20 @@
   {
    "id": "neuromorphic-hardware",
    "name": "Neuromorphic Hardware",
-   "count": 49,
+   "count": 50,
    "trajectory": {
     "2018": 1,
-    "2026": 48
+    "2026": 49
    },
    "momentum": {
     "id": "neuromorphic-hardware",
     "name": "Neuromorphic Hardware",
-    "total": 49,
-    "recent": 48,
+    "total": 50,
+    "recent": 49,
     "prior": 0,
     "growth_pct": null,
     "recent_share": 0.98,
-    "papers_per_month": 4.0,
+    "papers_per_month": 4.1,
     "score": 98.0
    }
   },
@@ -120,40 +120,40 @@
   {
    "id": "spiking-neural-networks",
    "name": "Spiking Neural Networks",
-   "count": 196,
+   "count": 198,
    "trajectory": {
     "2019": 1,
     "2021": 1,
-    "2026": 194
+    "2026": 196
    },
    "momentum": {
     "id": "spiking-neural-networks",
     "name": "Spiking Neural Networks",
-    "total": 196,
-    "recent": 194,
+    "total": 198,
+    "recent": 196,
     "prior": 0,
     "growth_pct": null,
     "recent_share": 0.99,
-    "papers_per_month": 16.2,
+    "papers_per_month": 16.3,
     "score": 99.0
    }
   },
   {
    "id": "survey",
    "name": "Surveys & Taxonomies",
-   "count": 113,
+   "count": 115,
    "trajectory": {
-    "2026": 113
+    "2026": 115
    },
    "momentum": {
     "id": "survey",
     "name": "Survey",
-    "total": 113,
-    "recent": 113,
+    "total": 115,
+    "recent": 115,
     "prior": 0,
     "growth_pct": null,
     "recent_share": 1.0,
-    "papers_per_month": 9.4,
+    "papers_per_month": 9.6,
     "score": 100.0
    }
   }
@@ -177,17 +177,17 @@
   {
    "id": "method",
    "name": "Method",
-   "count": 205
+   "count": 207
   },
   {
    "id": "review",
    "name": "Reviews & Surveys",
-   "count": 87
+   "count": 89
   },
   {
    "id": "systems",
    "name": "Systems & Technology",
-   "count": 63
+   "count": 64
   },
   {
    "id": "theory",
@@ -2673,8 +2673,23 @@
   ],
   [
    "2026-08",
+   "neuromorphic-hardware",
+   "systems"
+  ],
+  [
+   "2026-08",
    "neuromorphic-sensors",
    "application"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
+  ],
+  [
+   "2026-08",
+   "spiking-neural-networks",
+   "method"
   ],
   [
    "2026-08",
@@ -2755,6 +2770,16 @@
    "2026-08",
    "survey",
    "method"
+  ],
+  [
+   "2026-08",
+   "survey",
+   "review"
+  ],
+  [
+   "2026-08",
+   "survey",
+   "review"
   ],
   [
    "2026-08",
@@ -2857,108 +2882,108 @@
  "keyword_bursts": [
   {
    "keyword": "benchmark",
-   "recent": 153,
-   "total": 153,
+   "recent": 155,
+   "total": 155,
    "burst_score": 1.01,
-   "recent_share": 0.2977
+   "recent_share": 0.2987
   },
   {
    "keyword": "energy-efficient",
    "recent": 136,
    "total": 136,
    "burst_score": 1.01,
-   "recent_share": 0.2646
+   "recent_share": 0.262
   },
   {
    "keyword": "event-driven",
    "recent": 91,
    "total": 91,
    "burst_score": 1.01,
-   "recent_share": 0.177
+   "recent_share": 0.1753
   },
   {
    "keyword": "low-power",
    "recent": 87,
    "total": 87,
    "burst_score": 1.01,
-   "recent_share": 0.1693
+   "recent_share": 0.1676
   },
   {
    "keyword": "spike-timing",
    "recent": 42,
    "total": 42,
    "burst_score": 1.01,
-   "recent_share": 0.0817
+   "recent_share": 0.0809
   },
   {
    "keyword": "spike-timing-dependent plasticity",
    "recent": 36,
    "total": 36,
    "burst_score": 1.01,
-   "recent_share": 0.07
+   "recent_share": 0.0694
   },
   {
    "keyword": "brain-inspired",
    "recent": 26,
    "total": 26,
    "burst_score": 1.01,
-   "recent_share": 0.0506
+   "recent_share": 0.0501
   },
   {
    "keyword": "edge computing",
    "recent": 24,
    "total": 24,
    "burst_score": 1.01,
-   "recent_share": 0.0467
+   "recent_share": 0.0462
   },
   {
    "keyword": "biologically plausible",
    "recent": 23,
    "total": 23,
    "burst_score": 1.01,
-   "recent_share": 0.0447
+   "recent_share": 0.0443
   },
   {
    "keyword": "neuromorphic processor",
    "recent": 17,
    "total": 17,
    "burst_score": 1.01,
-   "recent_share": 0.0331
+   "recent_share": 0.0328
   },
   {
    "keyword": "cortical",
    "recent": 16,
    "total": 16,
    "burst_score": 1.01,
-   "recent_share": 0.0311
+   "recent_share": 0.0308
   },
   {
    "keyword": "neural dynamics",
    "recent": 15,
    "total": 15,
    "burst_score": 1.01,
-   "recent_share": 0.0292
+   "recent_share": 0.0289
   },
   {
    "keyword": "local learning",
    "recent": 14,
    "total": 14,
    "burst_score": 1.01,
-   "recent_share": 0.0272
+   "recent_share": 0.027
   },
   {
    "keyword": "resistive switching",
    "recent": 5,
    "total": 5,
    "burst_score": 1.01,
-   "recent_share": 0.0097
+   "recent_share": 0.0096
   },
   {
    "keyword": "neuromorphic algorithm",
    "recent": 4,
    "total": 4,
    "burst_score": 1.01,
-   "recent_share": 0.0078
+   "recent_share": 0.0077
   }
  ]
 }
