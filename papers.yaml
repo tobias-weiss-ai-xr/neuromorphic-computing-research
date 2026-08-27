@@ -227,7 +227,7 @@ papers:
     The neuron operates in two distinct modes of training mode, which produces bipolar
     spikes to support synaptic updates, and inference mode, which generates a single
     unipolar spike while deactivating non-essential circuitry to reduce power consumption.
-    To validate the proposed design, a proof-of-concept 15 $$\times$$ 4 spiking neural
+    To validate the proposed design, a proof-of-concept 15 $\times$ 4 spiking neural
     network incorporating a winner-takes-all (WTA) mechanism is implemented in 65-nm
     CMOS technology and evaluated using circuit-level simulations. The results demonstrate
     correct local synaptic adaptation, stable neuron operation under process variations,
@@ -404,10 +404,10 @@ papers:
     timing to achieve sparse, low-latency computation, with stronger inputs producing
     earlier spikes. This work presents a compact mixed-signal TTFS encoder and its
     integration with leaky integrate-and-fire (LIF) neurons and sparse synaptic circuits,
-    implemented in$65-\text{nm}$CMOS technology. The proposed encoder converts input
-    current into spike latency using a membrane capacitor, an NMOS source follower,
-    and a Schmitt trigger for robust threshold detection, followed by inverter-based
-    spike generation and clock-controlled reset. Simulation results confirm a monotonic
+    implemented in65-nmCMOS technology. The proposed encoder converts input current
+    into spike latency using a membrane capacitor, an NMOS source follower, and a
+    Schmitt trigger for robust threshold detection, followed by inverter-based spike
+    generation and clock-controlled reset. Simulation results confirm a monotonic
     inverse relationship between input current and spike latency, validating correct
     TTFS operation. The proposed architecture provides a low-power and low-latency
     hardware front-end suitable for scalable neuromorphic and reservoir computing
@@ -559,29 +559,28 @@ papers:
   - Roberto Ammendola
   - Andrea Biagioni
   abstract: 'The dual-radiator Ring Imaging Cherenkov (dRICH) detector of the ePIC
-    experiment at the Electron-Ion Collider (EIC) will read out $\sim$320,000 silicon
+    experiment at the Electron-Ion Collider (EIC) will read out \sim320,000 silicon
     photomultiplier (SiPM) channels at a bunch-crossing rate of 100 MHz. The dark
     count rate (DCR) of the SiPMs is expected to rise up to 300 kHz per channel over
     the experiment lifetime, saturating the output bandwidth and requiring an online
     data reduction factor of at least five. Most crossings contain only uncorrelated
-    DCR hits, while genuine Cherenkov hits cluster within $\sim$2 ns of the 10 ns
-    crossing window: an intrinsically temporal discrimination problem. We present
-    a two-stage online data reduction pipeline based on spiking neural networks (SNNs).
-    The first stage is a per-photodetection-unit leaky-integrate-and-fire (LIF) temporal
-    coincidence encoder that converts raw SiPM hits into a sparse spike stream, achieving
-    over 90% data sparsification before any learned classifier is applied. The second
-    stage is a distributed SNN (30 sub-sector networks plus an aggregation network)
-    deployed on FELIX-155 DAM boards and a dedicated Trigger Processor board, classifying
-    each crossing as Noise-Only or Signal+Noise. On simulated ePIC events the system
-    reaches a true positive rate above 94% at a true negative rate of at least 80%
-    across the full DCR range; an optional early-exit strategy reduces the average
-    classification latency to $\sim$2 algorithmic timesteps at the cost of a few percentage
-    points on both metrics. A hardware proof-of-concept on an AMD Versal Premium FPGA,
-    integrating the LIF encoder with the AIGOR multi-core neuromorphic architecture,
-    validates a single sub-sector pipeline at $\sim$1.7 MHz throughput; ongoing work
-    targets 100 MHz through an identified set of optimizations of the inference fabric.
-    The methodology may be relevant to other timing-driven detector applications at
-    high rate.'
+    DCR hits, while genuine Cherenkov hits cluster within \sim2 ns of the 10 ns crossing
+    window: an intrinsically temporal discrimination problem. We present a two-stage
+    online data reduction pipeline based on spiking neural networks (SNNs). The first
+    stage is a per-photodetection-unit leaky-integrate-and-fire (LIF) temporal coincidence
+    encoder that converts raw SiPM hits into a sparse spike stream, achieving over
+    90% data sparsification before any learned classifier is applied. The second stage
+    is a distributed SNN (30 sub-sector networks plus an aggregation network) deployed
+    on FELIX-155 DAM boards and a dedicated Trigger Processor board, classifying each
+    crossing as Noise-Only or Signal+Noise. On simulated ePIC events the system reaches
+    a true positive rate above 94% at a true negative rate of at least 80% across
+    the full DCR range; an optional early-exit strategy reduces the average classification
+    latency to \sim2 algorithmic timesteps at the cost of a few percentage points
+    on both metrics. A hardware proof-of-concept on an AMD Versal Premium FPGA, integrating
+    the LIF encoder with the AIGOR multi-core neuromorphic architecture, validates
+    a single sub-sector pipeline at \sim1.7 MHz throughput; ongoing work targets 100
+    MHz through an identified set of optimizations of the inference fabric. The methodology
+    may be relevant to other timing-driven detector applications at high rate.'
   venue: arXiv (Cornell University)
 - title: A Low-Power Analog Spiking Neural Network with On-Chip Learning
   date: 2026-04
@@ -1113,34 +1112,34 @@ papers:
     through their presentation of EBNA1 antigens, which enables U-Net-based convolutional
     neural networks to detect B cells automatically during live imaging and surgical
     biopsy procedures. The system switches from expensive manual histopathology work,
-    which costs between $500 and $1000 for each sample, to Artificial Intelligence
-    (AI)-powered analysis that costs under $50 while it completes diagnoses within
-    seconds instead of days, which decreases neurologist tasks by 70%. The deployment
-    of scalable cloud services allows people in areas with limited resources to access
-    treatment, which helps prevent MS progression that costs $85 000 each year per
-    patient through early treatment that eventually generates billions in worldwide
-    healthcare savings[3]. Neural networks can potentially perform real-time segmentation
-    tasks for EBV-infected B cells in neuroinflammatory lesions, yet researchers question
-    their ability to adapt to the changing patterns of central nervous system tissues,
-    which MS studies have shown. Läderach et al[4] demonstrate that EBV infection
-    drives T-bet+ CXCR3+ B cells to infiltrate the CNS, forming perivascular aggregates
-    that trigger T-cell-mediated neuroinflammation, yet their histological analyses
-    relied on static immunohistochemistry rather than live imaging. The use of neural
-    networks for real-time operations requires comprehensive instruction using multiple
-    datasets that track lesion changes throughout acute flare periods, but this specific
-    data does not exist in current neurostudies, which results in overfitting problems
-    because researchers use fixed samples and postmortem data. The clinical utility
-    of this gap suffers because MS patients experience false positives and missed
-    detections when their lesion microenvironments fluctuate due to blood-brain barrier
-    breaches. Future models must integrate multimodal, real-time CNS imaging to bridge
-    this translational divide[4,5]. We propose that SNN–based diagnostic tools be
-    incorporated into multicenter studies supported by dedicated funding for the development
-    of neuromorphic hardware. Collaborative efforts between neuroimmunologists and
-    AI specialists should prioritize the creation of high-quality EBV-infected B-cell
-    segmentation datasets, such as those curated by the National Library of Medicine.
-    Given the rising global burden of MS, regulatory and policy-level support is essential
-    to advance SNN-based pathological assessment methods, which may ultimately contribute
-    to improved disease monitoring and control of disease progression.'
+    which costs between 500 and 1000 for each sample, to Artificial Intelligence (AI)-powered
+    analysis that costs under 50 while it completes diagnoses within seconds instead
+    of days, which decreases neurologist tasks by 70%. The deployment of scalable
+    cloud services allows people in areas with limited resources to access treatment,
+    which helps prevent MS progression that costs 85 000 each year per patient through
+    early treatment that eventually generates billions in worldwide healthcare savings[3].
+    Neural networks can potentially perform real-time segmentation tasks for EBV-infected
+    B cells in neuroinflammatory lesions, yet researchers question their ability to
+    adapt to the changing patterns of central nervous system tissues, which MS studies
+    have shown. Läderach et al[4] demonstrate that EBV infection drives T-bet+ CXCR3+
+    B cells to infiltrate the CNS, forming perivascular aggregates that trigger T-cell-mediated
+    neuroinflammation, yet their histological analyses relied on static immunohistochemistry
+    rather than live imaging. The use of neural networks for real-time operations
+    requires comprehensive instruction using multiple datasets that track lesion changes
+    throughout acute flare periods, but this specific data does not exist in current
+    neurostudies, which results in overfitting problems because researchers use fixed
+    samples and postmortem data. The clinical utility of this gap suffers because
+    MS patients experience false positives and missed detections when their lesion
+    microenvironments fluctuate due to blood-brain barrier breaches. Future models
+    must integrate multimodal, real-time CNS imaging to bridge this translational
+    divide[4,5]. We propose that SNN–based diagnostic tools be incorporated into multicenter
+    studies supported by dedicated funding for the development of neuromorphic hardware.
+    Collaborative efforts between neuroimmunologists and AI specialists should prioritize
+    the creation of high-quality EBV-infected B-cell segmentation datasets, such as
+    those curated by the National Library of Medicine. Given the rising global burden
+    of MS, regulatory and policy-level support is essential to advance SNN-based pathological
+    assessment methods, which may ultimately contribute to improved disease monitoring
+    and control of disease progression.'
   venue: Annals of Medicine and Surgery
 - title: Unsupervised feature learning in spiking neural networks using nonlinear
     interface dipole modulation-based synaptic devices
@@ -1287,8 +1286,8 @@ papers:
     higher operating speed, and substantially lower hardware resource utilization,
     as the proposed design eliminates most of the computational overhead of STDP through
     both algorithmic and hardware-level optimizations. On the FPGA platform, the proposed
-    design improves energy efficiency by 4.5$\times$ to 219.8$\times$ over the compared
-    designs. On the ASIC platform, the proposed design achieves a 4.8$\times$ to 22.01$\times$
+    design improves energy efficiency by 4.5\times to 219.8\times over the compared
+    designs. On the ASIC platform, the proposed design achieves a 4.8\times to 22.01\times
     speedup while consuming only 1.2% to 3.3% of the area required by prior works.
   venue: arXiv (Cornell University)
 - title: 'Neuromorphic Filtering: Memristive Anisotropic Diffusion Coupled with STDP-Driven
@@ -3790,7 +3789,7 @@ papers:
     gradient degradation. To bridge this gap, we propose the Physics-Aware Spiking
     Neural Network (PAS-Net), a fully multiplier-free architecture explicitly tailored
     for Green HAR. Spatially, an adaptive symmetric topology mixer enforces human-joint
-    physical constraints. Temporally, an $O(1)$-memory causal neuromodulator yields
+    physical constraints. Temporally, an O(1)-memory causal neuromodulator yields
     context-aware dynamic threshold neurons, adapting actively to non-stationary movement
     rhythms. Furthermore, we leverage a temporal spike error objective to unlock a
     flexible early-exit mechanism for continuous IMU streams. Evaluated across seven
@@ -4126,20 +4125,20 @@ papers:
   - Soumya Swaraj Mondal
   abstract: 'Neuromorphic computing has emerged as a promising paradigm for ultra-low-power,
     high-density edge intelligence, where memristive synapses enable compact multi-bit
-    weight storage. \(\ce {HfO2}\)-based devices offer high integration density but
-    suffer from intrinsic variability, particularly in the high-resistance state (HRS),
-    leading to potential weight overlap and accuracy degradation. In this work, we
-    present a comprehensive evaluation of synaptic noise in neuroprocessors integrating
-    memristor-based synapses with CMOS neuron circuits. Experimentally characterized
-    \(\ce {HfO2}\) devices in 65 nm CMOS are analyzed using 3σ resistance distributions,
-    and the extracted noise profiles are incorporated into two neuromorphic architectures:
-    RISP (integrate-and-fire) and RAVENS (leaky integrate-and-fire with refractory
-    behavior). We further study encoding schemes under noise across classification,
-    control, and regression tasks. Results show strong resilience to synaptic variability,
-    with limited performance degradation under realistic conditions. Additionally,
-    measured inference power averages 3.85 μW in LRS and 0.79 μW in HRS, enabling
-    nearly \(80 \,\%\) power savings with negligible performance loss, highlighting
-    the potential for variability-tolerant, energy-efficient edge AI systems.'
+    weight storage. \ce {HfO2}-based devices offer high integration density but suffer
+    from intrinsic variability, particularly in the high-resistance state (HRS), leading
+    to potential weight overlap and accuracy degradation. In this work, we present
+    a comprehensive evaluation of synaptic noise in neuroprocessors integrating memristor-based
+    synapses with CMOS neuron circuits. Experimentally characterized \ce {HfO2} devices
+    in 65 nm CMOS are analyzed using 3σ resistance distributions, and the extracted
+    noise profiles are incorporated into two neuromorphic architectures: RISP (integrate-and-fire)
+    and RAVENS (leaky integrate-and-fire with refractory behavior). We further study
+    encoding schemes under noise across classification, control, and regression tasks.
+    Results show strong resilience to synaptic variability, with limited performance
+    degradation under realistic conditions. Additionally, measured inference power
+    averages 3.85 μW in LRS and 0.79 μW in HRS, enabling nearly 80 \,\% power savings
+    with negligible performance loss, highlighting the potential for variability-tolerant,
+    energy-efficient edge AI systems.'
   venue: ''
 - title: Multifunctional Device Design and Applications of GaN and Transition Metal
     Dichalcogenides Heterojunctions
@@ -5241,7 +5240,7 @@ papers:
   venue: Zenodo (CERN European Organization for Nuclear Research)
 - title: Biologically Realistic Dynamics for Nonlinear Classification in CMOS+X Neurons
   date: 2026-04
-  url: https://arxiv.org/abs/2604.03187v1
+  url: https://arxiv.org/abs/2604.03187
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5269,7 +5268,7 @@ papers:
 - title: 'BASC : Behavior-Aligned Quantization and Pruning for Low-Bit Spiking Neural
     Networks'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.19239v1
+  url: https://arxiv.org/abs/2608.19239
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5304,7 +5303,7 @@ papers:
 - title: Memristor-Based Spiking Neural Network Accelerator for Bio-inspired Interception
     Task
   date: 2026-05
-  url: https://arxiv.org/abs/2605.31299v1
+  url: https://arxiv.org/abs/2605.31299
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5334,7 +5333,7 @@ papers:
     circuits for energy-efficient real-time edge intelligence.
 - title: Spiking Neural Network inference on FPGAs with hls4ml
   date: 2026-06
-  url: https://arxiv.org/abs/2606.10008v1
+  url: https://arxiv.org/abs/2606.10008
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5351,7 +5350,7 @@ papers:
     present an extension of hls4ml that enables clock-driven deployment of SNNs trained
     in pytorch onto FPGA firmware. We demonstrate the workflow using a dense quantised
     SNN trained on the Heidelberg Spiking Digits dataset where it achieves inference
-    latencies of approximately $34μ$s. We validate the generated design through software
+    latencies of approximately 34μs. We validate the generated design through software
     reference comparisons, HLS C simulation, HLS synthesis, export, and Vivado synthesis
     reports. This work opens up the hls4ml toolkit to neuromorphic computing, allowing
     streamlined optimisation, synthesis, and deployment of SNN models for real-time
@@ -5359,7 +5358,7 @@ papers:
 - title: Gradient-Free Training of Spiking Neural Networks via Low-Rank Evolution
     Strategies
   date: 2026-05
-  url: https://arxiv.org/abs/2605.30361v1
+  url: https://arxiv.org/abs/2605.30361
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5376,16 +5375,16 @@ papers:
     alternative, yet their computational cost scales with the number of parameters,
     making them impractical for large weight matrices. We present a method for training
     SNNs using EGGROLL, a low-rank factorisation of ES perturbations that reduces
-    per-generation memory from $\mathcal{O}(mn)$ to $\mathcal{O}(r(m{+}n))$. Combining
+    per-generation memory from \mathcal{O}(mn) to \mathcal{O}(r(m{+}n)). Combining
     EGGROLL with a Leaky Integrate-and-Fire SNN on N-MNIST, we demonstrate that gradient-free
     training achieves 79.21% test accuracy while reducing per-generation wall-clock
-    time by 2.23$\times$ relative to full-rank ES. Our results demonstrate EGGROLL
-    is viable for SNN training, with a clear accuracy-speed tradeoff, compatible with
+    time by 2.23\times relative to full-rank ES. Our results demonstrate EGGROLL is
+    viable for SNN training, with a clear accuracy-speed tradeoff, compatible with
     training on neuromorphic hardware without surrogate gradients.
 - title: 'UniSpike: Accelerating Spiking Neural Networks on Neuromorphic Systems via
     Eliminating Address Redundancy'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.23796v1
+  url: https://arxiv.org/abs/2605.23796
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5405,12 +5404,12 @@ papers:
     UniSpike, a hardware-software co-design that removes address redundancy by aggregating
     spikes destined for the same core into compact packets. UniSpike combines destination-centric
     spike scheduling, lightweight runtime packet assembly hardware, and destination-aware
-    SNN partitioning. Across diverse SNN workloads, UniSpike reduces traffic by 1.93$\times$
-    on average, delivering 1.77$\times$ speedup and 1.50$\times$ energy efficiency
-    improvement over state-of-the-art designs.'
+    SNN partitioning. Across diverse SNN workloads, UniSpike reduces traffic by 1.93\times
+    on average, delivering 1.77\times speedup and 1.50\times energy efficiency improvement
+    over state-of-the-art designs.'
 - title: Linearized Bregman Iterations for Sparse Spiking Neural Networks
   date: 2026-03
-  url: https://arxiv.org/abs/2603.16462v1
+  url: https://arxiv.org/abs/2603.16462
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5435,7 +5434,7 @@ papers:
 - title: Breaking Global Self-Attention Bottlenecks in Transformer-based Spiking Neural
     Networks with Local Structure-Aware Self-Attention
   date: 2026-05
-  url: https://arxiv.org/abs/2605.13887v1
+  url: https://arxiv.org/abs/2605.13887
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5467,7 +5466,7 @@ papers:
     applications.
 - title: A Spiking Sequence Generator for Polar Trajectories on Neuromorphic Hardware
   date: 2026-07
-  url: https://arxiv.org/abs/2607.02753v1
+  url: https://arxiv.org/abs/2607.02753
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5491,7 +5490,7 @@ papers:
     reduction in energy expenditure when compared to conventional computing platforms.
 - title: A Neuromorphic Trigger for Efficient Audio Event Detection
   date: 2026-06
-  url: https://arxiv.org/abs/2606.17775v2
+  url: https://arxiv.org/abs/2606.17775
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5513,14 +5512,14 @@ papers:
     the trigger achieves a one-second segment-based F1 score of 0.97 on a class-agnostic
     form of the URBAN-SED dataset, demonstrating high reliability in identifying relevant
     audio regions. For SED, the trigger is combined with the Dang classifier on the
-    DCASE 2017 Challenge Task 2 dataset, showing a potential $42.6\times$ reduction
+    DCASE 2017 Challenge Task 2 dataset, showing a potential 42.6\times reduction
     in FLOPs while reducing the lower bound of the event-based error rate from 0.41
     to 0.25. These results highlight the potential of neuromorphic triggers as real-time,
     energy-efficient front-end filters, enabling substantial reductions in computational
     cost.'
 - title: Direct-to-Event Spiking Neural Network Transfer
   date: 2026-05
-  url: https://arxiv.org/abs/2605.07207v1
+  url: https://arxiv.org/abs/2605.07207
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5546,7 +5545,7 @@ papers:
     energy-efficient transfer while preserving model performance.'
 - title: Generalization Bounds of Spiking Neural Networks via Rademacher Complexity
   date: 2026-04
-  url: https://arxiv.org/abs/2605.02927v1
+  url: https://arxiv.org/abs/2605.02927
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5575,7 +5574,7 @@ papers:
     of SNNs.
 - title: Reconstructing Spiking Neural Networks Using a Single Neuron with Autapses
   date: 2026-03
-  url: https://arxiv.org/abs/2603.24692v1
+  url: https://arxiv.org/abs/2603.24692
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5603,7 +5602,7 @@ papers:
     models as compact computational units for brain-inspired computing.
 - title: A Spiking Neural Architecture for Coordinating Arm and Locomotor Control
   date: 2026-06
-  url: https://arxiv.org/abs/2606.11034v1
+  url: https://arxiv.org/abs/2606.11034
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5631,7 +5630,7 @@ papers:
     implementation enables future deployment on low-power neuromorphic hardware.
 - title: 'YANA: Bridging the Neuromorphic Simulation-to-Hardware Gap'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.03432v1
+  url: https://arxiv.org/abs/2604.03432
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5661,14 +5660,14 @@ papers:
     capabilities through experiments on the Spiking Heidelberg Digits dataset, showing
     near-linear scaling of inference time with both spatial and temporal sparsity
     levels. Deployed on the accessible AMD Kria KR260 platform, a single YANA core
-    utilizes 740 LUTs, 918 registers, 7 BRAMS and 24 URAMs, supporting up to $2^{17}$
-    synapses and $2^{10}$ neurons. We release the YANA framework as an open-source
-    project, providing an end-to-end solution for training, optimizing, and deploying
-    SNNs that integrates with existing neuromorphic computing tools through the Neuromorphic
+    utilizes 740 LUTs, 918 registers, 7 BRAMS and 24 URAMs, supporting up to 2^{17}
+    synapses and 2^{10} neurons. We release the YANA framework as an open-source project,
+    providing an end-to-end solution for training, optimizing, and deploying SNNs
+    that integrates with existing neuromorphic computing tools through the Neuromorphic
     Intermediate Representation (NIR).
 - title: 'SpikingMoE: SDPrompt-Guided Dynamic Expert Fusion in Spiking Neural Networks'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.23188v1
+  url: https://arxiv.org/abs/2605.23188
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5693,7 +5692,7 @@ papers:
     MoE into a spike-driven Transformer with LGN-inspired routing.
 - title: 'SuperNeuroMAT: An Efficient Matrix-based Simulator for Spiking Neural Networks'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.08479v1
+  url: https://arxiv.org/abs/2608.08479
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5729,7 +5728,7 @@ papers:
 - title: A 32-channel event-based bio-signal analog front-end with adaptive delta
     and pulse frequency encoding
   date: 2026-07
-  url: https://arxiv.org/abs/2607.12901v1
+  url: https://arxiv.org/abs/2607.12901
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5755,7 +5754,7 @@ papers:
 - title: 'Benchmarking Fairness in Spiking Neural Networks: Data Bias, Spurious Features,
     and Hardware Effects'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.27407v1
+  url: https://arxiv.org/abs/2605.27407
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5789,7 +5788,7 @@ papers:
     at: https://anonymous.4open.science/r/SNN-Benchmarks-8017.'
 - title: Reducing ANN-SNN Conversion Error via Residual Membrane Potential Alignment
   date: 2026-08
-  url: https://arxiv.org/abs/2608.13952v1
+  url: https://arxiv.org/abs/2608.13952
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5808,10 +5807,10 @@ papers:
     well-trained ANN weights for low-latency, energy-efficient inference. Nevertheless,
     existing conversion schemes suffer from severe accuracy drops at small timesteps,
     large inference delays and cumulative quantization errors, even with marginal
-    performance loss at large $T$. To address these limitations, we first analyze
-    flaws of conventional conversion pipelines from residual membrane potential statistics
+    performance loss at large T. To address these limitations, we first analyze flaws
+    of conventional conversion pipelines from residual membrane potential statistics
     and propose a novel conversion strategy combining dynamic initial potential tuning
-    and feature enhancement. We then introduce a regularization loss $\mathcal{L}_{\mathrm{RMPD}}$
+    and feature enhancement. We then introduce a regularization loss \mathcal{L}_{RMPD}
     to adapt initial potential of IF neurons and mitigate systematic truncation bias
     from boundary aggregation. A dedicated SCR-Conv2d competitive refinement layer
     with grouped convolution is further built to sharpen feature discrimination, eliminate
@@ -5819,13 +5818,13 @@ papers:
     the state-of-the-art QCFS baseline, our approach delivers consistent low-latency
     performance gains and generalizes to ReLU CNNs, ANN Transformers, and multi-threshold
     SNN variants. Evaluations on CIFAR-10, CIFAR-100 and ImageNet verify prominent
-    accuracy improvements at $T=2,4,8$, with negligible extra computation overhead.
+    accuracy improvements at T=2,4,8, with negligible extra computation overhead.
     This work offers an effective conversion paradigm to facilitate real-world SNN
     deployment on neuromorphic chips.
 - title: A Hardware-Aware Open-Source Framework for Design Space Exploration of Mixed-Signal
     Spiking Neural Networks
   date: 2026-07
-  url: https://arxiv.org/abs/2607.06456v2
+  url: https://arxiv.org/abs/2607.06456
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5857,7 +5856,7 @@ papers:
 - title: An Event-Driven E-Skin System with Dynamic Binary Scanning and real time
     SNN Classification
   date: 2026-03
-  url: https://arxiv.org/abs/2603.10537v1
+  url: https://arxiv.org/abs/2603.10537
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5887,7 +5886,7 @@ papers:
     interaction.
 - title: Spiking and Event-driven Neuromorphic Mamba Models for Efficient Speech Recognition
   date: 2026-05
-  url: https://arxiv.org/abs/2606.01135v1
+  url: https://arxiv.org/abs/2606.01135
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5919,7 +5918,7 @@ papers:
 - title: A Multiplication-Free Spike-Time Learning Algorithm and its Efficient FPGA
     Implementation for On-Chip SNN Training
   date: 2026-04
-  url: https://arxiv.org/abs/2604.23218v1
+  url: https://arxiv.org/abs/2604.23218
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5945,7 +5944,7 @@ papers:
     in edge environments.
 - title: Hybrid ANN-SNN Pipeline with Local Plasticity
   date: 2026-06
-  url: https://arxiv.org/abs/2606.20151v2
+  url: https://arxiv.org/abs/2606.20151
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -5970,7 +5969,7 @@ papers:
 - title: 'Stable Spike: Dual Consistency Optimization via Bitwise AND Operations for
     Spiking Neural Networks'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.11676v1
+  url: https://arxiv.org/abs/2603.11676
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6001,7 +6000,7 @@ papers:
     and speed potential of SNNs.
 - title: 'Brain-inspired AI for Edge Intelligence: a systematic review'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.26722v1
+  url: https://arxiv.org/abs/2603.26722
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6030,7 +6029,7 @@ papers:
 - title: A2SG:Adaptive and Asymmetric Surrogate Gradients for Training Deep Spiking
     Neural Networks
   date: 2026-05
-  url: https://arxiv.org/abs/2606.11236v1
+  url: https://arxiv.org/abs/2606.11236
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6060,7 +6059,7 @@ papers:
     and reliable solution for training deep SNNs. Our code is available at https://github.com/KIST-NCL/A2SG.git.'
 - title: 'mlx-snn: Spiking Neural Networks on Apple Silicon via MLX'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.03529v1
+  url: https://arxiv.org/abs/2603.03529
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6084,7 +6083,7 @@ papers:
 - title: 'XOResNet: Exclusive-OR Meta-Residuals Facilitate Deep Spiking Neural Networks
     Learning'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.30362v1
+  url: https://arxiv.org/abs/2605.30362
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6115,7 +6114,7 @@ papers:
     neuromorphic systems.
 - title: Co-Evolved Spiking Neural Network Ensembles via Marginal Contribution Fitness
   date: 2026-06
-  url: https://arxiv.org/abs/2606.13985v1
+  url: https://arxiv.org/abs/2606.13985
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6134,7 +6133,7 @@ papers:
     consistently improve ensemble performance and penalizes redundancy, encouraging
     complementary specialization during evolution rather than relying on post-hoc
     combination of independently trained networks. We evaluate the approach on classification,
-    regression, and control tasks under $μ$Caspian neuromorphic hardware constraints.
+    regression, and control tasks under μCaspian neuromorphic hardware constraints.
     Co-evolved ensembles achieve statistically significant improvements over both
     single-network evolution and post-hoc ensembles across all tasks, with the most
     pronounced gains in control, where standard evolution fails to discover effective
@@ -6142,7 +6141,7 @@ papers:
 - title: 'The Sparsity Ceiling: Where Spiking Networks Can and Cannot Trade Activity
     for Energy'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.26648v1
+  url: https://arxiv.org/abs/2607.26648
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6171,7 +6170,7 @@ papers:
 - title: 'QDS-SNN: Energy-efficient Quantum Deeply-Supervised Spiking Neural Network
     Algorithm for Traffic Sign Recognition'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.07657v1
+  url: https://arxiv.org/abs/2606.07657
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6205,7 +6204,7 @@ papers:
     solution for traffic sign recognition in intelligent transportation systems.
 - title: Globally Optimal Training of Spiking Neural Networks via Parameter Reconstruction
   date: 2026-05
-  url: https://arxiv.org/abs/2605.08022v2
+  url: https://arxiv.org/abs/2605.08022
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6231,7 +6230,7 @@ papers:
 - title: SRAM-Based Compute-in-Memory Accelerator for Linear-decay Spiking Neural
     Networks
   date: 2026-03
-  url: https://arxiv.org/abs/2603.12739v1
+  url: https://arxiv.org/abs/2603.12739
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6266,7 +6265,7 @@ papers:
     low-power, and real-time neuromorphic processing.
 - title: Adaptive Speech-to-Spike Encoding for Spiking Neural Networks
   date: 2026-06
-  url: https://arxiv.org/abs/2606.19039v1
+  url: https://arxiv.org/abs/2606.19039
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6296,7 +6295,7 @@ papers:
 - title: On the Evaluation of Spiking Neural Network Configurations for Network Intrusion
     Detection
   date: 2026-05
-  url: https://arxiv.org/abs/2606.01442v1
+  url: https://arxiv.org/abs/2606.01442
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6328,7 +6327,7 @@ papers:
     when considering low-latency or resource-constrained deployments.
 - title: Burst Spiking Neural Networks
   date: 2026-07
-  url: https://arxiv.org/abs/2607.11914v1
+  url: https://arxiv.org/abs/2607.11914
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6365,7 +6364,7 @@ papers:
     SNNs, advancing their practical viability in robust and energy-efficient applications.
 - title: Winner-Take-All Spiking Transformer for Language Modeling
   date: 2026-04
-  url: https://arxiv.org/abs/2604.11321v1
+  url: https://arxiv.org/abs/2604.11321
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6398,7 +6397,7 @@ papers:
 - title: Criticality-Constrained Iterative Pruning for Energy-Efficient Spiking Neural
     Networks via Combined Importance Scoring
   date: 2026-06
-  url: https://arxiv.org/abs/2606.30676v1
+  url: https://arxiv.org/abs/2606.30676
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6432,7 +6431,7 @@ papers:
 - title: 'CATFormer: When Continual Learning Meets Spiking Transformers With Dynamic
     Thresholds'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.15184v1
+  url: https://arxiv.org/abs/2603.15184
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6463,7 +6462,7 @@ papers:
     for energy-efficient, true-class incremental learning.
 - title: Combining Convolution and Delay Learning in Recurrent Spiking Neural Networks
   date: 2026-04
-  url: https://arxiv.org/abs/2604.15997v1
+  url: https://arxiv.org/abs/2604.15997
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6486,7 +6485,7 @@ papers:
     accuracy. Our code is available at: https://github.com/luciozebendo/delrec_snn/tree/conv_delays'
 - title: Spike-driven Large Language Model
   date: 2026-04
-  url: https://arxiv.org/abs/2604.16475v1
+  url: https://arxiv.org/abs/2604.16475
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6522,7 +6521,7 @@ papers:
     generation of event-driven neuromorphic chips.'
 - title: Elastic Spiking Transformers for Efficient Gesture Understanding
   date: 2026-05
-  url: https://arxiv.org/abs/2605.13869v1
+  url: https://arxiv.org/abs/2605.13869
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6555,7 +6554,7 @@ papers:
     adaptive, real-time gesture recognition on resource-constrained edge devices.'
 - title: 'VQ4SNN: Vector Quantization for Memory-Efficient FPGA Spiking Neural Networks'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.20675v1
+  url: https://arxiv.org/abs/2606.20675
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6580,7 +6579,7 @@ papers:
 - title: 'MorphSNN: Adaptive Graph Diffusion and Structural Plasticity for Spiking
     Neural Networks'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.14285v1
+  url: https://arxiv.org/abs/2603.14285
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6611,7 +6610,7 @@ papers:
     without auxiliary training. The code is available at anonymous.4open.science/r/MorphSNN-B0BC.'
 - title: Spiking Neural Networks for fMRI-Based Visual Semantic Decoding
   date: 2026-07
-  url: https://arxiv.org/abs/2607.19170v1
+  url: https://arxiv.org/abs/2607.19170
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6646,7 +6645,7 @@ papers:
 - title: Neuromorphic Continual Learning for Sequential Deployment of Nuclear Plant
     Monitoring Systems
   date: 2026-04
-  url: https://arxiv.org/abs/2604.18611v1
+  url: https://arxiv.org/abs/2604.18611
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6680,7 +6679,7 @@ papers:
 - title: 'NeuroTrain: Surveying Local Learning Rules for Spiking Neural Networks with
     an Open Benchmarking Framework'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.15058v1
+  url: https://arxiv.org/abs/2605.15058
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6710,7 +6709,7 @@ papers:
     promising directions for future work on scalable, efficient SNN training.
 - title: General aspects of internal noise in spiking neural networks
   date: 2026-04
-  url: https://arxiv.org/abs/2604.13612v1
+  url: https://arxiv.org/abs/2604.13612
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6741,7 +6740,7 @@ papers:
 - title: 'Multi-Timescale Conductance Spiking Networks: A Sparse, Gradient-Trainable
     Framework with Rich Firing Dynamics for Enhanced Temporal Processing'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.11835v1
+  url: https://arxiv.org/abs/2605.11835
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6774,7 +6773,7 @@ papers:
     building block for energy-aware temporal processing and neuromorphic implementation.
 - title: 'SMM Transformer: Leveraging Spiking Neural Networks for Multimodal Tasks'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.01622v1
+  url: https://arxiv.org/abs/2608.01622
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6803,7 +6802,7 @@ papers:
 - title: 'Spiker-LL: An Energy-Efficient FPGA Accelerator Enabling Adaptive Local
     Learning in Spiking Neural Networks'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.18003v1
+  url: https://arxiv.org/abs/2605.18003
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6827,7 +6826,7 @@ papers:
 - title: Gradient-Free Continual Learning in Spiking Neural Networks via Inter-Spike
     Interval Regularization
   date: 2026-04
-  url: https://arxiv.org/abs/2604.16496v1
+  url: https://arxiv.org/abs/2604.16496
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6862,7 +6861,7 @@ papers:
 - title: 'NeuroRing: Scaling Spiking Neural Networks via Multi-FPGA Bidirectional
     Ring Topologies and Stream-Dataflow Architectures'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.28059v2
+  url: https://arxiv.org/abs/2604.28059
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6889,7 +6888,7 @@ papers:
     both neuroscience simulation and broader event-driven applications.
 - title: 'SpikeDecoder: Realizing the GPT Architecture with Spiking Neural Networks'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.12287v1
+  url: https://arxiv.org/abs/2606.12287
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6922,7 +6921,7 @@ papers:
 - title: 'EdgeSpike: Spiking Neural Networks for Low-Power Autonomous Sensing in Edge
     IoT Architectures'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.27004v1
+  url: https://arxiv.org/abs/2604.27004
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6956,7 +6955,7 @@ papers:
 - title: 'AS-FedBridge: Pseudo-Spike Bridge Distillation for Heterogeneous ANN-SNN
     Federated Learning'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.03324v1
+  url: https://arxiv.org/abs/2608.03324
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -6993,7 +6992,7 @@ papers:
 - title: 'SAGE: Surrogate-gradient Adaptation via Attention-Guided Entropy for Spiking
     Transformers'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.13702v1
+  url: https://arxiv.org/abs/2608.13702
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7020,7 +7019,7 @@ papers:
     surrogate-gradient learning in transformer-based SNNs.
 - title: Reinterpreting Safety Thresholds as Neuron Spiking Thresholds
   date: 2026-05
-  url: https://arxiv.org/abs/2605.30368v1
+  url: https://arxiv.org/abs/2605.30368
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7051,7 +7050,7 @@ papers:
 - title: 'SpikeMLLM: Spike-based Multimodal Large Language Models via Modality-Specific
     Temporal Scales and Temporal Compression'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.18610v1
+  url: https://arxiv.org/abs/2604.18610
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7084,7 +7083,7 @@ papers:
     multimodal intelligence.'
 - title: Equivalence of approximation by networks of single- and multi-spike neurons
   date: 2026-03
-  url: https://arxiv.org/abs/2603.13478v1
+  url: https://arxiv.org/abs/2603.13478
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7109,7 +7108,7 @@ papers:
     hold for the multi-spike case.'
 - title: 'SNNF: An SNN-based Near-Sensor Noise Filter for Dynamic Vision Sensors'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.01937v1
+  url: https://arxiv.org/abs/2605.01937
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7141,7 +7140,7 @@ papers:
     for resource-constrained, near-sensor deployment.
 - title: Adaptive Spiking Neurons for Vision and Language Modeling
   date: 2026-04
-  url: https://arxiv.org/abs/2604.12365v1
+  url: https://arxiv.org/abs/2604.12365
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7171,7 +7170,7 @@ papers:
 - title: Integer-State Dynamics of Quantized Spiking Neural Networks for Efficient
     Hardware Acceleration
   date: 2026-04
-  url: https://arxiv.org/abs/2604.01042v1
+  url: https://arxiv.org/abs/2604.01042
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7200,7 +7199,7 @@ papers:
 - title: Scalable Learning in Structured Recurrent Spiking Neural Networks without
     Backpropagation
   date: 2026-05
-  url: https://arxiv.org/abs/2605.00402v1
+  url: https://arxiv.org/abs/2605.00402
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7231,7 +7230,7 @@ papers:
 - title: 'ReSCom: A Reconfigurable Spiking Neural Network Accelerator Using Stochastic
     Computing'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.13560v1
+  url: https://arxiv.org/abs/2606.13560
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7255,15 +7254,15 @@ papers:
     reconfigurable neuron design supports Integrate-and-Fire (IF), Leaky Integrate-and-Fire
     (LIF), and Synaptic neuron models within a single hardware framework. Experimental
     results for MNIST inference on a Xilinx Artix-7 FPGA show that ReSCom achieves
-    $92.80\%$ classification accuracy while consuming just $0.05~\mathrm{mJ}$ of operational
-    energy per image at $100~\mathrm{MHz}$, outperforming the energy efficiency of
-    recent state-of-the-art implementations. Furthermore, managing the stochastic
-    bit-stream length allows explicit, dynamic control over accuracy-latency-energy
-    trade-offs to meet target application constraints.
+    92.80\% classification accuracy while consuming just 0.05~mJ of operational energy
+    per image at 100~MHz, outperforming the energy efficiency of recent state-of-the-art
+    implementations. Furthermore, managing the stochastic bit-stream length allows
+    explicit, dynamic control over accuracy-latency-energy trade-offs to meet target
+    application constraints.
 - title: 'SupraSNN: Exploiting Synapse-Level Parallelism in Spiking Neural Network
     Accelerators through Co-Optimized Mapping and Scheduling'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.13354v1
+  url: https://arxiv.org/abs/2606.13354
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7292,15 +7291,15 @@ papers:
     maps the SNN onto hardware respecting memory constraints, then heuristic scheduling
     determines the synaptic execution order, maximizing throughput and resource utilization.
     Implementing a feedforward SNN trained on MNIST (93.44% accuracy), SupraSNN achieves
-    149 $μs$ inference latency and 0.025 mJ per image (0.276 nJ per synapse) on the
-    Xilinx Zynq XC7Z020 FPGA--delivering 47.6% lower latency and 5.6$\times$ better
+    149 μs inference latency and 0.025 mJ per image (0.276 nJ per synapse) on the
+    Xilinx Zynq XC7Z020 FPGA--delivering 47.6% lower latency and 5.6\times better
     energy efficiency than prior FPGA-based SNN accelerators. Beyond vision tasks,
     a recurrent SNN on the Spiking Heidelberg Dataset (71.82% accuracy) achieves 1.41
     ms latency and 0.77 mJ per sample on XC7Z030.
 - title: 'Collapse or Preserve: Data-Dependent Temporal Aggregation for Spiking Neural
     Network Acceleration'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.13810v1
+  url: https://arxiv.org/abs/2603.13810
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7313,8 +7312,8 @@ papers:
     distinct sparse computation strategies on Apple M3 Max all fail to outperform
     dense convolution, because SIMD architectures cannot exploit the fine-grained,
     unstructured sparsity of i.i.d. binary spikes. Instead, we propose Temporal Aggregated
-    Convolution (TAC), which exploits convolution linearity to pre-aggregate $K$ spike
-    frames before a single convolution call, reducing $T$ calls to $T/K$. On rate-coded
+    Convolution (TAC), which exploits convolution linearity to pre-aggregate K spike
+    frames before a single convolution call, reducing T calls to T/K. On rate-coded
     data, TAC achieves 13.8times speedup with +1.6% accuracy on MNIST and +5.4% on
     Fashion-MNIST -- a simultaneous improvement in both speed and accuracy. However,
     on event-based data where the temporal dimension carries genuine motion information,
@@ -7330,7 +7329,7 @@ papers:
     the mlx-snn library are open source.'
 - title: 'SpikF-GO: Spiking Fourier Graph Operators for Multivariate Time Series Forecasting'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.13901v1
+  url: https://arxiv.org/abs/2606.13901
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7366,7 +7365,7 @@ papers:
 - title: Advancing Direct Training for Spiking Neural Networks with Circulate-Firing
     Neurons and Learnable Gradients
   date: 2026-05
-  url: https://arxiv.org/abs/2605.27412v1
+  url: https://arxiv.org/abs/2605.27412
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7399,7 +7398,7 @@ papers:
 - title: Efficient and Robust Spiking Neural Networks for sEMG-Based Muscle Fatigue
     Detection
   date: 2026-07
-  url: https://arxiv.org/abs/2607.11065v1
+  url: https://arxiv.org/abs/2607.11065
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7429,7 +7428,7 @@ papers:
 - title: 'L-SPINE: A Low-Precision SIMD Spiking Neural Compute Engine for Resource-efficient
     Edge Inference'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.03626v1
+  url: https://arxiv.org/abs/2604.03626
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7457,7 +7456,7 @@ papers:
 - title: A Formal Tool for Verification of Probabilistic Spiking Neural Networks Based
     on Quotient Abstractions
   date: 2026-06
-  url: https://arxiv.org/abs/2606.20674v1
+  url: https://arxiv.org/abs/2606.20674
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7486,13 +7485,13 @@ papers:
     bounded gray zone around threshold, and an Asymptotic Silence theorem gives the
     exact limit guarantee that unforced neurons fall permanently silent. A topology-dependent
     scaling analysis shows that the state space reduction compounds exponentially
-    -- approximately $17\times$ per neuron for discretization parameter $W = 3$ --
-    enabling verification of networks that are otherwise intractable, as confirmed
-    empirically across seven canonical topologies.'
+    -- approximately 17\times per neuron for discretization parameter W = 3 -- enabling
+    verification of networks that are otherwise intractable, as confirmed empirically
+    across seven canonical topologies.'
 - title: 'Federated Few-Shot Learning on Neuromorphic Hardware: An Empirical Study
     Across Physical Edge Nodes'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.13037v1
+  url: https://arxiv.org/abs/2603.13037
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7517,7 +7516,7 @@ papers:
     the distinctiveness of neuron prototypes.'
 - title: Dendritic In-Context Learning in a Single-Layer Spiking Neural Network
   date: 2026-07
-  url: https://arxiv.org/abs/2607.02283v1
+  url: https://arxiv.org/abs/2607.02283
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7550,7 +7549,7 @@ papers:
     is sufficient.'
 - title: 'ShiftLIF: Efficient Multi-Level Spiking Neurons with Power-of-Two Quantization'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.01866v1
+  url: https://arxiv.org/abs/2605.01866
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7583,7 +7582,7 @@ papers:
 - title: 'BiSpikCLM: A Spiking Language Model integrating Softmax-Free Spiking Attention
     and Spike-Aware Alignment Distillation'
   date: 2026-04
-  url: https://arxiv.org/abs/2605.13859v1
+  url: https://arxiv.org/abs/2605.13859
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7615,7 +7614,7 @@ papers:
 - title: Test-Time Adaptation of Spiking Neural Networks for Intracortical Neural
     Decoding using Membrane Potential Alignment
   date: 2026-06
-  url: https://arxiv.org/abs/2606.14866v1
+  url: https://arxiv.org/abs/2606.14866
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7637,7 +7636,7 @@ papers:
     a practical path toward long-term, recalibration-free brain-computer interfaces.
 - title: Optimal Memory Encoding Through Fluctuation-Response Structure
   date: 2026-03
-  url: https://arxiv.org/abs/2603.21666v1
+  url: https://arxiv.org/abs/2603.21666
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7662,7 +7661,7 @@ papers:
     systems.
 - title: 'SpikingMOT: A Spike-Driven Multi-Object Tracker'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.19875v1
+  url: https://arxiv.org/abs/2607.19875
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7694,7 +7693,7 @@ papers:
     for efficient tracking.'
 - title: Energy-Efficient Implementation of Spiking Recurrent Cells on FPGA
   date: 2026-05
-  url: https://arxiv.org/abs/2605.10679v3
+  url: https://arxiv.org/abs/2605.10679
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7711,23 +7710,22 @@ papers:
     IR/LIF) sacrifice part of the neuronal dynamics. In this work, we present an FPGA
     accelerator for an SNN using Spiking Recurrent Cell (SRC) neurons, providing a
     trade-off between biological plausibility and hardware cost. We propose a set
-    of mathematical simplifications that remove costly unary operators (\textit{tanh},
-    \textit{exp}) and avoid floating-point arithmetic through scaling and piecewise-defined
-    approximations. The complete network is implemented in VHDL and validated using
-    spiking traces derived from the MNIST dataset. The weight matrices computed off-line
-    are stored directly in LUT-registers without any adaptation. This demonstrates
-    the robustness of SRC cells. Experiments were conducted on an Artix-7 XC7A200T
-    clocked at 100 MHz. The reference implementation achieves 96.31\% accuracy with
-    a 220-image spiking trace and a processing time of 1.7424 ms per digit. We then
-    investigate accuracy/energy trade-offs by reducing the spiking trace length and
-    quantizing synaptic weights down to 4 bits, achieving 93.32\% accuracy at 0.55
-    mJ per digit (55 images, 5-bit weights) and 92.89\% at 0.45 mJ (44 images, 4-bit
-    weights). These results show that SRC-based SNNs can deliver competitive performance
-    with reduced energy consumption, while preserving richer neuronal dynamics than
-    standard LIF/IR models.
+    of mathematical simplifications that remove costly unary operators (tanh, exp)
+    and avoid floating-point arithmetic through scaling and piecewise-defined approximations.
+    The complete network is implemented in VHDL and validated using spiking traces
+    derived from the MNIST dataset. The weight matrices computed off-line are stored
+    directly in LUT-registers without any adaptation. This demonstrates the robustness
+    of SRC cells. Experiments were conducted on an Artix-7 XC7A200T clocked at 100
+    MHz. The reference implementation achieves 96.31\% accuracy with a 220-image spiking
+    trace and a processing time of 1.7424 ms per digit. We then investigate accuracy/energy
+    trade-offs by reducing the spiking trace length and quantizing synaptic weights
+    down to 4 bits, achieving 93.32\% accuracy at 0.55 mJ per digit (55 images, 5-bit
+    weights) and 92.89\% at 0.45 mJ (44 images, 4-bit weights). These results show
+    that SRC-based SNNs can deliver competitive performance with reduced energy consumption,
+    while preserving richer neuronal dynamics than standard LIF/IR models.
 - title: Frequency Matching in Spiking Neural Networks for mmWave Sensing
   date: 2026-05
-  url: https://arxiv.org/abs/2605.09983v1
+  url: https://arxiv.org/abs/2605.09983
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7754,13 +7752,13 @@ papers:
     for configuring the membrane decay factor by matching the effective bandwidth
     of LIF dynamics to the data's discriminative spectral content. Experimental results
     across four widely used mmWave datasets validate the proposed frequency-matching
-    hypothesis, yielding an average test-accuracy improvement of 6.22% and a 3.64$\times$
+    hypothesis, yielding an average test-accuracy improvement of 6.22% and a 3.64\times
     reduction in theoretical energy consumption relative to ANN baselines, under a
     unified evaluation protocol.
-- title: 'Ge$^\text{2}$mS-T: Multi-Dimensional Grouping for Ultra-High Energy Efficiency
-    in Spiking Transformer'
+- title: 'Ge^2mS-T: Multi-Dimensional Grouping for Ultra-High Energy Efficiency in
+    Spiking Transformer'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.08894v2
+  url: https://arxiv.org/abs/2604.08894
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7777,7 +7775,7 @@ papers:
     and inference metrics when applied to Spiking Vision Transformers (S-ViTs). Existing
     paradigms including ANN-SNN Conversion and Spatial-Temporal Backpropagation (STBP)
     suffer from inherent limitations, precluding concurrent optimization of memory,
-    accuracy and energy consumption. To address these issues, we propose Ge$^\text{2}$mS-T,
+    accuracy and energy consumption. To address these issues, we propose Ge^2mS-T,
     a novel architecture implementing grouped computation across temporal, spatial
     and network structure dimensions. Specifically, we introduce the Grouped-Exponential-Coding-based
     IF (ExpG-IF) model, enabling lossless conversion with constant training overhead
@@ -7792,7 +7790,7 @@ papers:
 - title: 'Rare Events, Real Signals: Functional Ensembles as Units of Computation
     in Deep Spiking Networks'
   date: 2026-05
-  url: https://arxiv.org/abs/2606.00073v1
+  url: https://arxiv.org/abs/2606.00073
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7828,7 +7826,7 @@ papers:
     diagnostics on the information flow.'
 - title: Sharpness Aware Surrogate Training for Spiking Neural Networks
   date: 2026-03
-  url: https://arxiv.org/abs/2603.18039v1
+  url: https://arxiv.org/abs/2603.18039
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7852,14 +7850,14 @@ papers:
     Empirically, we evaluate clean accuracy, hard spike transfer, corruption robustness,
     and training overhead on N-MNIST and DVS Gesture. The clearest practical effect
     is transfer gap reduction: on N-MNIST, hard spike accuracy rises from 65.7% to
-    94.7% (best at $ρ=0.30$) while surrogate forward accuracy remains high; on DVS
-    Gesture, hard spike accuracy improves from 31.8% to 63.3% (best at $ρ=0.40$).
-    We additionally specify the compute matched, calibration, and theory alignment
-    controls required for a final practical assessment.'
+    94.7% (best at ρ=0.30) while surrogate forward accuracy remains high; on DVS Gesture,
+    hard spike accuracy improves from 31.8% to 63.3% (best at ρ=0.40). We additionally
+    specify the compute matched, calibration, and theory alignment controls required
+    for a final practical assessment.'
 - title: An Optimization Framework for Automated Assessment of Biological Plausibility
     of Spiking Neurons
   date: 2026-06
-  url: https://arxiv.org/abs/2606.17853v1
+  url: https://arxiv.org/abs/2606.17853
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7890,7 +7888,7 @@ papers:
 - title: Neuromorphic Parameter Estimation for Power Converter Health Monitoring Using
     Spiking Neural Networks
   date: 2026-04
-  url: https://arxiv.org/abs/2604.15714v1
+  url: https://arxiv.org/abs/2604.15714
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7907,17 +7905,17 @@ papers:
     leaky integrate-and-fire SNN estimates passive component parameters while a differentiable
     ODE solver provides physics-consistent training by decoupling the ODE physics
     loss from the unrolled spiking loop. On an EMI-corrupted synchronous buck converter
-    benchmark, the SNN reduces lumped resistance error from $25.8\%$ to $10.2\%$ versus
-    a feedforward baseline, within the $\pm 10\%$ manufacturing tolerance of passive
-    components, at a projected ${\sim}270\times$ energy reduction on neuromorphic
-    hardware. Persistent membrane states further enable degradation tracking and event-driven
-    fault detection via a $+5.5$ percentage-point spike-rate jump at abrupt faults.
-    With $93\%$ spike sparsity, the architecture is suited for always-on deployment
+    benchmark, the SNN reduces lumped resistance error from 25.8\% to 10.2\% versus
+    a feedforward baseline, within the \pm 10\% manufacturing tolerance of passive
+    components, at a projected {\sim}270\times energy reduction on neuromorphic hardware.
+    Persistent membrane states further enable degradation tracking and event-driven
+    fault detection via a +5.5 percentage-point spike-rate jump at abrupt faults.
+    With 93\% spike sparsity, the architecture is suited for always-on deployment
     on Intel Loihi 2 or BrainChip Akida.'
 - title: 'CLANE: Continual Learning of Actions on Neuromorphic Hardware from Event
     Cameras'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.28387v1
+  url: https://arxiv.org/abs/2605.28387
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7947,7 +7945,7 @@ papers:
     benchmarking across three evaluation levels.
 - title: 'Spike-HTR: Spiking Neural Transformer for Handwritten Text Recognition'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.01646v1
+  url: https://arxiv.org/abs/2608.01646
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -7970,13 +7968,13 @@ papers:
     steps cover broad stroke regions and later steps emphasize sharper stroke details.
     To reduce sequence computation, a CTC-guided length reducer keeps likely character
     or uncertain positions and compresses long blank-dominated stretches before deep
-    mixing. With $T{=}2$, Spike-HTR trains only on target data, decodes without language
+    mixing. With T{=}2, Spike-HTR trains only on target data, decodes without language
     models or lexicons, and reaches validation/test CERs of 3.5/5.4, 2.3/2.5, and
     4.2/3.9 on IAM, LAM, and READ2016. Codes are available at https://github.com/QomolangmaH/SpikeHTR.'
 - title: Characterization of Off-wafer Pulse Communication in BrainScaleS Neuromorphic
     System
   date: 2026-03
-  url: https://arxiv.org/abs/2603.24854v1
+  url: https://arxiv.org/abs/2603.24854
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8005,7 +8003,7 @@ papers:
     communication channels.
 - title: Robust PnP on a Neuromorphic Processor for Object Pose Estimation
   date: 2026-07
-  url: https://arxiv.org/abs/2607.16834v1
+  url: https://arxiv.org/abs/2607.16834
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8037,7 +8035,7 @@ papers:
 - title: 'The SpiNNaker2 chip: a many-core platform for flexible and scalable brain-inspired
     computing'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.24396v1
+  url: https://arxiv.org/abs/2607.24396
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8072,7 +8070,7 @@ papers:
     computing and its combinations with mainstream deep network approaches.
 - title: 'S2Act: Simple Spiking Actor'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.15725v1
+  url: https://arxiv.org/abs/2603.15725
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8110,7 +8108,7 @@ papers:
 - title: Low-Power, Neuromorphic, Acoustic Anomaly Detection for Persistent Machine
     Monitoring
   date: 2026-08
-  url: https://arxiv.org/abs/2608.18341v1
+  url: https://arxiv.org/abs/2608.18341
   category: neuromorphic-hardware
   subcategory: systems
   authors: []
@@ -8127,14 +8125,14 @@ papers:
     pAUC at maximum false-positive rate 0.1. In the DCASE 2026 Task 2 ToyCar noisy
     benchmark, the model achieves source AUC 0.7990, target AUC 0.6466, and pAUC 0.6426,
     exceeding reported baseline metrics. Power profiling on a 16-chip Loihi 2 VPX
-    system shows real-time throughput with 0.0406$\unicode{x2013}$0.0426 mJ dynamic
+    system shows real-time throughput with 0.0406\unicode{x2013}0.0426 mJ dynamic
     energy per sample, two orders of magnitude lower than both a CPU and GPU. These
     results support neuromorphic acoustic anomaly detection as a practical candidate
     for low-power, persistent machine monitoring.
 - title: On the Role of Preprocessing and Memristor Dynamics in Reservoir Computing
     for Image Classification
   date: 2026-04
-  url: https://arxiv.org/abs/2604.21602v1
+  url: https://arxiv.org/abs/2604.21602
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8167,7 +8165,7 @@ papers:
 - title: Programmable superconducting neuron with intrinsic in-memory computation
     and dual-timescale plasticity for ultra-efficient neuromorphic computing
   date: 2026-03
-  url: https://arxiv.org/abs/2603.04966v2
+  url: https://arxiv.org/abs/2603.04966
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8201,7 +8199,7 @@ papers:
 - title: 'AIGOR: A Modular, Event-Driven Neuromorphic Architecture for Configurable
     SNN Inference'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.03191v1
+  url: https://arxiv.org/abs/2607.03191
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8238,7 +8236,7 @@ papers:
     the configurable structure of the architecture admits as changes to the same cores.'
 - title: 'Nanoscale memristive devices: Threats and solutions'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.18978v1
+  url: https://arxiv.org/abs/2606.18978
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8269,7 +8267,7 @@ papers:
 - title: Compact and Energy-Efficient Memristive Spiking Neuromorphic Accelerator
     for Bio-inspired Interception Tasks
   date: 2026-05
-  url: https://arxiv.org/abs/2605.31141v1
+  url: https://arxiv.org/abs/2605.31141
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8300,7 +8298,7 @@ papers:
 - title: Uncertainty-triggered wake-up enables energy-efficient, error-resilient edge
     AI with memristor front ends
   date: 2026-05
-  url: https://arxiv.org/abs/2605.29533v1
+  url: https://arxiv.org/abs/2605.29533
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8335,7 +8333,7 @@ papers:
 - title: Positional Encoding in the Context of Memristor-Based Analog Computation
     for Automatic Speech Recognition
   date: 2026-06
-  url: https://arxiv.org/abs/2606.13379v1
+  url: https://arxiv.org/abs/2606.13379
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8359,7 +8357,7 @@ papers:
 - title: 'DendroNN: Dendrocentric Neural Networks for Energy-Efficient Classification
     of Event-Based Data'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.09274v1
+  url: https://arxiv.org/abs/2603.09274
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8398,7 +8396,7 @@ papers:
 - title: 'An Open-Source LFSR-Based Stochastic Leaky Integrate-and-Fire Neuron in
     SkyWater 130 nm: Design, Stochastic Characterisation, and Rate Coding'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.23532v1
+  url: https://arxiv.org/abs/2606.23532
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8433,7 +8431,7 @@ papers:
 - title: A Comparative Analysis of Ising Formulations for Neuromorphic Maximum-Likelihood
     Channel Decoding
   date: 2026-07
-  url: https://arxiv.org/abs/2607.12862v1
+  url: https://arxiv.org/abs/2607.12862
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8466,7 +8464,7 @@ papers:
 - title: Neural dynamical systems on ferroelectric compute-in-memory for real-time
     forecasting
   date: 2026-06
-  url: https://arxiv.org/abs/2606.16896v1
+  url: https://arxiv.org/abs/2606.16896
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8487,16 +8485,15 @@ papers:
     based on multi-bit ferrodiodes. A 128-neuron instance of FerroNDS computes short-time
     Fourier transform and forecasts a 500-ms horizon for periodic, quasi-periodic,
     and chaotic signals. The system achieves sub-watt real-time operation with per-neuron
-    per-inference energy of 1.64 $μ$J (200 Hz) and 0.29 $μ$J (10 kHz), 25-40$\times$
-    area reduction over SRAM-based digital systems, and per-layer latency of 3.18
-    ms (200 Hz) and 63.87 $μ$s (10 kHz). To our knowledge, this is the first end-to-end
-    integration of a ferrodiode into a neuromorphic computational framework, establishing
-    ferroelectric compute-in-memory as a practical substrate for analog neural dynamical
-    systems.'
+    per-inference energy of 1.64 μJ (200 Hz) and 0.29 μJ (10 kHz), 25-40\times area
+    reduction over SRAM-based digital systems, and per-layer latency of 3.18 ms (200
+    Hz) and 63.87 μs (10 kHz). To our knowledge, this is the first end-to-end integration
+    of a ferrodiode into a neuromorphic computational framework, establishing ferroelectric
+    compute-in-memory as a practical substrate for analog neural dynamical systems.'
 - title: Implicitly Parallel Neuromorphic Solver Design for Constraint Satisfaction
     Problems
   date: 2026-03
-  url: https://arxiv.org/abs/2603.01150v1
+  url: https://arxiv.org/abs/2603.01150
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8521,7 +8518,7 @@ papers:
 - title: 'Functional Interface Blocks for Neuromorphic Hardware: A Junction-Centered
     Framework'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.04281v1
+  url: https://arxiv.org/abs/2606.04281
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8550,7 +8547,7 @@ papers:
 - title: A Fast and Energy-Efficient Latch-Based Memristive Analog Content-Addressable
     Memory
   date: 2026-05
-  url: https://arxiv.org/abs/2605.11847v1
+  url: https://arxiv.org/abs/2605.11847
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8586,7 +8583,7 @@ papers:
 - title: 'Design and Development of a Neuromorphic Silicon Suite: PVT Sensing, Stochastic
     LIF Inference, On-Chip STDP Learning, and Crossbar Programming'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.22635v1
+  url: https://arxiv.org/abs/2606.22635
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8621,7 +8618,7 @@ papers:
     silicon is reported.'
 - title: Nanoparticle Networks for Neuromorphic Computing
   date: 2026-07
-  url: https://arxiv.org/abs/2607.27844v1
+  url: https://arxiv.org/abs/2607.27844
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8633,27 +8630,26 @@ papers:
   project_url: ''
   abstract: Physical computing leverages complex dynamical systems for energy-efficient
     data processing. In this work, we present a neuromorphic architecture based on
-    metallic nanoparticles interconnected by molecular junctions on a $\text{SiO}_2$/Si
-    substrate. We demonstrate that surrounding static control electrodes transform
-    this nanoparticle network from a passive reservoir into a tunable nonlinear dynamical
-    system. By analyzing how these electrodes route simple one-dimensional voltage
-    inputs into multidimensional signal responses, we establish three core design
-    rules to maximize computational performance. First, operating near the system's
-    cutoff frequency achieves an optimal balance between nonlinear charge tunneling
-    and linear capacitive memory. Second, tuning the underlying $\text{SiO}_2$ thickness
-    sets the electrostatic screening length and dictates the memory type. Thick oxide
-    layers reduce the screening length, causing networks larger than this length to
-    transition into a persistent, non-volatile-like regime. Conversely, networks smaller
-    than the screening length exhibit only fading memory. Third, introducing structural
-    disorder via heterogeneous molecular junctions overcomes inherent limits on expressivity.
-    While a network's computational expressivity scales with its physical size, it
-    is ultimately capped by the screening length. Breaking internal spatial symmetries
-    with localized disorder bypasses this saturation, allowing control voltages to
-    independently manipulate specific signal amplitudes and phases, universally maximizing
-    performance for dynamic neuromorphic applications.
+    metallic nanoparticles interconnected by molecular junctions on a SiO_2/Si substrate.
+    We demonstrate that surrounding static control electrodes transform this nanoparticle
+    network from a passive reservoir into a tunable nonlinear dynamical system. By
+    analyzing how these electrodes route simple one-dimensional voltage inputs into
+    multidimensional signal responses, we establish three core design rules to maximize
+    computational performance. First, operating near the system's cutoff frequency
+    achieves an optimal balance between nonlinear charge tunneling and linear capacitive
+    memory. Second, tuning the underlying SiO_2 thickness sets the electrostatic screening
+    length and dictates the memory type. Thick oxide layers reduce the screening length,
+    causing networks larger than this length to transition into a persistent, non-volatile-like
+    regime. Conversely, networks smaller than the screening length exhibit only fading
+    memory. Third, introducing structural disorder via heterogeneous molecular junctions
+    overcomes inherent limits on expressivity. While a network's computational expressivity
+    scales with its physical size, it is ultimately capped by the screening length.
+    Breaking internal spatial symmetries with localized disorder bypasses this saturation,
+    allowing control voltages to independently manipulate specific signal amplitudes
+    and phases, universally maximizing performance for dynamic neuromorphic applications.
 - title: Stochastic binary networks with asymmetric and time-delayed interactions
   date: 2026-07
-  url: https://arxiv.org/abs/2607.15215v1
+  url: https://arxiv.org/abs/2607.15215
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8687,7 +8683,7 @@ papers:
     in neuromorphic hardware and complex network dynamics.
 - title: 'Novel models of computation from novel physical substrates: a bosonic example'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.24531v1
+  url: https://arxiv.org/abs/2603.24531
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8708,7 +8704,7 @@ papers:
     computing as implemented by a physical multi-component interferometer.
 - title: Intrinsic Neuro-Synaptic Spiking Dynamics and Resonance in Memristive Networks
   date: 2026-04
-  url: https://arxiv.org/abs/2604.18015v2
+  url: https://arxiv.org/abs/2604.18015
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8732,7 +8728,7 @@ papers:
 - title: Breaking Local-Minimum Traps in Spiking Neural Network-Based Solvers for
     CSPs via Parallel Tempering
   date: 2026-07
-  url: https://arxiv.org/abs/2607.08897v1
+  url: https://arxiv.org/abs/2607.08897
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8764,7 +8760,7 @@ papers:
 - title: 'Self-organizing Architecture of Receptron Units: a Hardware-Aware Framework
     for Edge Intelligence'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.20162v1
+  url: https://arxiv.org/abs/2607.20162
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8790,7 +8786,7 @@ papers:
 - title: Investigating reservoir computing for branch prediction in pipelined processors
     using emerging CMOS memristor devices
   date: 2026-07
-  url: https://arxiv.org/abs/2607.27140v2
+  url: https://arxiv.org/abs/2607.27140
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8817,7 +8813,7 @@ papers:
     to be 15x slower to adapt to changes in branching behaviour.
 - title: 'Optical Flow Sensor: A Direction-Selective Bionic Retina Design'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.28686v1
+  url: https://arxiv.org/abs/2607.28686
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8839,15 +8835,15 @@ papers:
     interface supports low-power, high-throughput readout. \rev{Based on the CMOS-based
     OFS, we further propose optical memristor-based OFS to reduce sensor power consumption
     and area overhead.} Experimental results show that the proposed OFS achieves a
-    303$\times$ reduction in power consumption compared with FPGA-accelerated DVS
-    systems while maintaining microsecond-level latency. Moreover, by directly outputting
-    optical flow vectors, the OFS reduces output data size by approximately 3.3$\times$,
+    303\times reduction in power consumption compared with FPGA-accelerated DVS systems
+    while maintaining microsecond-level latency. Moreover, by directly outputting
+    optical flow vectors, the OFS reduces output data size by approximately 3.3\times,
     demonstrating strong potential for ultra-high-speed, low-power vision sensing
     applications.
 - title: Experimental Demonstration of an On-Chip CMOS-Integrated 3T-1MTJ Probabilistic
     Bit -- A P-Bit
   date: 2026-04
-  url: https://arxiv.org/abs/2604.05191v2
+  url: https://arxiv.org/abs/2604.05191
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8875,7 +8871,7 @@ papers:
 - title: Remotely programming the weights of a spintronic neural network by a radiofrequency
     broadcast signal
   date: 2026-04
-  url: https://arxiv.org/abs/2604.24561v4
+  url: https://arxiv.org/abs/2604.24561
   category: neuromorphic-hardware
   subcategory: systems
   authors: []
@@ -8900,7 +8896,7 @@ papers:
     hardware.'
 - title: Unidirectional information flow in a nanomagnetic metamaterial
   date: 2026-04
-  url: https://arxiv.org/abs/2604.09420v1
+  url: https://arxiv.org/abs/2604.09420
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8931,7 +8927,7 @@ papers:
 - title: 'Autonomous Physical Computation: A Categorical Closure Criterion for Physical
     and Neuromorphic Reservoirs'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.23902v1
+  url: https://arxiv.org/abs/2607.23902
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8960,7 +8956,7 @@ papers:
 - title: 'Synthetic Biological Intelligence: System-Level Abstractions and Adaptive
     Bio-Digital Interaction'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.27933v1
+  url: https://arxiv.org/abs/2604.27933
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -8994,7 +8990,7 @@ papers:
 - title: 'Multi-Level Resistive Synapses for On-Chip Neural Networks: A Physics-Based
     Design of a Memristive Crossbar Fabric with Quasi-Continuous Conductance States'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.22621v1
+  url: https://arxiv.org/abs/2606.22621
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -9023,7 +9019,7 @@ papers:
     for a high-density, analog, in-memory neural processor.
 - title: Machine vision with small numbers of detected photons per inference
   date: 2026-03
-  url: https://arxiv.org/abs/2603.23974v1
+  url: https://arxiv.org/abs/2603.23974
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -9058,7 +9054,7 @@ papers:
     and other photon-starved setups.
 - title: Energy-efficient codon optimization on thermodynamic hardware
   date: 2026-06
-  url: https://arxiv.org/abs/2606.17327v1
+  url: https://arxiv.org/abs/2606.17327
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -9085,7 +9081,7 @@ papers:
 - title: Evaluating Encoding Strategies for Closed-Loop Classification in Biological
     Neural Networks
   date: 2026-07
-  url: https://arxiv.org/abs/2607.13644v1
+  url: https://arxiv.org/abs/2607.13644
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -9115,7 +9111,7 @@ papers:
     temporal encoding as a key design dimension for bio-digital computing.
 - title: Local Synaptic Rules Can Implement a SIGReg Gradient Without Backpropagation
   date: 2026-07
-  url: https://arxiv.org/abs/2607.21622v1
+  url: https://arxiv.org/abs/2607.21622
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9124,21 +9120,21 @@ papers:
   code_url: ''
   project_url: ''
   abstract: 'We prove that two canonical local synaptic learning rules, the potentiation
-    arm of spike-timing-dependent plasticity (STDP$^+$) and homeostatic plasticity
-    (instantiated here via flashlight granule-cell-like neurons), together can implement
-    the exact gradient of a SIGReg-like self-supervised learning objective. The equivalence
+    arm of spike-timing-dependent plasticity (STDP^+) and homeostatic plasticity (instantiated
+    here via flashlight granule-cell-like neurons), together can implement the exact
+    gradient of a SIGReg-like self-supervised learning objective. The equivalence
     requires no gradient calculations, no global error signals, no weight transport,
     and no label information: the only inputs are pre- and post-synaptic firing rates,
     local firing statistics, and the temporal contiguity of natural sensory streams.
     On a synthetic clustering task designed to probe whether class structure can be
     recovered from temporal ordering of inputs alone, ordered presentation raised
     cluster separation (CSR) to 2.49 while random ordering left it near baseline (0.83),
-    a roughly threefold ($\approx 3.5σ$) separation attributable solely to input ordering.
+    a roughly threefold (\approx 3.5σ) separation attributable solely to input ordering.
     On temporally ordered MNIST, a two-layer network trained entirely with these rules
     achieved 87.3% linear-probe accuracy, showing that the mechanism functions end-to-end.'
 - title: Modeling of Self-sustained Neuron Population without External Stimulus
   date: 2026-04
-  url: https://arxiv.org/abs/2604.13719v1
+  url: https://arxiv.org/abs/2604.13719
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9171,7 +9167,7 @@ papers:
 - title: Beyond LLMs, Sparse Distributed Memory, and Neuromorphics &lt;A Hyper-Dimensional
     SRAM-CAM "VaCoAl" for Ultra-High Speed, Ultra-Low Power, and Low Cost&gt;
   date: 2026-04
-  url: https://arxiv.org/abs/2604.11665v7
+  url: https://arxiv.org/abs/2604.11665
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9208,7 +9204,7 @@ papers:
 - title: Neuromorphic Graph Anomaly Detection via Adaptive STDP and Spiking Graph
     Neural Networks
   date: 2026-04
-  url: https://arxiv.org/abs/2605.13863v1
+  url: https://arxiv.org/abs/2605.13863
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9237,13 +9233,13 @@ papers:
     simulation steps and hidden dimension; LIFGAT approximates any continuous attention
     function; hypergraph memory converges to optimal prototypes; contrast pooling
     achieves provable anomaly selection bounds; STDP learning converges stably; and
-    multi-factor fusion produces calibrated scores with up to $5\times$ variance reduction.
+    multi-factor fusion produces calibrated scores with up to 5\times variance reduction.
     Extensive experiments on nine datasets on both dynamic and static graphs demonstrate
     superior anomaly detection accuracy while maintaining biological plausibility
     and energy efficiency for neuromorphic deployment.'
 - title: Self-Organized Optical Pathways in Optofluidic Photonic Crystals
   date: 2026-03
-  url: https://arxiv.org/abs/2603.25845v1
+  url: https://arxiv.org/abs/2603.25845
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9270,7 +9266,7 @@ papers:
 - title: Soliton-like Waves in a Two-Dimensional Recurrent Spiking Neural Network
     with Weighted Spike-Timing-Dependent Plasticity
   date: 2026-06
-  url: https://arxiv.org/abs/2606.21432v1
+  url: https://arxiv.org/abs/2606.21432
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9301,7 +9297,7 @@ papers:
 - title: 'Reward-Modulated Local Learning in Spiking Encoders: Controlled Benchmarks
     with STDP and Hybrid Rate Readouts'
   date: 2026-02
-  url: https://arxiv.org/abs/2603.00710v1
+  url: https://arxiv.org/abs/2603.00710
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9327,7 +9323,7 @@ papers:
 - title: Cross-Species RSA Reveals Conserved Early Visual Alignment but Divergent
     Higher-Area Rankings Across Human fMRI and Macaque Electrophysiology
   date: 2026-05
-  url: https://arxiv.org/abs/2605.22401v2
+  url: https://arxiv.org/abs/2605.22401
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9361,7 +9357,7 @@ papers:
 - title: Intrinsic Numerical Robustness and Fault Tolerance in a Neuromorphic Algorithm
     for Scientific Computing
   date: 2026-03
-  url: https://arxiv.org/abs/2603.10246v1
+  url: https://arxiv.org/abs/2603.10246
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9384,7 +9380,7 @@ papers:
 - title: 'Bio-plausible Neuromorphic Disturbance Observer Based on Emulation Theory:
     Extended Version'
   date: 2026-05
-  url: https://arxiv.org/abs/2606.05189v2
+  url: https://arxiv.org/abs/2606.05189
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9409,7 +9405,7 @@ papers:
     to 42.6% of the fixed-threshold case under noisy conditions.
 - title: Benchmarking the Energy Cost of Assurance in Neuromorphic Edge Robotics
   date: 2026-03
-  url: https://arxiv.org/abs/2603.13880v1
+  url: https://arxiv.org/abs/2603.13880
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9436,7 +9432,7 @@ papers:
     sparsity enables sustainable and high-assurance edge autonomy.
 - title: Efficient event-driven retrieval in high-capacity kernel Hopfield networks
   date: 2026-05
-  url: https://arxiv.org/abs/2605.05978v2
+  url: https://arxiv.org/abs/2605.05978
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9453,8 +9449,8 @@ papers:
     sequential updates exhibit trajectories that are statistically indistinguishable
     from those of synchronous dynamics, while maintaining high recall accuracy within
     the tested regime for random patterns. Furthermore, we find that the asynchronous
-    network achieves empirical storage capacities approaching $P/N \approx 30$ in
-    static random pattern regimes, exceeding classical limits. To evaluate computational
+    network achieves empirical storage capacities approaching P/N \approx 30 in static
+    random pattern regimes, exceeding classical limits. To evaluate computational
     efficiency, we analyze the total number of state transitions (bit flips) required
     for error correction. The results show that the network converges using a number
     of events close to the initial Hamming distance from the target pattern, without
@@ -9465,7 +9461,7 @@ papers:
 - title: Regime Mapping of Oscillatory States in Balanced Spiking Networks with Multiple
     Time Scales
   date: 2026-04
-  url: https://arxiv.org/abs/2604.04770v1
+  url: https://arxiv.org/abs/2604.04770
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9493,7 +9489,7 @@ papers:
     settings.
 - title: An event-driven framework for fly-inspired visual motion detection
   date: 2026-07
-  url: https://arxiv.org/abs/2607.05205v1
+  url: https://arxiv.org/abs/2607.05205
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9530,7 +9526,7 @@ papers:
     processing.
 - title: Petri Net Description of Biological Neural Circuits for Fast Hardware Prototyping
   date: 2026-08
-  url: https://arxiv.org/abs/2608.20147v1
+  url: https://arxiv.org/abs/2608.20147
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9557,7 +9553,7 @@ papers:
 - title: 'Temporal Coding as a Substrate for Sensorimotor Object Inference: A Spiking
     Reinterpretation of Thousand Brains Architecture'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.22206v1
+  url: https://arxiv.org/abs/2605.22206
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9592,7 +9588,7 @@ papers:
 - title: 'When Spike Sparsity Does Not Translate to Deployed Cost: VS-WNO on Jetson
     Orin Nano'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.17040v1
+  url: https://arxiv.org/abs/2604.17040
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9624,7 +9620,7 @@ papers:
 - title: 'The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex
     Systems'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.24559v1
+  url: https://arxiv.org/abs/2603.24559
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9657,7 +9653,7 @@ papers:
     lead to the unfolding of Nature itself.'
 - title: Sharpness-Aware Surrogate Training for On-Sensor Spiking Neural Networks
   date: 2026-04
-  url: https://arxiv.org/abs/2604.09696v1
+  url: https://arxiv.org/abs/2604.09696
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9683,13 +9679,13 @@ papers:
     hard-spike accuracy improves from 47.6\% to 96.9\% (INT8) and from 43.2\% to 81.0\%
     (INT4), while on DVS Gesture it improves from 25.3\% to 47.6\% (INT8) and from
     26.0\% to 43.8\% (INT4). SynOps also decrease under the same hardware-aware setting,
-    including 1734k$\rightarrow$1315k (N-MNIST, INT8) and 86221k$\rightarrow$4323k
-    (DVS Gesture, INT8). These results suggest that SAST is a promising component
-    in a broader toolbox for on-sensor spiking inference under the tested settings.'
+    including 1734k\rightarrow1315k (N-MNIST, INT8) and 86221k\rightarrow4323k (DVS
+    Gesture, INT8). These results suggest that SAST is a promising component in a
+    broader toolbox for on-sensor spiking inference under the tested settings.'
 - title: Neuromorphic Reinforcement Learning for Quadruped Locomotion Control on Uneven
     Terrain
   date: 2026-05
-  url: https://arxiv.org/abs/2605.09595v2
+  url: https://arxiv.org/abs/2605.09595
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9716,13 +9712,13 @@ papers:
     show that the proposed controller achieves stable policy convergence in a two-stage
     uneven terrain locomotion task. Its locomotion performance is comparable to a
     backpropagation-trained PPO baseline in success rate, velocity tracking, actuator
-    power, and body stability, while improving GPU memory efficiency by 4.3\(\times\)
+    power, and body stability, while improving GPU memory efficiency by 4.3\times
     compared with backpropagation through time (BPTT). These results suggest that
     local equilibrium-based learning can support high-dimensional embodied locomotion
     and provide an algorithmic foundation for low-power on-robot adaptation and fine-tuning.
 - title: Optimising Urban Flood Resilience
   date: 2026-04
-  url: https://arxiv.org/abs/2604.18620v1
+  url: https://arxiv.org/abs/2604.18620
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9757,7 +9753,7 @@ papers:
     urban environments.
 - title: 'Error Highways: Scaling Predictive Coding to Very Deep Networks'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.22744v1
+  url: https://arxiv.org/abs/2606.22744
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9774,10 +9770,10 @@ papers:
     interior layers effectively unchanged. To directly counter this problem, we propose
     highway error propagation (HEP), a scheme that augments the free energy function
     underlying predictive coding (PC) by altering its neural structure with feedback
-    matrices $V_{L\to i}$ that couple selected hidden states directly to the clamped
+    matrices V_{L\to i} that couple selected hidden states directly to the clamped
     output error. Since this coupling is linear in the hidden state, the highway pathway
     delivers a correction at every inference step whose magnitude is independent of
-    depth, in contrast to vanilla PC where the output error reaches the $i$-th hidden
+    depth, in contrast to vanilla PC where the output error reaches the i-th hidden
     layer with attenuation that decays exponentially in depth. This bypasses the Jacobian
     chain while preserving the local PC synaptic update rule. On MNIST and Fashion-MNIST,
     we show that HEP effectively trains MLPs of up to 128 layers with accuracy that
@@ -9785,7 +9781,7 @@ papers:
 - title: Self-supervised local learning rules learn the hidden hierarchical structure
     of high-dimensional data
   date: 2026-05
-  url: https://arxiv.org/abs/2605.18557v1
+  url: https://arxiv.org/abs/2605.18557
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -9813,7 +9809,7 @@ papers:
     training, while being compatible with known rules of synaptic plasticity in cortex.
 - title: An Instruction Set Architecture for IMPLY-based Memristive Processing-in-Array
   date: 2026-06
-  url: https://arxiv.org/abs/2606.27319v1
+  url: https://arxiv.org/abs/2606.27319
   category: memristive
   subcategory: systems
   authors:
@@ -9844,7 +9840,7 @@ papers:
     environmental sensor node.
 - title: 'RRAM-DP: Device-Calibrated Differential Privacy for In-Memory Edge Learning'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.18169v2
+  url: https://arxiv.org/abs/2607.18169
   category: memristive
   subcategory: systems
   authors:
@@ -9875,7 +9871,7 @@ papers:
 - title: 'XL-HD: Extended Learning in Hyperdimensional Computing via Deterministic
     Projections for In-Memory Accelerators'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.24788v1
+  url: https://arxiv.org/abs/2605.24788
   category: memristive
   subcategory: systems
   authors:
@@ -9898,11 +9894,11 @@ papers:
     later binarized, enabling an entirely binary dot-product inference pipeline ideal
     for IMC hardware such as ReRAM crossbars. XL-HD achieves competitive accuracy
     on MNIST, UCIHAR, and ISOLET while maintaining a compact IMC-based inference engine
-    with $0.395 \ \text{mm}^2$ area and only $0.40 \ μ\text{J}$ per single-cycle inference.
+    with 0.395 \ mm^2 area and only 0.40 \ μJ per single-cycle inference.
 - title: 'Cross-Domain Acceleration of Open Modification Search: From Commodity Platforms
     to Emerging Memory and Storage Devices'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.17569v1
+  url: https://arxiv.org/abs/2607.17569
   category: memristive
   subcategory: systems
   authors:
@@ -9932,7 +9928,7 @@ papers:
     in energy efficiency.
 - title: 'CQ-CiM: Hardware-Aware Embedding Shaping for Robust CiM-Based Retrieval'
   date: 2026-02
-  url: https://arxiv.org/abs/2602.20083v3
+  url: https://arxiv.org/abs/2602.20083
   category: memristive
   subcategory: systems
   authors:
@@ -9964,7 +9960,7 @@ papers:
     RAG.
 - title: 'Ternary Memristive Logic: Hardware for Reasoning Realized via Domain Algebra'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.20891v2
+  url: https://arxiv.org/abs/2604.20891
   category: memristive
   subcategory: systems
   authors:
@@ -9989,7 +9985,7 @@ papers:
     answers one question, without symbolic interpretation.'
 - title: Design of Memristive Lightweight Encryption For In-Memory Image Steganography
   date: 2026-05
-  url: https://arxiv.org/abs/2605.03494v2
+  url: https://arxiv.org/abs/2605.03494
   category: memristive
   subcategory: systems
   authors:
@@ -10021,7 +10017,7 @@ papers:
     demonstrating their practical efficiency.
 - title: 'Beyond Silicon: Materials, Mechanisms, and Methods for Physical Neural Computing'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.09833v2
+  url: https://arxiv.org/abs/2604.09833
   category: memristive
   subcategory: systems
   authors:
@@ -10060,7 +10056,7 @@ papers:
 - title: 'STAR: Astrocyte-Inspired State-Augmented Repair for Supervised Memristive
     AI Hardware Systems'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.15415v1
+  url: https://arxiv.org/abs/2607.15415
   category: memristive
   subcategory: systems
   authors:
@@ -10094,7 +10090,7 @@ papers:
     to convolutional networks.
 - title: 'phys-MCP: A Control Plane for Heterogeneous Physical Neural Networks'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.04256v1
+  url: https://arxiv.org/abs/2605.04256
   category: memristive
   subcategory: systems
   authors:
@@ -10131,7 +10127,7 @@ papers:
 - title: Signed Spiking Neuron Enabled by an Orthogonal-Easy-Axis Magnetic Tunnel
     Junction
   date: 2026-06
-  url: https://arxiv.org/abs/2606.03796v1
+  url: https://arxiv.org/abs/2606.03796
   category: neuromorphic-sensors
   subcategory: application
   authors:
@@ -10153,7 +10149,7 @@ papers:
     retaining most of the accuracy of ideal signed LIF neurons.
 - title: Spiking Local Interaction and Adaptive Complementary Fusion for Spiking Transformer
   date: 2026-08
-  url: https://arxiv.org/abs/2608.19238v1
+  url: https://arxiv.org/abs/2608.19238
   category: neuromorphic-sensors
   subcategory: application
   authors:
@@ -10178,14 +10174,14 @@ papers:
     be incorporated into different Spiking Transformer architectures with modest parameter
     overhead. Experiments on ImageNet-1K, CIFAR-10, CIFAR-100, CIFAR10-DVS, and ADE20K
     show consistent improvements across image classification, event-based recognition,
-    and semantic segmentation. In particular, QKFormer with SLI and ACF achieves $84.37\%$
-    Top-1 accuracy on ImageNet-1K and $37.5\%$ mIoU on ADE20K, where the segmentation
+    and semantic segmentation. In particular, QKFormer with SLI and ACF achieves 84.37\%
+    Top-1 accuracy on ImageNet-1K and 37.5\% mIoU on ADE20K, where the segmentation
     model is trained without ImageNet pretraining. Ablation studies and qualitative
     analyses further indicate that SSA and SLI capture complementary interaction patterns
     and that learnable fusion consistently outperforms fixed weighting.
 - title: Analog Quantum Asynchronous Event-Based Graph Neural Network
   date: 2026-06
-  url: https://arxiv.org/abs/2606.11000v1
+  url: https://arxiv.org/abs/2606.11000
   category: neuromorphic-sensors
   subcategory: application
   authors:
@@ -10215,7 +10211,7 @@ papers:
     with potential accuracy improvements
 - title: 'CANNs: A Toolkit for Research on Continuous Attractor Neural Networks'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.27783v1
+  url: https://arxiv.org/abs/2606.27783
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10250,7 +10246,7 @@ papers:
 - title: Effective pruning of task-trained recurrent neural networks using noisy fluctuations
     and connection rescaling
   date: 2026-08
-  url: https://arxiv.org/abs/2608.05464v1
+  url: https://arxiv.org/abs/2608.05464
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10279,7 +10275,7 @@ papers:
 - title: Frame Theoretical Derivation of Three Factor Learning Rule for Oja's Subspace
     Rule
   date: 2026-04
-  url: https://arxiv.org/abs/2604.02849v1
+  url: https://arxiv.org/abs/2604.02849
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10296,7 +10292,7 @@ papers:
     learning rule from its mathematically canonical counterpart.
 - title: 'Single-Entity Spiking Neuron Models: Survey'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.07429v1
+  url: https://arxiv.org/abs/2607.07429
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10318,7 +10314,7 @@ papers:
 - title: 'NeuroSynth: A Biologically Inspired Continual Reinforcement Learning Architecture
     for Mitigating Catastrophic Forgetting'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.28663v1
+  url: https://arxiv.org/abs/2607.28663
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10350,7 +10346,7 @@ papers:
 - title: 'From Optimal Policies to Individual Differences: Rethinking Reinforcement
     Learning for Biology'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.16542v1
+  url: https://arxiv.org/abs/2607.16542
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10374,7 +10370,7 @@ papers:
 - title: Structure Abstraction and Generalization in a Hippocampal-Entorhinal Inspired
     World Model
   date: 2026-05
-  url: https://arxiv.org/abs/2605.15733v1
+  url: https://arxiv.org/abs/2605.15733
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10402,7 +10398,7 @@ papers:
     abstract knowledge.
 - title: Causal Learning with Neural Assemblies
   date: 2026-04
-  url: https://arxiv.org/abs/2604.26919v1
+  url: https://arxiv.org/abs/2604.26919
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10433,7 +10429,7 @@ papers:
 - title: Scalable neuromorphic computing from autonomous spiking dynamics in a clockless
     reconfigurable chip
   date: 2026-05
-  url: https://arxiv.org/abs/2605.16114v1
+  url: https://arxiv.org/abs/2605.16114
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10459,7 +10455,7 @@ papers:
 - title: Towards transferable lightweight neuromorphic computing through a model-free
     temporal-switch framework
   date: 2026-07
-  url: https://arxiv.org/abs/2607.02608v2
+  url: https://arxiv.org/abs/2607.02608
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10489,7 +10485,7 @@ papers:
 - title: 'The Forward-Backward Disconnect: State Dynamics, Credit Assignment, and
     Biological Grounding in Neural Computation'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.19995v1
+  url: https://arxiv.org/abs/2608.19995
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10520,7 +10516,7 @@ papers:
     among state dynamics, credit assignment, and computational substrate.'
 - title: A Variational Latent Equilibrium for Learning in Neuronal Circuits
   date: 2026-03
-  url: https://arxiv.org/abs/2603.09600v2
+  url: https://arxiv.org/abs/2603.09600
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10554,7 +10550,7 @@ papers:
 - title: Reconfigurable Nonlinear Photonic Networks for In-Situ Learning and Memory
     Formation via Driven-Dissipative Dynamics
   date: 2026-05
-  url: https://arxiv.org/abs/2605.19911v2
+  url: https://arxiv.org/abs/2605.19911
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10583,7 +10579,7 @@ papers:
 - title: 'Diffusing Blame: Task-Dependent Credit Assignment in Biologically Plausible
     Dual-Stream Networks'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.31700v1
+  url: https://arxiv.org/abs/2606.31700
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10621,7 +10617,7 @@ papers:
     a backpropagation-free baseline.'
 - title: Controlled Dynamics Attractor Transformer
   date: 2026-06
-  url: https://arxiv.org/abs/2606.15207v1
+  url: https://arxiv.org/abs/2606.15207
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10650,7 +10646,7 @@ papers:
 - title: Harnessing cortical geometry, wiring, and function as inductive biases for
     recurrent neural networks
   date: 2026-06
-  url: https://arxiv.org/abs/2606.14975v1
+  url: https://arxiv.org/abs/2606.14975
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10684,7 +10680,7 @@ papers:
 - title: Energy-Efficient Information Representation in MNIST Classification Using
     Biologically Inspired Learning
   date: 2026-02
-  url: https://arxiv.org/abs/2603.00588v1
+  url: https://arxiv.org/abs/2603.00588
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10713,7 +10709,7 @@ papers:
 - title: Quadratic integrate-and-fire neurons exhibit less fragmented loss landscapes
     and outperform leaky integrate-and-fire neurons in spike-based gradient descent
   date: 2026-06
-  url: https://arxiv.org/abs/2606.03935v1
+  url: https://arxiv.org/abs/2606.03935
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10745,7 +10741,7 @@ papers:
     continuous spiking dynamics, such as QIF neurons, for gradient descent training.
 - title: Scaling Laws and Tradeoffs in Recurrent Networks of Expressive Neurons
   date: 2026-05
-  url: https://arxiv.org/abs/2605.12049v1
+  url: https://arxiv.org/abs/2605.12049
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10760,28 +10756,28 @@ papers:
     Mainstream machine learning, by contrast, predominantly builds models from extremely
     simple units, a default inherited from early neural-network theory. We treat this
     as a normative architectural question. How should one split a fixed parameter
-    budget $P$ between the number of units $N$, per-unit effective complexity $k_e$,
-    and per-unit connectivity $k_c$? What controls the optimal allocation? This calls
-    for a model in which per-unit complexity can be tuned independently of width and
-    connectivity. Accordingly, we introduce the ELM Network, whose recurrent layer
-    is built from Expressive Leaky Memory (ELM) neurons, chosen to mirror functional
-    components of cortical neurons. The architecture allows for individually adjusting
-    $N$, $k_e$, and $k_c$ and trains stably across orders of magnitude in scale. We
-    evaluate the model on two qualitatively different sequence benchmarks: the neuromorphic
-    SHD-Adding task and Enwik8 character-level language modeling. Performance improves
-    monotonically along each of the three axes individually. Under a fixed budget,
-    a clear non-trivial optimum emerges in their tradeoff, and larger budgets favor
-    both more and more complex neurons. A closed-form information-theoretic model
-    captures these tradeoffs and attributes the diminishing returns at two ends to:
-    per-neuron signal-to-noise saturation and across-neuron redundancy. A hyperparameter
-    sweep spanning three orders of magnitude in trainable parameters traces a near-Pareto-frontier
-    scaling law consistent with the framework. This suggests that the simple-unit
-    default in ML is not obviously optimal once this tradeoff surface is probed, and
-    offers a normative lens on cortex''s reliance on complex spatio-temporal integrators.'
+    budget P between the number of units N, per-unit effective complexity k_e, and
+    per-unit connectivity k_c? What controls the optimal allocation? This calls for
+    a model in which per-unit complexity can be tuned independently of width and connectivity.
+    Accordingly, we introduce the ELM Network, whose recurrent layer is built from
+    Expressive Leaky Memory (ELM) neurons, chosen to mirror functional components
+    of cortical neurons. The architecture allows for individually adjusting N, k_e,
+    and k_c and trains stably across orders of magnitude in scale. We evaluate the
+    model on two qualitatively different sequence benchmarks: the neuromorphic SHD-Adding
+    task and Enwik8 character-level language modeling. Performance improves monotonically
+    along each of the three axes individually. Under a fixed budget, a clear non-trivial
+    optimum emerges in their tradeoff, and larger budgets favor both more and more
+    complex neurons. A closed-form information-theoretic model captures these tradeoffs
+    and attributes the diminishing returns at two ends to: per-neuron signal-to-noise
+    saturation and across-neuron redundancy. A hyperparameter sweep spanning three
+    orders of magnitude in trainable parameters traces a near-Pareto-frontier scaling
+    law consistent with the framework. This suggests that the simple-unit default
+    in ML is not obviously optimal once this tradeoff surface is probed, and offers
+    a normative lens on cortex''s reliance on complex spatio-temporal integrators.'
 - title: A Theory-grounded Hybrid Neural Network Integrating Complementary Estimation
     Mechanisms for Stable Visual Object TrackingA
   date: 2026-06
-  url: https://arxiv.org/abs/2606.22604v1
+  url: https://arxiv.org/abs/2606.22604
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10815,7 +10811,7 @@ papers:
     offers a generalizable foundation for advancing HNNs toward population-scale hybridization.'
 - title: Updating the standard neuron model in artificial neural networks
   date: 2026-05
-  url: https://arxiv.org/abs/2605.30370v3
+  url: https://arxiv.org/abs/2605.30370
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10842,7 +10838,7 @@ papers:
 - title: Masked Autoencoders Learn Perception-Relevant Representations from Resting
     State Neural Data
   date: 2026-06
-  url: https://arxiv.org/abs/2607.22615v1
+  url: https://arxiv.org/abs/2607.22615
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10870,7 +10866,7 @@ papers:
     neural decoding.'
 - title: 'Structure as Computation: Developmental Generation of Minimal Neural Circuits'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.15143v1
+  url: https://arxiv.org/abs/2604.15143
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10896,7 +10892,7 @@ papers:
 - title: Neuromorphic Computing Based on Parametrically-Driven Oscillators and Frequency
     Combs
   date: 2026-04
-  url: https://arxiv.org/abs/2604.21861v1
+  url: https://arxiv.org/abs/2604.21861
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10929,7 +10925,7 @@ papers:
     toward optimal neuromorphic functionality.
 - title: Self-organized MT Direction Maps Emerge from Spatiotemporal Contrastive Optimization
   date: 2026-05
-  url: https://arxiv.org/abs/2605.11718v1
+  url: https://arxiv.org/abs/2605.11718
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10961,7 +10957,7 @@ papers:
 - title: Divisive Normalization Shapes Low-Rank Slow Manifolds for Continuous Working
     Memory
   date: 2026-08
-  url: https://arxiv.org/abs/2608.01947v1
+  url: https://arxiv.org/abs/2608.01947
   category: brain-inspired
   subcategory: theory
   authors:
@@ -10998,7 +10994,7 @@ papers:
 - title: 'A Bayes-Markov Neuromorphic Model of Cortical Orientation Selectivity: A
     Computational Re-implementation and Quantitative Simulation Study'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.12388v1
+  url: https://arxiv.org/abs/2608.12388
   category: brain-inspired
   subcategory: theory
   authors:
@@ -11032,7 +11028,7 @@ papers:
 - title: Dynamic neural manifolds for flexible closed-loop control on neuromorphic
     hardware
   date: 2026-07
-  url: https://arxiv.org/abs/2607.07373v1
+  url: https://arxiv.org/abs/2607.07373
   category: brain-inspired
   subcategory: theory
   authors:
@@ -11059,7 +11055,7 @@ papers:
 - title: 'The Fast Lane Hypothesis: Von Economo Neurons Implement a Biological Speed-Accuracy
     Tradeoff'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.09229v2
+  url: https://arxiv.org/abs/2604.09229
   category: brain-inspired
   subcategory: theory
   authors:
@@ -11092,7 +11088,7 @@ papers:
 - title: 'Kuramoto Oscillatory Phase Encoding: Neuro-inspired Synchronization for
     Improved Learning Efficiency'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.07904v2
+  url: https://arxiv.org/abs/2604.07904
   category: brain-inspired
   subcategory: theory
   authors:
@@ -11122,7 +11118,7 @@ papers:
     network models. Code is avaliable at https://github.com/microsoft/Neuro-inspired_Phase_Encoding.
 - title: Hebbian Attractor Networks for Robot Locomotion
   date: 2026-03
-  url: https://arxiv.org/abs/2603.22512v1
+  url: https://arxiv.org/abs/2603.22512
   category: brain-inspired
   subcategory: theory
   authors:
@@ -11152,7 +11148,7 @@ papers:
 - title: Epileptic Seizure Detection in Separate Frequency Bands Using Feature Analysis
     and Graph Convolutional Neural Network (GCN) from Electroencephalogram (EEG) Signals
   date: 2026-03
-  url: https://arxiv.org/abs/2604.00163v2
+  url: https://arxiv.org/abs/2604.00163
   category: brain-inspired
   subcategory: theory
   authors:
@@ -11182,7 +11178,7 @@ papers:
     to conventional broadband EEG-based methods.
 - title: Structure-Guided Diffusion Model for EEG-Based Visual Cognition Reconstruction
   date: 2026-04
-  url: https://arxiv.org/abs/2604.22649v1
+  url: https://arxiv.org/abs/2604.22649
   category: brain-inspired
   subcategory: theory
   authors:
@@ -11220,7 +11216,7 @@ papers:
 - title: 'AQ4SViT: An Automated Quantization Framework with Search Gating Policy for
     Compressing Spiking Vision Transformers'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.15523v1
+  url: https://arxiv.org/abs/2606.15523
   category: edge-computing
   subcategory: application
   authors:
@@ -11256,7 +11252,7 @@ papers:
     on embedded AI systems.'
 - title: Neuromorphic Energy-Aware Learning for Adaptive Deep Brain Stimulation
   date: 2026-06
-  url: https://arxiv.org/abs/2606.28600v1
+  url: https://arxiv.org/abs/2606.28600
   category: edge-computing
   subcategory: application
   authors:
@@ -11286,7 +11282,7 @@ papers:
 - title: Neuromorphic Silicon Neuron Controller for Adaptive Deep Brain Stimulation
     in Parkinson's Disease
   date: 2026-07
-  url: https://arxiv.org/abs/2607.05453v1
+  url: https://arxiv.org/abs/2607.05453
   category: edge-computing
   subcategory: application
   authors:
@@ -11311,13 +11307,13 @@ papers:
     subthalamic nucleus local field potentials (STN-LFPs), with their average rectified
     value (Beta ARV) used as the control biomarker. Our SiLIF-DBS controller for aDBS
     suppresses pathological beta activity while consuming only 25% of the power required
-    by open-loop stimulation and achieving a suppression efficiency of $5.85\%$/$μ$W.
+    by open-loop stimulation and achieving a suppression efficiency of 5.85\%/μW.
     Overall, our SiLIF-DBS controller achieves strong beta suppression at substantially
     reduced power, delivering high suppression efficiency that demonstrates it is
     a viable foundation for low-power implantable aDBS.
 - title: Encoding and Decoding Temporal Signals with Spiking Bandpass Wavelets
   date: 2026-05
-  url: https://arxiv.org/abs/2605.09770v1
+  url: https://arxiv.org/abs/2605.09770
   category: edge-computing
   subcategory: application
   authors:
@@ -11338,7 +11334,7 @@ papers:
 - title: 'CORVET: A CORDIC-Powered, Resource-Frugal Mixed-Precision Vector Processing
     Engine for High-Throughput AIoT applications'
   date: 2026-02
-  url: https://arxiv.org/abs/2602.19268v1
+  url: https://arxiv.org/abs/2602.19268
   category: edge-computing
   subcategory: application
   authors:
@@ -11367,7 +11363,7 @@ papers:
 - title: 'Computing with Living Neurons: Chaos-Controlled Reservoir Computing with
     Knowledge Transplant'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.02552v1
+  url: https://arxiv.org/abs/2604.02552
   category: edge-computing
   subcategory: application
   authors:
@@ -11394,7 +11390,7 @@ papers:
     neural populations, transcending biological lifespan limits.'
 - title: Neural Dynamics Self-Attention for Spiking Transformers
   date: 2026-03
-  url: https://arxiv.org/abs/2603.19290v1
+  url: https://arxiv.org/abs/2603.19290
   category: edge-computing
   subcategory: application
   authors:
@@ -11425,7 +11421,7 @@ papers:
     establish it as a key unit for achieving energy-efficient Spiking Transformers.'
 - title: Event-based Neural Decoding for Neuroprosthetic Motor Control
   date: 2026-07
-  url: https://arxiv.org/abs/2607.11445v1
+  url: https://arxiv.org/abs/2607.11445
   category: edge-computing
   subcategory: application
   authors:
@@ -11455,7 +11451,7 @@ papers:
 - title: Road to scalability for efficient graph search on massively parallel neuromorphic
     hardware
   date: 2026-06
-  url: https://arxiv.org/abs/2606.28907v1
+  url: https://arxiv.org/abs/2606.28907
   category: edge-computing
   subcategory: application
   authors:
@@ -11484,7 +11480,7 @@ papers:
 - title: Threshold-Based Early Stopping of Accumulations in Neural Networks with Binary
     Activation
   date: 2026-08
-  url: https://arxiv.org/abs/2608.06177v1
+  url: https://arxiv.org/abs/2608.06177
   category: edge-computing
   subcategory: application
   authors:
@@ -11507,13 +11503,13 @@ papers:
     the running accumulations on the training dataset and use this information to
     predict the final sign as soon as possible. No model parameter is retrained. We
     count the number of operations under an idealized ordering of weights. On VGG11
-    applied to the CIFAR-10 dataset, the method removes $86.6\%$ of the accumulation
-    terms of the deepest convolution for a $0.37$-point accuracy drop, and $25\%$
-    of the full-network arithmetic when used on the three deepest convolutions simultaneously,
-    for a $1.36$-point drop.
+    applied to the CIFAR-10 dataset, the method removes 86.6\% of the accumulation
+    terms of the deepest convolution for a 0.37-point accuracy drop, and 25\% of the
+    full-network arithmetic when used on the three deepest convolutions simultaneously,
+    for a 1.36-point drop.
 - title: Joint sparse coding and temporal dynamics support context reconfiguration
   date: 2026-05
-  url: https://arxiv.org/abs/2605.10178v1
+  url: https://arxiv.org/abs/2605.10178
   category: edge-computing
   subcategory: application
   authors:
@@ -11546,7 +11542,7 @@ papers:
     adapting to new contexts.
 - title: Towards Topology-Aware Very Large-Scale Photonic AI Accelerators
   date: 2026-04
-  url: https://arxiv.org/abs/2604.26966v1
+  url: https://arxiv.org/abs/2604.26966
   category: edge-computing
   subcategory: application
   authors:
@@ -11578,7 +11574,7 @@ papers:
 - title: 'Focus Session: Hardware and Software Techniques for Accelerating Multimodal
     Foundation Models'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.21952v1
+  url: https://arxiv.org/abs/2604.21952
   category: edge-computing
   subcategory: application
   authors:
@@ -11612,7 +11608,7 @@ papers:
 - title: FPGA-Accelerated Neuromorphic Vision System for Real-Time Orbital Object
     Detection
   date: 2026-06
-  url: https://arxiv.org/abs/2606.20727v1
+  url: https://arxiv.org/abs/2606.20727
   category: edge-computing
   subcategory: application
   authors:
@@ -11640,7 +11636,7 @@ papers:
 - title: MO-SAE:Multi-Objective Stacked Autoencoders Optimization for Edge Anomaly
     Detection
   date: 2026-03
-  url: https://arxiv.org/abs/2603.13895v1
+  url: https://arxiv.org/abs/2603.13895
   category: edge-computing
   subcategory: application
   authors:
@@ -11676,7 +11672,7 @@ papers:
 - title: Co-Optimization of Analog Kolmogorov-Arnold Networks for Low-Power Function
     Approximation in Flexible Electronics
   date: 2026-06
-  url: https://arxiv.org/abs/2606.27892v1
+  url: https://arxiv.org/abs/2606.27892
   category: edge-computing
   subcategory: application
   authors:
@@ -11713,7 +11709,7 @@ papers:
     in FE.
 - title: 'PSViT: A Methodology for Structurally Pruning Spiking Vision Transformers'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.03257v1
+  url: https://arxiv.org/abs/2606.03257
   category: edge-computing
   subcategory: application
   authors:
@@ -11746,7 +11742,7 @@ papers:
     SViT deployments on resource-constrained applications.'
 - title: Scalable Memristive-Friendly Reservoir Computing for Time Series Classification
   date: 2026-04
-  url: https://arxiv.org/abs/2604.19343v1
+  url: https://arxiv.org/abs/2604.19343
   category: edge-computing
   subcategory: application
   authors:
@@ -11781,7 +11777,7 @@ papers:
 - title: Dual-axis attribution of zebrafish tectal microcircuits for energy-efficient
     and robust neurocomputing
   date: 2026-05
-  url: https://arxiv.org/abs/2605.13924v1
+  url: https://arxiv.org/abs/2605.13924
   category: edge-computing
   subcategory: application
   authors:
@@ -11801,22 +11797,21 @@ papers:
     leaky integrate-and-fire spiking neural network is then used as a nonlinear perturbation
     testbed, where predefined subcircuits are selectively ablated and evaluated using
     the Energy Sensitivity Index and the Robustness Sensitivity Index.The results
-    reveal a functional dissociation between two tectal subcircuits.The \textit{ns\_TIN}
-    subcircuit shows a low spike footprint but a measurable influence on prediction
-    error, suggesting a role as a spike-efficient internal information gate.In contrast,
-    the \textit{superficial\_TIN} subcircuit produces the highest robustness sensitivity,
-    suggesting a feedback-like role in maintaining system-level stability.We further
-    transfer these attributed functions into ResNet18-based artificial neural networks
-    and evaluate them on CIFAR-10 under inference-budget reduction and Gaussian noise
-    corruption. The \textit{ns\_TIN}-inspired module improves performance preservation
-    under reduced computation, whereas the \textit{superficial\_TIN}-inspired module
-    improves robustness under input noise. These findings provide a subcircuit-level
-    route for linking biological circuit organization with bio-inspired neural architecture
-    design.'
+    reveal a functional dissociation between two tectal subcircuits.The ns\_TIN subcircuit
+    shows a low spike footprint but a measurable influence on prediction error, suggesting
+    a role as a spike-efficient internal information gate.In contrast, the superficial\_TIN
+    subcircuit produces the highest robustness sensitivity, suggesting a feedback-like
+    role in maintaining system-level stability.We further transfer these attributed
+    functions into ResNet18-based artificial neural networks and evaluate them on
+    CIFAR-10 under inference-budget reduction and Gaussian noise corruption. The ns\_TIN-inspired
+    module improves performance preservation under reduced computation, whereas the
+    superficial\_TIN-inspired module improves robustness under input noise. These
+    findings provide a subcircuit-level route for linking biological circuit organization
+    with bio-inspired neural architecture design.'
 - title: 'STARS: Spike Tail-Aware Relational Synthesis for ANN-to-SNN Data-Free Knowledge
     Distillation'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.27409v1
+  url: https://arxiv.org/abs/2605.27409
   category: edge-computing
   subcategory: application
   authors:
@@ -11850,7 +11845,7 @@ papers:
 - title: An Amortized Efficiency Threshold for Comparing Neural and Heuristic Solvers
     in Combinatorial Optimization
   date: 2026-05
-  url: https://arxiv.org/abs/2605.14624v2
+  url: https://arxiv.org/abs/2605.14624
   category: edge-computing
   subcategory: application
   authors:
@@ -11883,7 +11878,7 @@ papers:
 - title: Scalable, Energy-Efficient Optical-Neural Architecture for Multiplexed Deepfake
     Video Detection
   date: 2026-05
-  url: https://arxiv.org/abs/2605.19360v1
+  url: https://arxiv.org/abs/2605.19360
   category: edge-computing
   subcategory: application
   authors:
@@ -11917,7 +11912,7 @@ papers:
 - title: 'Physical Foundation Models: Fixed hardware implementations of large-scale
     neural networks'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.27911v1
+  url: https://arxiv.org/abs/2604.27911
   category: edge-computing
   subcategory: application
   authors:
@@ -11932,29 +11927,29 @@ papers:
     and Opus~4) trained on large datasets that can perform diverse downstream tasks
     -- text and code generation, question answering, summarization, image classification,
     and so on. The philosophy of foundation models is to put effort into a single,
-    large (${\sim}10^{12}$-parameter) general-purpose model that can be adapted to
-    many downstream tasks with no or minimal additional training. We argue that the
-    rise of foundation models presents an opportunity for hardware engineers: in contrast
+    large ({\sim}10^{12}-parameter) general-purpose model that can be adapted to many
+    downstream tasks with no or minimal additional training. We argue that the rise
+    of foundation models presents an opportunity for hardware engineers: in contrast
     to when different models were used for different tasks, it now makes sense to
     build special-purpose, fixed hardware implementations of neural networks, manufactured
     and released at the roughly 1-year cadence of major new foundation-model versions.
     Beyond conventional digital-electronic inference hardware with read-only weight
     memory, we advocate a more radical re-thinking: hardware in which the neural network
     is realized directly at the level of the physical design and operates via the
-    hardware''s natural physical dynamics -- \textit{Physical Foundation Models} (PFMs).
-    PFMs could enable orders-of-magnitude advantages in energy efficiency, speed,
-    and parameter density. For ${\sim}10^{12}$-parameter models, this would both reduce
-    the high energy burden of AI in datacenters and enable AI in edge devices that
-    today are power-constrained to far smaller models. PFMs could also enable inference
-    hardware for models much larger than current ones: $10^{15}$- or even $10^{18}$-parameter
-    PFMs seem plausible by some measures. We present back-of-the-envelope calculations
-    illustrating PFM scaling using an optical example -- a 3D nanostructured glass
-    medium -- and discuss prospects in nanoelectronics and other physical platforms.
-    We conclude with the major research challenges that must be resolved for trillion-parameter
-    PFMs and beyond to become reality.'
+    hardware''s natural physical dynamics -- Physical Foundation Models (PFMs). PFMs
+    could enable orders-of-magnitude advantages in energy efficiency, speed, and parameter
+    density. For {\sim}10^{12}-parameter models, this would both reduce the high energy
+    burden of AI in datacenters and enable AI in edge devices that today are power-constrained
+    to far smaller models. PFMs could also enable inference hardware for models much
+    larger than current ones: 10^{15}- or even 10^{18}-parameter PFMs seem plausible
+    by some measures. We present back-of-the-envelope calculations illustrating PFM
+    scaling using an optical example -- a 3D nanostructured glass medium -- and discuss
+    prospects in nanoelectronics and other physical platforms. We conclude with the
+    major research challenges that must be resolved for trillion-parameter PFMs and
+    beyond to become reality.'
 - title: Survey on Neural Routing Solvers
   date: 2026-02
-  url: https://arxiv.org/abs/2602.21761v2
+  url: https://arxiv.org/abs/2602.21761
   category: survey
   subcategory: review
   authors:
@@ -11980,7 +11975,7 @@ papers:
 - title: 'HERCULES: Hardware-Efficient, Robust, Continual Learning Neural Architecture
     Search'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.04103v1
+  url: https://arxiv.org/abs/2605.04103
   category: survey
   subcategory: review
   authors:
@@ -12014,7 +12009,7 @@ papers:
 - title: 'EEG Benchmarking Needs a Task Specification Layer: NeuroDoc for Rulebook-Guided,
     Executable Benchmark Construction'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.22925v1
+  url: https://arxiv.org/abs/2606.22925
   category: survey
   subcategory: review
   authors:
@@ -12047,7 +12042,7 @@ papers:
 - title: 'From Brain Models to Executable Digital Twins: Execution Semantics and Neuro-Neuromorphic
     Systems'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.13574v1
+  url: https://arxiv.org/abs/2604.13574
   category: survey
   subcategory: review
   authors: []
@@ -12076,7 +12071,7 @@ papers:
     model form or application domain alone.'
 - title: 'The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.26294v2
+  url: https://arxiv.org/abs/2606.26294
   category: survey
   subcategory: review
   authors:
@@ -12114,7 +12109,7 @@ papers:
 - title: 'Neural Architecture Search for Traffic Prediction: A Survey of Methods,
     Challenges, and Future Directions'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.26467v1
+  url: https://arxiv.org/abs/2607.26467
   category: survey
   subcategory: review
   authors:
@@ -12144,7 +12139,7 @@ papers:
     research.'
 - title: Mechanistic Interpretability of EEG Foundation Models via Sparse Autoencoders
   date: 2026-05
-  url: https://arxiv.org/abs/2605.13930v3
+  url: https://arxiv.org/abs/2605.13930
   category: survey
   subcategory: review
   authors:
@@ -12172,10 +12167,10 @@ papers:
     where it is impossible to suppress one concept without corrupting the other. Finally,
     a spectral decoder maps these interventions back to the amplitude spectrum, translating
     latent manipulations into physiologically interpretable frequency signatures,
-    such as pathological slow-wave suppression and $α$-band restoration.'
+    such as pathological slow-wave suppression and α-band restoration.'
 - title: 'Approximation Theory for Neural Networks: Old and New'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.21451v1
+  url: https://arxiv.org/abs/2605.21451
   category: survey
   subcategory: review
   authors:
@@ -12187,7 +12182,7 @@ papers:
   abstract: Universal approximation theorems provide a mathematical explanation for
     the expressive power of neural networks. They assert that, under mild conditions
     on the activation function, feedforward neural networks are dense in broad function
-    classes, such as continuous functions on compact subsets of $\mathbb{R}^d$, $L^p$
+    classes, such as continuous functions on compact subsets of \mathbb{R}^d, L^p
     spaces, or Sobolev spaces. Over the past four decades, these qualitative universality
     results have evolved into a rich quantitative theory addressing approximation
     rates, parameter efficiency, and the role of architectural features such as depth
@@ -12202,7 +12197,7 @@ papers:
     properties have begun to attract significant theoretical attention.
 - title: Combining Trained Models in Reinforcement Learning
   date: 2026-05
-  url: https://arxiv.org/abs/2605.02159v1
+  url: https://arxiv.org/abs/2605.02159
   category: survey
   subcategory: review
   authors:
@@ -12237,7 +12232,7 @@ papers:
 - title: 'Engineering Hybrid Physics-Informed Neural Networks for Next-Generation
     Electricity Systems: A State-of-the-Art Review'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.21903v1
+  url: https://arxiv.org/abs/2605.21903
   category: survey
   subcategory: review
   authors:
@@ -12270,7 +12265,7 @@ papers:
     electricity systems.
 - title: LLM for the development of FCM
   date: 2026-07
-  url: https://arxiv.org/abs/2607.04983v2
+  url: https://arxiv.org/abs/2607.04983
   category: survey
   subcategory: review
   authors:
@@ -12295,7 +12290,7 @@ papers:
 - title: 'RDEx-SOP: Exploitation-Biased Reconstructed Differential Evolution for Fixed-Budget
     Bound-Constrained Single-Objective Optimization'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.27089v1
+  url: https://arxiv.org/abs/2603.27089
   category: survey
   subcategory: review
   authors:
@@ -12320,7 +12315,7 @@ papers:
     the 29 benchmark functions.
 - title: 'RCMAES: A Robust CMA-ES Variant for CEC2026 Competition'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.27138v1
+  url: https://arxiv.org/abs/2604.27138
   category: survey
   subcategory: review
   authors:
@@ -12341,7 +12336,7 @@ papers:
 - title: A Scalable Benchmark Test Suite for Dynamic Multi-Objective Optimization
     with a Changing Number of Objectives
   date: 2026-05
-  url: https://arxiv.org/abs/2605.25785v1
+  url: https://arxiv.org/abs/2605.25785
   category: survey
   subcategory: review
   authors:
@@ -12373,7 +12368,7 @@ papers:
 - title: Exploration of Pareto-preserving Search Space Transformations in Multi-objective
     Test Functions
   date: 2026-04
-  url: https://arxiv.org/abs/2604.08173v2
+  url: https://arxiv.org/abs/2604.08173
   category: survey
   subcategory: review
   authors:
@@ -12403,7 +12398,7 @@ papers:
 - title: 'Block-Bench: A Framework for Controllable and Transparent Discrete Optimization
     Benchmarking'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.06973v1
+  url: https://arxiv.org/abs/2604.06973
   category: survey
   subcategory: review
   authors:
@@ -12433,7 +12428,7 @@ papers:
 - title: 'Planktonzilla: Multimodal dataset and models for understanding plankton
     ecosystems'
   date: 2026-05
-  url: https://arxiv.org/abs/2606.00080v1
+  url: https://arxiv.org/abs/2606.00080
   category: survey
   subcategory: review
   authors:
@@ -12463,7 +12458,7 @@ papers:
     the limitations of current biological foundation models in marine imaging domains.
 - title: On the Runtime Analysis of Reinforcement Learning Hyper-Heuristics
   date: 2026-07
-  url: https://arxiv.org/abs/2607.22036v1
+  url: https://arxiv.org/abs/2607.22036
   category: survey
   subcategory: review
   authors:
@@ -12493,7 +12488,7 @@ papers:
 - title: 'ARES-LSHADE: Autoresearch-Enhanced LSHADE with Memetic Polish for the GNBG
     Benchmark'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.13877v2
+  url: https://arxiv.org/abs/2605.13877
   category: survey
   subcategory: review
   authors:
@@ -12529,7 +12524,7 @@ papers:
 - title: 'RDEx-CSOP: Feasibility-Aware Reconstructed Differential Evolution with Adaptive
     epsilon-Constraint Ranking'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.27090v1
+  url: https://arxiv.org/abs/2603.27090
   category: survey
   subcategory: review
   authors:
@@ -12555,7 +12550,7 @@ papers:
 - title: Selection Hyper-heuristics Can Automatically Adjust the Learning Period to
     Optimally Solve Pseudo-Boolean Problems
   date: 2026-05
-  url: https://arxiv.org/abs/2605.29916v1
+  url: https://arxiv.org/abs/2605.29916
   category: survey
   subcategory: review
   authors:
@@ -12568,18 +12563,18 @@ papers:
   abstract: The Random Gradient hyper-heuristic was recently shown to be able to learn
     the optimal neighbourhood size when optimizing the LeadingOnes benchmark via the
     Randomised Local Search (RLS) meta-heuristic. However, for this to happen, a learning
-    period of a certain length $τ$ had to be used, differently from classic hyper-heuristics,
+    period of a certain length τ had to be used, differently from classic hyper-heuristics,
     which change their behaviour based on the success of only the previous iteration.
     In this paper, we show how to automatically set this new parameter value, relieving
     the user from the non-trivial task of controlling this novel algorithm parameter.
     We prove that the resulting hyper-heuristic selects the optimal neighbourhood
-    size in a $1-o(1)$ fraction of the iterations and, consequently, optimises the
-    LeadingOnes benchmark in the best possible time (apart from lower-order terms)
-    achievable with these neighborhood sizes.
+    size in a 1-o(1) fraction of the iterations and, consequently, optimises the LeadingOnes
+    benchmark in the best possible time (apart from lower-order terms) achievable
+    with these neighborhood sizes.
 - title: 'DALight-3D: A Lightweight 3D U-Net for Brain Tumor Segmentation from Multi-Modal
     MRI'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.04518v1
+  url: https://arxiv.org/abs/2605.04518
   category: survey
   subcategory: review
   authors:
@@ -12605,7 +12600,7 @@ papers:
 - title: 'Graph Instance Landscapes: When Structural Similarity Does (Not) Reflect
     Shortest-Path Performance'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.18267v1
+  url: https://arxiv.org/abs/2606.18267
   category: survey
   subcategory: review
   authors:
@@ -12625,9 +12620,9 @@ papers:
     are studied: weighted Erdős--Rényi graphs, random geometric (wireless) graphs,
     and real-world road networks. We evaluate four representative shortest-path solvers
     spanning uninformed exact search (Dijkstra), bidirectional exact search (bidirectional
-    Dijkstra), heuristic-guided exact search (A$^{*}$), and deque-based strategies
-    (DEQ). Clustering robustness is analyzed under multiple feature-selection schemes,
-    and runtime distributions are compared across landscape regions using non-parametric
+    Dijkstra), heuristic-guided exact search (A^{*}), and deque-based strategies (DEQ).
+    Clustering robustness is analyzed under multiple feature-selection schemes, and
+    runtime distributions are compared across landscape regions using non-parametric
     tests. While generator parameters induce stable structural regions, we find that
     feature-space similarity does not necessarily imply performance similarity: significant
     runtime shifts are frequently observed even within the same landscape region.
@@ -12637,7 +12632,7 @@ papers:
     algorithms.'
 - title: 'Linear Ordering Problem: Time for a Change'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.31051v2
+  url: https://arxiv.org/abs/2605.31051
   category: survey
   subcategory: review
   authors:
@@ -12663,7 +12658,7 @@ papers:
     setting and the newly introduced multi-solution scenario
 - title: Benchmarking Stopping Criteria for Evolutionary Multi-objective Optimization
   date: 2026-04
-  url: https://arxiv.org/abs/2604.25458v1
+  url: https://arxiv.org/abs/2604.25458
   category: survey
   subcategory: review
   authors:
@@ -12690,7 +12685,7 @@ papers:
     by benchmarking five representative stopping criteria for EMO.
 - title: 'The Traveling Thief Problem with Time Windows: Benchmarks and Heuristics'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.06724v1
+  url: https://arxiv.org/abs/2604.06724
   category: survey
   subcategory: review
   authors:
@@ -12716,7 +12711,7 @@ papers:
 - title: 'Semantic Sections: An Atlas-Native Feature Ontology for Obstructed Representation
     Spaces'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.20867v1
+  url: https://arxiv.org/abs/2603.20867
   category: survey
   subcategory: review
   authors:
@@ -12748,7 +12743,7 @@ papers:
 - title: Multi-Objective Molecular Generation with Frequency-Controlled Evolutionary
     Dynamics
   date: 2026-06
-  url: https://arxiv.org/abs/2606.27467v1
+  url: https://arxiv.org/abs/2606.27467
   category: survey
   subcategory: review
   authors:
@@ -12785,7 +12780,7 @@ papers:
 - title: 'SDDMO-Bench: A Benchmark Suite for Streaming Data-Driven Dynamic Multi-Objective
     Optimization'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.00474v1
+  url: https://arxiv.org/abs/2608.00474
   category: survey
   subcategory: review
   authors:
@@ -12814,7 +12809,7 @@ papers:
 - title: 'From Heuristic Selection to Automated Algorithm Design: LLMs Benefit from
     Strong Priors'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.02792v2
+  url: https://arxiv.org/abs/2603.02792
   category: survey
   subcategory: review
   authors:
@@ -12842,7 +12837,7 @@ papers:
 - title: Benchmarking Zero-Shot LLM-Generated Parent Selection in Genetic Programming
     for Symbolic Regression
   date: 2026-07
-  url: https://arxiv.org/abs/2607.23505v1
+  url: https://arxiv.org/abs/2607.23505
   category: survey
   subcategory: review
   authors:
@@ -12867,7 +12862,7 @@ papers:
     are held constant. For each LLM, ten independent zero-shot operators are evaluated
     on twelve OpenML regression benchmarks and compared against automatic lexicase
     and tournament selection baselines. Claude Sonnet~4.6 and Gemini~3.1 Pro stand
-    out for consistently strong performance on both training and held-out test $R^2$.
+    out for consistently strong performance on both training and held-out test R^2.
     The strongest operator in our benchmark---a Kimi~K2.5 zero-shot synthesis---surpasses
     the automatic lexicase and tournament baselines in search effectiveness. These
     results suggest that zero-shot LLM synthesis is a viable approach to generating
@@ -12876,10 +12871,10 @@ papers:
     search heuristics from the task description alone. We also examine the relationship
     between public LLM leaderboard rankings and GP performance. Widely used benchmarks,
     such as Humanity's Last Exam and SWE-bench Verified, strongly correlate with training
-    $R^2$, while their relationship to held-out test $R^2$ is weaker and less clear.
+    R^2, while their relationship to held-out test R^2 is weaker and less clear.
 - title: Empirical Evaluation of No Free Lunch Violations in Permutation-Based Optimization
   date: 2026-03
-  url: https://arxiv.org/abs/2603.03613v1
+  url: https://arxiv.org/abs/2603.03613
   category: survey
   subcategory: review
   authors:
@@ -12912,7 +12907,7 @@ papers:
 - title: An Integrated System for Real-Time Student Assessment and Career Guidance
     Using Neural Networks in Computing Disciplines
   date: 2026-06
-  url: https://arxiv.org/abs/2606.15831v1
+  url: https://arxiv.org/abs/2606.15831
   category: survey
   subcategory: review
   authors:
@@ -12946,7 +12941,7 @@ papers:
     and further improve the overall effectiveness and usability of the system.
 - title: Neural architectures for resolving references in program code
   date: 2026-04
-  url: https://arxiv.org/abs/2604.14073v1
+  url: https://arxiv.org/abs/2604.14073
   category: survey
   subcategory: review
   authors:
@@ -12973,7 +12968,7 @@ papers:
 - title: Multi-Objective Evolutionary Optimization of Chance-Constrained Multiple-Choice
     Knapsack Problems with Implicit Probability Distributions
   date: 2026-03
-  url: https://arxiv.org/abs/2603.08209v1
+  url: https://arxiv.org/abs/2603.08209
   category: survey
   subcategory: review
   authors:
@@ -13005,7 +13000,7 @@ papers:
 - title: 'Seq103: A Unified Neuroevolution Framework for Compact Sequence Architecture
     Discovery'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.07664v1
+  url: https://arxiv.org/abs/2606.07664
   category: survey
   subcategory: review
   authors:
@@ -13036,7 +13031,7 @@ papers:
     to 160,601.0x fewer parameters.
 - title: 'DarwinX: Evolving Agent Harnesses Through Natural Selection'
   date: 2026-07
-  url: https://arxiv.org/abs/2608.07545v1
+  url: https://arxiv.org/abs/2608.07545
   category: survey
   subcategory: review
   authors:
@@ -13068,7 +13063,7 @@ papers:
     capability.'
 - title: Mechanism and Stability Analysis of Metabolic Closed-Loop Metaheuristics
   date: 2026-07
-  url: https://arxiv.org/abs/2607.01551v2
+  url: https://arxiv.org/abs/2607.01551
   category: survey
   subcategory: review
   authors:
@@ -13101,7 +13096,7 @@ papers:
 - title: 'LEVI: Stronger Search Architectures Can Substitute for Larger LLMs in Evolutionary
     Search'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.09764v1
+  url: https://arxiv.org/abs/2605.09764
   category: survey
   subcategory: review
   authors:
@@ -13130,7 +13125,7 @@ papers:
     https://github.com/ttanv/levi.'
 - title: A Fresh Look at Lamarckian Evolution and the Baldwin Effect
   date: 2026-05
-  url: https://arxiv.org/abs/2605.28703v1
+  url: https://arxiv.org/abs/2605.28703
   category: survey
   subcategory: review
   authors:
@@ -13163,7 +13158,7 @@ papers:
     lengths onwards, explaining its strong empirical performance.
 - title: Sensitivity of hMPA to Controlled CEC 2017 Transformations
   date: 2026-07
-  url: https://arxiv.org/abs/2607.22862v1
+  url: https://arxiv.org/abs/2607.22862
   category: survey
   subcategory: review
   authors:
@@ -13197,7 +13192,7 @@ papers:
 - title: A Longitudinal Analysis of the CEC Single-Objective Competitions (2010-2024)
     and Implications for Variational Quantum Optimization
   date: 2026-03
-  url: https://arxiv.org/abs/2603.24140v1
+  url: https://arxiv.org/abs/2603.24140
   category: survey
   subcategory: review
   authors:
@@ -13224,7 +13219,7 @@ papers:
     adaptive capabilities required for quantum control.
 - title: 'Apparent Age Estimation: Challenges and Outcomes'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.03335v1
+  url: https://arxiv.org/abs/2604.03335
   category: survey
   subcategory: review
   authors:
@@ -13250,7 +13245,7 @@ papers:
     adherence to fairness validation protocols.
 - title: Analog Optical Inference on Million-Record Mortgage Data
   date: 2026-04
-  url: https://arxiv.org/abs/2604.13251v1
+  url: https://arxiv.org/abs/2604.13251
   category: survey
   subcategory: review
   authors:
@@ -13276,7 +13271,7 @@ papers:
 - title: 'Indian Wedding System Optimization (IWSO): A Novel Socially Inspired Metaheuristic
     with Operational Design and Analysis'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.13871v1
+  url: https://arxiv.org/abs/2605.13871
   category: survey
   subcategory: review
   authors:
@@ -13306,7 +13301,7 @@ papers:
 - title: Hybrid Augmented Lagrangian Method for General Constrained Optimization via
     Evolutionary Algorithms
   date: 2026-07
-  url: https://arxiv.org/abs/2607.16876v1
+  url: https://arxiv.org/abs/2607.16876
   category: survey
   subcategory: review
   authors:
@@ -13341,7 +13336,7 @@ papers:
     numerous local minima and saddle points.
 - title: Hybrid Quantum-Classical Encoding for Accurate Residue-Level pKa Prediction
   date: 2026-03
-  url: https://arxiv.org/abs/2603.11061v1
+  url: https://arxiv.org/abs/2603.11061
   category: survey
   subcategory: review
   authors:
@@ -13362,7 +13357,7 @@ papers:
     microenvironments that are not accessible to classical models. Benchmarking across
     multiple curated descriptor sets demonstrates that the DQNN achieves improved
     cross-context generalization relative to classical baselines. External evaluation
-    on the PKAD-R experimental benchmark and an A$β$40 case study further highlights
+    on the PKAD-R experimental benchmark and an Aβ40 case study further highlights
     the robustness and transferability of the quantum-inspired representation. By
     integrating quantum-inspired feature transformations with classical biochemical
     descriptors, this work establishes a scalable and experimentally transferable
@@ -13371,7 +13366,7 @@ papers:
 - title: SILVA Networks as Structured Implicit Layers and Vector Attractors via Dynamic
     Interaction Fields
   date: 2026-07
-  url: https://arxiv.org/abs/2607.28989v1
+  url: https://arxiv.org/abs/2607.28989
   category: survey
   subcategory: review
   authors:
@@ -13397,7 +13392,7 @@ papers:
 - title: 'Recipes for Creativity: Iterative Generation and Evaluation in Large Language
     Models'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.07243v1
+  url: https://arxiv.org/abs/2608.07243
   category: survey
   subcategory: review
   authors:
@@ -13422,7 +13417,7 @@ papers:
     search.'
 - title: 'Hub-Aware Hybrid Search: Accelerating the Locally Aligned Ant Technique'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.06198v1
+  url: https://arxiv.org/abs/2606.06198
   category: survey
   subcategory: review
   authors:
@@ -13449,7 +13444,7 @@ papers:
 - title: Travel-Oriented Reasoning Large Language Model via Domain-Specific Knowledge
     Graphs
   date: 2026-06
-  url: https://arxiv.org/abs/2606.29254v1
+  url: https://arxiv.org/abs/2606.29254
   category: survey
   subcategory: review
   authors:
@@ -13473,19 +13468,19 @@ papers:
     into a reasoning-capable LLM using the generated QA pairs as auditable reasoning
     traces, and a travel-domain benchmark dataset that measures the fine-tuned model''s
     accuracy and calibration. We evaluate our approach using Qwen3-4B with LoRA adaptation.
-    Our reasoning model achieves an $82.4\%$ exact match on the benchmark. This performance
-    significantly outperforms the pretrained Qwen3-4B baseline at $22.4\%$. A calibration
-    analysis decomposes the residual $17.57\%$ of errors into two distinct failure
-    modes: an over-confident multi-label decoder that predicts both correct answers
-    plus one spurious option on most dual-answer mistakes, and a smaller reasoning
-    failure on single-answer questions where the supporting facts are present in the
-    KG but the model fails to reconstruct the correct multi-hop path. This split confirms
+    Our reasoning model achieves an 82.4\% exact match on the benchmark. This performance
+    significantly outperforms the pretrained Qwen3-4B baseline at 22.4\%. A calibration
+    analysis decomposes the residual 17.57\% of errors into two distinct failure modes:
+    an over-confident multi-label decoder that predicts both correct answers plus
+    one spurious option on most dual-answer mistakes, and a smaller reasoning failure
+    on single-answer questions where the supporting facts are present in the KG but
+    the model fails to reconstruct the correct multi-hop path. This split confirms
     that explicit KG-grounded reasoning substantially improves the accuracy and uncertainty
     interpretation of LLMs in specialized domains, and isolates per-option calibration
     and trace-length-aware decoding as the next axes of improvement.'
 - title: 'BBOWP-Bench: Evaluating LLMs on Black-Box Optimization Word Problems'
   date: 2026-05
-  url: https://arxiv.org/abs/2608.02612v1
+  url: https://arxiv.org/abs/2608.02612
   category: survey
   subcategory: review
   authors:
@@ -13522,7 +13517,7 @@ papers:
     highly problem-specific. Our code and dataset are available at https://github.com/shiralab/bbowp-bench.
 - title: Spike-based Belief Propagation in Nonlinear Dynamical Systems
   date: 2026-08
-  url: https://arxiv.org/abs/2608.19907v1
+  url: https://arxiv.org/abs/2608.19907
   category: survey
   subcategory: review
   authors:
@@ -13548,7 +13543,7 @@ papers:
 - title: 'GOAL: Graph-based Objective-Aligned Diffusion Solvers for Dynamic Multi-Objective
     Optimization'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.19119v1
+  url: https://arxiv.org/abs/2605.19119
   category: survey
   subcategory: review
   authors:
@@ -13575,7 +13570,7 @@ papers:
 - title: 'Frenetic Cat-inspired Particle Optimization: a Markov state-switching hybrid
     swarm optimizer with application to cardiac digital twinning'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.15761v1
+  url: https://arxiv.org/abs/2604.15761
   category: survey
   subcategory: review
   authors:
@@ -13597,22 +13592,22 @@ papers:
     from elite covariance, and (iv) linear population size reduction to control late-stage
     computational cost. We benchmark FCPO on five representative functions from the
     Congress on Evolutionary Computation (CEC) 2022 suite (F1, F2, F3, F6 and F10)
-    at dimensions D$\in${10,20} over 30 independent runs, comparing against PSO, CSO,
+    at dimensions D\in{10,20} over 30 independent runs, comparing against PSO, CSO,
     CLPSO, SHADE, L-SHADE and CMA-ES. FCPO achieves the lowest mean runtime across
     the ten benchmark cases (average 0.183 s), about 2.3x faster than CMA-ES and 2.6x
     faster than L-SHADE in our Python implementation. On the multimodal composition
-    function F10 at D=20, FCPO attains the best mean objective (9.625x 10^2 $\pm$
-    1.275x 10^3) and remains faster than CMA-ES (0.602 s vs. 1.126 s mean runtime).
-    On structured landscapes (F1--F3) and on the hybrid function (F6), CMA-ES remains
-    the most accurate method, while FCPO substantially improves over classical swarms
-    and maintains a favorable accuracy--runtime trade-off. Finally, in a ventricular
-    activation digital twin calibration task, FCPO reaches the target electrocardiogram
-    (ECG) fidelity (RMSE&lt;0.1 mV) within ~ 40 iterations and produces physiologically
+    function F10 at D=20, FCPO attains the best mean objective (9.625x 10^2 \pm 1.275x
+    10^3) and remains faster than CMA-ES (0.602 s vs. 1.126 s mean runtime). On structured
+    landscapes (F1--F3) and on the hybrid function (F6), CMA-ES remains the most accurate
+    method, while FCPO substantially improves over classical swarms and maintains
+    a favorable accuracy--runtime trade-off. Finally, in a ventricular activation
+    digital twin calibration task, FCPO reaches the target electrocardiogram (ECG)
+    fidelity (RMSE&lt;0.1 mV) within ~ 40 iterations and produces physiologically
     plausible activation maps with robust convergence across repeated initializations,
     supporting its use as a practical optimizer for expensive inverse problems.
 - title: What Do Evolutionary Coding Agents Evolve?
   date: 2026-05
-  url: https://arxiv.org/abs/2605.20086v1
+  url: https://arxiv.org/abs/2605.20086
   category: survey
   subcategory: review
   authors:
@@ -13651,7 +13646,7 @@ papers:
 - title: 'RDEx-CMOP: Feasibility-Aware Indicator-Guided Differential Evolution for
     Fixed-Budget Constrained Multiobjective Optimization'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.03708v1
+  url: https://arxiv.org/abs/2604.03708
   category: survey
   subcategory: review
   authors:
@@ -13678,7 +13673,7 @@ papers:
 - title: Spike-Aware C++ INT8 Inference for Sparse Spiking Language Models on Commodity
     CPUs
   date: 2026-06
-  url: https://arxiv.org/abs/2606.03026v1
+  url: https://arxiv.org/abs/2606.03026
   category: survey
   subcategory: review
   authors:
@@ -13712,7 +13707,7 @@ papers:
     problems.'
 - title: 'SPECS: Speciated Evolutionary Circuit Synthesis'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.14027v1
+  url: https://arxiv.org/abs/2607.14027
   category: survey
   subcategory: review
   authors:
@@ -13740,7 +13735,7 @@ papers:
 - title: Search Hardness-Aware LLM-Based Problem Formulation for Expensive Simulation-Driven
     Design
   date: 2026-07
-  url: https://arxiv.org/abs/2607.21220v1
+  url: https://arxiv.org/abs/2607.21220
   category: survey
   subcategory: review
   authors:
@@ -13771,7 +13766,7 @@ papers:
 - title: Evolutionary Warm-Starts for Reinforcement Learning in Industrial Continuous
     Control
   date: 2026-03
-  url: https://arxiv.org/abs/2603.26750v1
+  url: https://arxiv.org/abs/2603.26750
   category: survey
   subcategory: review
   authors:
@@ -13794,7 +13789,7 @@ papers:
     applications.
 - title: 'BDH-CQ: In-Context Learning with Recurrent Latent Reasoning'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.09888v1
+  url: https://arxiv.org/abs/2608.09888
   category: survey
   subcategory: review
   authors:
@@ -13820,7 +13815,7 @@ papers:
 - title: Hybrid Metaheuristic Combining the Dragonfly Algorithm and Tabu Search for
     the Traveling Salesman Problem
   date: 2026-06
-  url: https://arxiv.org/abs/2606.09529v1
+  url: https://arxiv.org/abs/2606.09529
   category: survey
   subcategory: review
   authors:
@@ -13851,7 +13846,7 @@ papers:
 - title: 'RDEx-MOP: Indicator-Guided Reconstructed Differential Evolution for Fixed-Budget
     Multiobjective Optimization'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.27092v1
+  url: https://arxiv.org/abs/2603.27092
   category: survey
   subcategory: review
   authors:
@@ -13877,7 +13872,7 @@ papers:
 - title: 'SeqGPT: A Constrained Transformer Agent for the Inverse Design of Multi-Panel
     Composite Structures'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.11910v1
+  url: https://arxiv.org/abs/2607.11910
   category: survey
   subcategory: review
   authors: []
@@ -13902,7 +13897,7 @@ papers:
 - title: Adaptive Protection for Evolutionary Feature Construction in Symbolic Regression
     with Application to Credit Classification
   date: 2026-08
-  url: https://arxiv.org/abs/2608.14209v1
+  url: https://arxiv.org/abs/2608.14209
   category: survey
   subcategory: review
   authors:
@@ -13933,7 +13928,7 @@ papers:
 - title: A Large-Scale Empirical Evaluation of MMAO Under Fair-Budget Continuous and
     Discrete Benchmarks
   date: 2026-06
-  url: https://arxiv.org/abs/2606.31584v2
+  url: https://arxiv.org/abs/2606.31584
   category: survey
   subcategory: review
   authors:
@@ -13962,7 +13957,7 @@ papers:
 - title: 'Why Prompt Optimization Works, and Why It Sometimes Doesn''t: A Causal-Inspired
     Edit-Level Analysis'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.26655v1
+  url: https://arxiv.org/abs/2605.26655
   category: survey
   subcategory: review
   authors:
@@ -13993,7 +13988,7 @@ papers:
 - title: 'Evolutionary Intelligence for Scientific Discovery: From Evolutionary Computation
     to Cumulative Discovery Systems'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.09025v1
+  url: https://arxiv.org/abs/2607.09025
   category: survey
   subcategory: review
   authors:
@@ -14026,7 +14021,7 @@ papers:
 - title: 'On the Impact of Crossover in Many-Objective Optimization: A Runtime Analysis
     of NSGA-III'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.11201v1
+  url: https://arxiv.org/abs/2605.11201
   category: survey
   subcategory: review
   authors:
@@ -14041,15 +14036,15 @@ papers:
     tuned to particular crossover operators, and still lag significantly behind its
     practical use. In this paper, we build upon this line of research and present
     a theoretical runtime analysis of the widely used NSGA-III algorithm on the classical
-    $m$-objective $m$-OneJumpZeroJump function ($m$-OJZJ for short). Our results demonstrate
-    that NSGA-III with crossover optimizes $m$-OJZJ asymptotically faster than NSGA-III
-    without crossover for any number $m$ of objectives for huge parameter regimes.
-    We complement our analysis by providing a lower runtime bound on $4$-OJZJ when
-    crossover is turned off.
+    m-objective m-OneJumpZeroJump function (m-OJZJ for short). Our results demonstrate
+    that NSGA-III with crossover optimizes m-OJZJ asymptotically faster than NSGA-III
+    without crossover for any number m of objectives for huge parameter regimes. We
+    complement our analysis by providing a lower runtime bound on 4-OJZJ when crossover
+    is turned off.
 - title: A Hybrid Matheuristic Framework for the Chinese Postman Problem with Load-Dependent
     Costs
   date: 2026-04
-  url: https://arxiv.org/abs/2607.22542v1
+  url: https://arxiv.org/abs/2607.22542
   category: survey
   subcategory: review
   authors:
@@ -14076,7 +14071,7 @@ papers:
 - title: 'GeM-EA: A Generative and Meta-learning Enhanced Evolutionary Algorithm for
     Streaming Data-Driven Optimization'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.12336v1
+  url: https://arxiv.org/abs/2604.12336
   category: survey
   subcategory: review
   authors:
@@ -14104,7 +14099,7 @@ papers:
 - title: Fuzzy Encoding-Decoding to Improve Spiking Q-Learning Performance in Autonomous
     Driving
   date: 2026-04
-  url: https://arxiv.org/abs/2604.16436v1
+  url: https://arxiv.org/abs/2604.16436
   category: survey
   subcategory: review
   authors:
@@ -14131,7 +14126,7 @@ papers:
     with spiking neural networks.'
 - title: Quadratic Surrogate Attractor for Particle Swarm Optimization
   date: 2026-03
-  url: https://arxiv.org/abs/2603.17163v1
+  url: https://arxiv.org/abs/2603.17163
   category: survey
   subcategory: review
   authors:
@@ -14157,7 +14152,7 @@ papers:
 - title: A Family of Quaternion-Valued Differential Evolution Algorithms for Numerical
     Function Optimization
   date: 2026-05
-  url: https://arxiv.org/abs/2605.12362v1
+  url: https://arxiv.org/abs/2605.12362
   category: survey
   subcategory: review
   authors:
@@ -14182,10 +14177,10 @@ papers:
     properties of quaternions. Results show that our QDE variants achieve faster convergence
     and superior performance on several function classes in the BBOB benchmark compared
     to the traditional real-valued DE algorithm.
-- title: Asymptotical Analysis of the $(1+(λ,λ))$ GA Escape Time from Local Optima
-    on Jump Functions
+- title: Asymptotical Analysis of the (1+(λ,λ)) GA Escape Time from Local Optima on
+    Jump Functions
   date: 2026-07
-  url: https://arxiv.org/abs/2607.14278v1
+  url: https://arxiv.org/abs/2607.14278
   category: survey
   subcategory: review
   authors:
@@ -14196,20 +14191,20 @@ papers:
   project_url: ''
   abstract: The paper develops the approach to the runtime analysis of evolutionary
     algorithms on the basis of limit theorems from probability theory. We consider
-    the family of Jump$_k$ benchmark functions, defined on the search space of binary
-    strings of length $n$, parametrized by the integer $k$, which have multiple local
-    optima at the Hamming distance $k$ from a unique global optimum. In this work,
-    we consider the genetic algorithm $(1+(λ,λ)) GA$ from (Doerr, Doerr and Ebel,
-    2015) with tunable parameters of the mutation rate $p$, crossover bias $c$, and
-    two intermediate population sizes $λ_M$ and $λ_C$, and study the time it escapes
-    from the plateau in the case of Jump$_k$ fitness function when $np$ tends to infinity.
-    The main result of this work is a tightened upper bound on the escape time from
-    the work of Antipov, Doerr and Karavaev (2022). Besides that, the obtained bound
-    applies to a wider range of algorithm parameters.
+    the family of Jump_k benchmark functions, defined on the search space of binary
+    strings of length n, parametrized by the integer k, which have multiple local
+    optima at the Hamming distance k from a unique global optimum. In this work, we
+    consider the genetic algorithm (1+(λ,λ)) GA from (Doerr, Doerr and Ebel, 2015)
+    with tunable parameters of the mutation rate p, crossover bias c, and two intermediate
+    population sizes λ_M and λ_C, and study the time it escapes from the plateau in
+    the case of Jump_k fitness function when np tends to infinity. The main result
+    of this work is a tightened upper bound on the escape time from the work of Antipov,
+    Doerr and Karavaev (2022). Besides that, the obtained bound applies to a wider
+    range of algorithm parameters.
 - title: A Unified Measure-Theoretic View of Diffusion, Score-Based, and Flow Matching
     Generative Models
   date: 2026-05
-  url: https://arxiv.org/abs/2605.06829v1
+  url: https://arxiv.org/abs/2605.06829
   category: survey
   subcategory: review
   authors:
@@ -14222,8 +14217,8 @@ papers:
     a simple reference distribution to a data distribution via stochastic or deterministic
     dynamics. We present a unified framework in which diffusion models, score-based
     generative models, and flow matching are instances of learning a time-dependent
-    vector field that induces a family of marginals $(ρ_t)_{t \in [0,1]}$ governed
-    by continuity and Fokker-Planck equations. Such a unified theory is timely because
+    vector field that induces a family of marginals (ρ_t)_{t \in [0,1]} governed by
+    continuity and Fokker-Planck equations. Such a unified theory is timely because
     these methods are converging methodologically, yet fragmented notation and competing
     derivations continue to obscure their shared structure and the practical tradeoffs
     governing sampling, stability, and computation. Within this framework, we (i)
@@ -14238,7 +14233,7 @@ papers:
     and scalability.
 - title: Improving Evaluation of Recombination-based Cartesian Genetic Programming
   date: 2026-05
-  url: https://arxiv.org/abs/2605.28353v1
+  url: https://arxiv.org/abs/2605.28353
   category: survey
   subcategory: review
   authors:
@@ -14263,7 +14258,7 @@ papers:
 - title: 'MAEO: Multiobjective Animorphic Ensemble Optimization for Scalable Large-scale
     Engineering Applications'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.26973v1
+  url: https://arxiv.org/abs/2604.26973
   category: survey
   subcategory: review
   authors:
@@ -14300,7 +14295,7 @@ papers:
 - title: Optically Writable Atomic Vapor Memory as a Substrate for Optical Reservoir
     Computing
   date: 2026-08
-  url: https://arxiv.org/abs/2608.17807v1
+  url: https://arxiv.org/abs/2608.17807
   category: survey
   subcategory: review
   authors:
@@ -14318,8 +14313,8 @@ papers:
     of a Cs ensemble via optical pumping and retrieved through differential probe
     absorption. Spatial multiplexing via acousto-optic deflection provides eight addressable
     memory rails able to store up to 3.8 bits of information per rail. Employing this
-    platform as a temporally multiplexed reservoir, we achieve a kernel rank ($\mathrm{KR}=
-    8.8 \pm 0.4$), and a minimum bit error rate of $0.02 \pm 0.01$ on the Exclusive-or
+    platform as a temporally multiplexed reservoir, we achieve a kernel rank (KR=
+    8.8 \pm 0.4), and a minimum bit error rate of 0.02 \pm 0.01 on the Exclusive-or
     (XOR) benchmark. We find the limited memory lifetime constrains the achievable
     temporal depth, encouraging further research into fast addressable memories. This
     constitutes the first demonstration of a free-space, optically writable atomic
@@ -14327,7 +14322,7 @@ papers:
 - title: Shared Symbolic Backbones for Physically Consistent Multi-Output Symbolic
     Regression
   date: 2026-07
-  url: https://arxiv.org/abs/2607.26528v1
+  url: https://arxiv.org/abs/2607.26528
   category: survey
   subcategory: review
   authors:
@@ -14360,7 +14355,7 @@ papers:
 - title: Benchmarking local Hebbian learning rules for memory storage and prototype
     extraction
   date: 2026-05
-  url: https://arxiv.org/abs/2605.01074v1
+  url: https://arxiv.org/abs/2605.01074
   category: survey
   subcategory: review
   authors:
@@ -14390,7 +14385,7 @@ papers:
 - title: 'The Geno-Synthetic Algorithm: Type-Factored Coevolutionary Optimization
     for Heterogeneous Genotypes and Assembled Phenotypes'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.13365v1
+  url: https://arxiv.org/abs/2605.13365
   category: survey
   subcategory: review
   authors:
@@ -14423,7 +14418,7 @@ papers:
 - title: 'Socrates Loss: Unifying Confidence Calibration and Classification by Leveraging
     the Unknown'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.12245v1
+  url: https://arxiv.org/abs/2604.12245
   category: survey
   subcategory: review
   authors:
@@ -14454,7 +14449,7 @@ papers:
 - title: A Firefly Algorithm for Mixed-Variable Optimization Based on Hybrid Distance
     Modeling
   date: 2026-03
-  url: https://arxiv.org/abs/2603.26792v2
+  url: https://arxiv.org/abs/2603.26792
   category: survey
   subcategory: review
   authors:
@@ -14487,7 +14482,7 @@ papers:
 - title: An FPGA-Based SoC Architecture with a RISC-V Controller for Energy-Efficient
     Temporal-Coding Spiking Neural Networks
   date: 2026-03
-  url: https://arxiv.org/abs/2603.18054v1
+  url: https://arxiv.org/abs/2603.18054
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14513,7 +14508,7 @@ papers:
 - title: Heterogeneous SoC Integrating an Open-Source Recurrent SNN Accelerator for
     Neuromorphic Edge Computing on FPGA
   date: 2026-05
-  url: https://arxiv.org/abs/2605.12217v1
+  url: https://arxiv.org/abs/2605.12217
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14547,7 +14542,7 @@ papers:
 - title: 'ExSpike: A General Full-Event Neuromorphic Architecture for Exploiting Irregular
     Sparsity with Event Compression'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.20414v2
+  url: https://arxiv.org/abs/2606.20414
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14572,13 +14567,13 @@ papers:
     on both classification and segmentation workloads. Experimental results show that
     ExSpike achieves high normalized energy efficiency across diverse SNN models while
     maintaining competitive accuracy, delivering up to 479.15 GOPS, 281.85 GOPS/W,
-    and 0.80 GOPS/W/PE. In particular, ExSpike achieves up to 10$\times$ higher PE-normalized
+    and 0.80 GOPS/W/PE. In particular, ExSpike achieves up to 10\times higher PE-normalized
     energy efficiency than the SOTA FPGA-based SNN accelerator (FireFly-T). The code
     for ExSpike is available at https://github.com/xiaoyuehai/ExSpike.
 - title: 'Shooting Neutrons at Neurons: Radiation Testing of a Spiking Neural Network
     on Flash-Based FPGAs'
   date: 2026-04
-  url: https://arxiv.org/abs/2605.00030v1
+  url: https://arxiv.org/abs/2605.00030
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14605,7 +14600,7 @@ papers:
 - title: 'AceleradorSNN: A Neuromorphic Cognitive System Integrating Spiking Neural
     Networks and DynamicImage Signal Processing on FPGA'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.28429v1
+  url: https://arxiv.org/abs/2603.28429
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14631,7 +14626,7 @@ papers:
 - title: Hardware-Software Co-Design for Event-Driven SNN Deployment on Low-Cost Neuromorphic
     FPGAs
   date: 2026-04
-  url: https://arxiv.org/abs/2604.22179v1
+  url: https://arxiv.org/abs/2604.22179
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14661,7 +14656,7 @@ papers:
     SNN models.
 - title: 'SPARQ: Spiking Early-Exit Neural Networks for Energy-Efficient Edge AI'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.14380v1
+  url: https://arxiv.org/abs/2603.14380
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14688,7 +14683,7 @@ papers:
 - title: 'NeuDW-CIM: a 65-nm 0.8-pJ/Sop Reconfigurable Neuromorphic Compute-in-Memory
     Macro with Nonlinear Dendrites and K-Winners'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.08947v1
+  url: https://arxiv.org/abs/2606.08947
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14713,7 +14708,7 @@ papers:
 - title: 'Mega: A 22 nm Convolutional Spiking Neural Network Accelerator Achieving
     0.375 pJ/SOP for Efficient Edge Vision'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.30039v1
+  url: https://arxiv.org/abs/2606.30039
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14729,14 +14724,14 @@ papers:
     layers and lack the flexibility to accommodate varying memory demands and input
     sparsity across layers. This paper presents Mega, a digital architecture for convolutional
     SNNs that addresses these limitations through three key contributions: (1) highly
-    parallel acceleration of $3 \times 3$ convolutions, (2) a unified data memory
-    for spikes, neuron states, and weights, and (3) efficient spike map processing
-    with low-overhead spike detection. Fabricated in GlobalFoundries 22 nm FDSOI technology,
+    parallel acceleration of 3 \times 3 convolutions, (2) a unified data memory for
+    spikes, neuron states, and weights, and (3) efficient spike map processing with
+    low-overhead spike detection. Fabricated in GlobalFoundries 22 nm FDSOI technology,
     Mega achieves an energy efficiency of 0.375 pJ/SOP, improving the state of the
-    art by $4\times$.'
+    art by 4\times.'
 - title: 'ELSA: An ELastic SNN Inference Architecture for Efficient Neuromorphic Computing'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.20802v1
+  url: https://arxiv.org/abs/2605.20802
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14768,13 +14763,12 @@ papers:
     sparsity. Combined with mapping and scheduling optimizations, ELSA achieves efficient,
     event-driven computation without compromising accuracy. Experiments show that
     SNNs can outperform quantized artificial neural networks (QANNs) while maintaining
-    on-par accuracy. For a 4-bit ResNet-50, ELSA achieves 3.4$\times$ speedup and
-    13.6$\times$ higher energy efficiency over the SOTA QANN accelerator (ANT), and
-    2.9$\times$ speedup and 22.1$\times$ energy efficiency gains over the SOTA SNN
-    accelerator (PAICORE).
+    on-par accuracy. For a 4-bit ResNet-50, ELSA achieves 3.4\times speedup and 13.6\times
+    higher energy efficiency over the SOTA QANN accelerator (ANT), and 2.9\times speedup
+    and 22.1\times energy efficiency gains over the SOTA SNN accelerator (PAICORE).
 - title: 'APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.19046v1
+  url: https://arxiv.org/abs/2608.19046
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14808,7 +14802,7 @@ papers:
 - title: 'Surrogates, Spikes, and Sparsity: Performance Analysis and Characterization
     of SNN Hyperparameters on Hardware'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.24891v1
+  url: https://arxiv.org/abs/2603.24891
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14843,7 +14837,7 @@ papers:
 - title: 'SpikON: A Dual-Parallel and Efficient Accelerator for Online Spiking Neural
     Networks Learning'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.30926v1
+  url: https://arxiv.org/abs/2606.30926
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14874,7 +14868,7 @@ papers:
 - title: A PVT-Resilient Subthreshold SRAM-Based In-Memory Computing Accelerator with
     In-Situ Regulation for Energy-Efficient Spiking Neural Networks
   date: 2026-05
-  url: https://arxiv.org/abs/2605.00319v1
+  url: https://arxiv.org/abs/2605.00319
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14902,7 +14896,7 @@ papers:
 - title: 'Lonic: Algorithm-Hardware Co-Design for Energy-Efficient Fully Local Online
     SNN Training with INT4 Precision'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.12500v1
+  url: https://arxiv.org/abs/2608.12500
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14931,7 +14925,7 @@ papers:
 - title: A Fault-Tolerant Spike-Time Interface for Approximate Agreement in Distributed
     Neuromorphic Systems
   date: 2026-08
-  url: https://arxiv.org/abs/2608.18151v1
+  url: https://arxiv.org/abs/2608.18151
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -14946,28 +14940,27 @@ papers:
     a shared control parameter such as a threshold reference. If these copies diverge,
     identical inputs may be processed under different intended settings. We study
     how tiles can reduce this disagreement when communication carries only labeled
-    spike times and up to \(f\) sender labels may be Byzantine. A raw event stream
-    cannot supply the one-value-per-sender input required by classical approximate
-    agreement because a faulty sender can remain silent, flood a receiver, or report
-    different times to different receivers. We introduce the Spike-time Interface
-    for Faults, or \SIF, which combines paced epochs, sender attribution, per-label
-    \FirstSpike admission, bounded timing error, and a silence sentinel. For an affine
-    one-spike code, midpoint decoding attains the exact deterministic minimax error
-    \(ρ=\min\{1/2,ω/L\}\), where \(ω\) is the residual timing uncertainty and \(L\)
-    is the usable encoding window. \SpikeTrim applies the classical mean-subsequence-reduced
-    (MSR) rule to the sender-indexed decoded values. For \(n\ge3f+1\), it guarantees
-    one-step robust validity, the tight noiseless contraction factor \(f/(n-2f)\)
-    under direct updates, an explicit worst-case asymptotic disagreement bound, and
-    finite recovery after transient agreement-state corruption. A closed-form test
-    determines whether a validated timing budget meets a target disagreement. Simulations
-    illustrate the fault threshold, timing dependence, flooding resistance, and recovery.
-    A controlled spiking classifier experiment shows an association between faster
-    control-state alignment and lower prediction disagreement under a finite maintenance
-    budget.
+    spike times and up to f sender labels may be Byzantine. A raw event stream cannot
+    supply the one-value-per-sender input required by classical approximate agreement
+    because a faulty sender can remain silent, flood a receiver, or report different
+    times to different receivers. We introduce the Spike-time Interface for Faults,
+    or \SIF, which combines paced epochs, sender attribution, per-label \FirstSpike
+    admission, bounded timing error, and a silence sentinel. For an affine one-spike
+    code, midpoint decoding attains the exact deterministic minimax error ρ=\min\{1/2,ω/L\},
+    where ω is the residual timing uncertainty and L is the usable encoding window.
+    \SpikeTrim applies the classical mean-subsequence-reduced (MSR) rule to the sender-indexed
+    decoded values. For n\ge3f+1, it guarantees one-step robust validity, the tight
+    noiseless contraction factor f/(n-2f) under direct updates, an explicit worst-case
+    asymptotic disagreement bound, and finite recovery after transient agreement-state
+    corruption. A closed-form test determines whether a validated timing budget meets
+    a target disagreement. Simulations illustrate the fault threshold, timing dependence,
+    flooding resistance, and recovery. A controlled spiking classifier experiment
+    shows an association between faster control-state alignment and lower prediction
+    disagreement under a finite maintenance budget.
 - title: 'The Sparsity Tax: Weight Sparsity Trade-offs in Event-Driven SIMD and SIMT
     Neuromorphic Cores'
   date: 2026-07
-  url: https://arxiv.org/abs/2607.22790v1
+  url: https://arxiv.org/abs/2607.22790
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15001,7 +14994,7 @@ papers:
 - title: 'Memory Wall is not gone: A Critical Outlook on Memory Architecture in Digital
     Neuromorphic Computing'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.08774v1
+  url: https://arxiv.org/abs/2604.08774
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15026,7 +15019,7 @@ papers:
 - title: 'NeuroPDE+: A Scalable Neuromorphic PDE Accelerator Based on Spintronic and
     Ferroelectric Devices'
   date: 2026-03
-  url: https://arxiv.org/abs/2603.28042v2
+  url: https://arxiv.org/abs/2603.28042
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15057,7 +15050,7 @@ papers:
     the way for probabilistic computing architectures in large-scale scientific simulations.'
 - title: Neuromorphic Computing for Low-Power Artificial Intelligence
   date: 2026-04
-  url: https://arxiv.org/abs/2604.04727v1
+  url: https://arxiv.org/abs/2604.04727
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15085,7 +15078,7 @@ papers:
 - title: A 65-nm Privacy-Preserving Neuromorphic Encoder With 7.13-nJ Efficiency,
     2.38-Mb/mm^2 Item-Memory Density, and Federated Learning Support
   date: 2026-06
-  url: https://arxiv.org/abs/2606.09460v2
+  url: https://arxiv.org/abs/2606.09460
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15116,7 +15109,7 @@ papers:
 - title: A 0.5-V Linear Neuromorphic Voltage-to-Spike Encoder Using a Bulk-Driven
     Transconductor
   date: 2026-04
-  url: https://arxiv.org/abs/2604.09315v1
+  url: https://arxiv.org/abs/2604.09315
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15138,7 +15131,7 @@ papers:
 - title: 'MOSAIC: A Workload-Driven Simulation and Design-Space Exploration Framework
     for Heterogeneous NPUs'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.05362v2
+  url: https://arxiv.org/abs/2606.05362
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15175,7 +15168,7 @@ papers:
     +46.91% mean iso-area energy savings over the best iso-area homogeneous baseline.'
 - title: 'AXELRAM: Quantize Once, Never Dequantize'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.02638v1
+  url: https://arxiv.org/abs/2604.02638
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15200,7 +15193,7 @@ papers:
     additional hardware cost. All source code is available at https://github.com/Axelidea/AXELRAM.'
 - title: Constant Depth Threshold Circuits For Exhaustive Epistasis Detection
   date: 2026-05
-  url: https://arxiv.org/abs/2605.29719v1
+  url: https://arxiv.org/abs/2605.29719
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15230,7 +15223,7 @@ papers:
 - title: 'Non-Parametric Dual-Manifold Mapping via 8-Bit Bounded Transformation Matrices:
     Challenging FP-centric Hardware Paradigms in Low-Energy AI'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.13328v1
+  url: https://arxiv.org/abs/2606.13328
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15258,7 +15251,7 @@ papers:
     long-term necessity of dense, floating-point-centric GPU accelerators.
 - title: Architectural Implications of Agentic AI Workflows
   date: 2026-08
-  url: https://arxiv.org/abs/2608.04458v1
+  url: https://arxiv.org/abs/2608.04458
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15295,7 +15288,7 @@ papers:
     for future server architectures for agentic AI.
 - title: Efficient CMOS Invertible Logic Using Stochastic Computing
   date: 2026-03
-  url: https://arxiv.org/abs/2603.27030v1
+  url: https://arxiv.org/abs/2603.27030
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15325,7 +15318,7 @@ papers:
 - title: 'Beyond Peak TOPS/W: A System-Level Perspective on Hybrid Digital, Analogue
     and Neuromorphic Computing'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.03514v1
+  url: https://arxiv.org/abs/2608.03514
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15356,7 +15349,7 @@ papers:
     tera operations per second per watt (TOPS/W) claims.'
 - title: Quantum-Driven Neuromorphic Computing for Million-Qubit-Scale Workloads
   date: 2026-06
-  url: https://arxiv.org/abs/2606.12968v1
+  url: https://arxiv.org/abs/2606.12968
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15392,7 +15385,7 @@ papers:
 - title: 'MCHA: A Memory-Centric Hierarchical Architecture for Parallel-Sequential
     Computing'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.04443v2
+  url: https://arxiv.org/abs/2608.04443
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15420,16 +15413,16 @@ papers:
     transmission latency within the execution pipeline. We benchmark MCHA against
     a diverse suite of parallel-sequential tasks, including MARL, motor variable control,
     and Markov random fields. Validated through our open-source, cycle-accurate simulator,
-    MCHA demonstrates performance speedups ranging from 153.06$\times$ to 2456.96$\times$
+    MCHA demonstrates performance speedups ranging from 153.06\times to 2456.96\times
     over NVIDIA A100 GPUs on MARL workloads, while maintaining robust programming
     flexibility across other application domains. Furthermore, the architecture successfully
     reduces main memory access from 96% to 5.44%. When synthesized in a 28 nm process,
-    the MCHA implementation occupies an area footprint of 2.92mm$^2$ and consumes
-    115.36 mW of power at 200 MHz. MCHA is open-sourced at https://github.com/carabdis/MCHA.
+    the MCHA implementation occupies an area footprint of 2.92mm^2 and consumes 115.36
+    mW of power at 200 MHz. MCHA is open-sourced at https://github.com/carabdis/MCHA.
 - title: 'Non-Monotonic Latency in Apple MPS Decoding: KV Cache Interactions and Execution
     Regimes'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.08913v2
+  url: https://arxiv.org/abs/2605.08913
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15456,7 +15449,7 @@ papers:
     inference.'
 - title: 'BIDENT: Heterogeneous Operator-level Mapping for Efficient Edge Inference'
   date: 2026-06
-  url: https://arxiv.org/abs/2606.05271v1
+  url: https://arxiv.org/abs/2606.05271
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15494,7 +15487,7 @@ papers:
     AI.
 - title: 'KV-RM: Regularizing KV-Cache Movement for Static-Graph LLM Serving'
   date: 2026-05
-  url: https://arxiv.org/abs/2605.09735v2
+  url: https://arxiv.org/abs/2605.09735
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15529,7 +15522,7 @@ papers:
 - title: From Bit-Position Sensitivity to Unequal Error Protection for DNN Inference
     Memory
   date: 2026-07
-  url: https://arxiv.org/abs/2607.19623v1
+  url: https://arxiv.org/abs/2607.19623
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15565,7 +15558,7 @@ papers:
 - title: Memristor-Based Pulse Width Modulation Circuit for Power Converters with
     Programmable Frequencies
   date: 2026-07
-  url: https://arxiv.org/abs/2607.29399v1
+  url: https://arxiv.org/abs/2607.29399
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15591,7 +15584,7 @@ papers:
     control, the proposed design achieves a 92% reduction in power consumption.
 - title: Mixed potential for nonlinear RLC circuits with memristors
   date: 2026-06
-  url: https://arxiv.org/abs/2606.04638v1
+  url: https://arxiv.org/abs/2606.04638
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15624,10 +15617,10 @@ papers:
     circuits. Those results will extend existing results on convergence that do not
     cover the important case where there is the simultaneous presence of capacitors
     and inductors in a memristor circuit.
-- title: Monolithically Integrated VO$_2$ Mott Oscillators for Energy-Efficient Spiking
+- title: Monolithically Integrated VO_2 Mott Oscillators for Energy-Efficient Spiking
     Neurons
   date: 2026-04
-  url: https://arxiv.org/abs/2604.21487v2
+  url: https://arxiv.org/abs/2604.21487
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15644,26 +15637,26 @@ papers:
     remains limited by the lack of compact, scalable spiking hardware. Mott phase-transition
     materials offer a promising route because their abrupt insulator-to-metal transitions
     enable neuron-like thresholding and oscillations. Among them, vanadium dioxide
-    (VO$_2$) is particularly attractive owing to its near-room-temperature transition,
-    fast switching, and scalability. However, existing VO$_2$ neuristors rely on discrete
+    (VO_2) is particularly attractive owing to its near-room-temperature transition,
+    fast switching, and scalability. However, existing VO_2 neuristors rely on discrete
     components, limiting integration density. Here, we report monolithic back-end-of-the-line
-    (BEOL) integration of one-transistor-one-VO$_2$-memristor (1T-1MR) spiking neurons
-    on a CMOS-compatible platform. VO$_2$ nanosheets are fabricated by pulsed-laser
+    (BEOL) integration of one-transistor-one-VO_2-memristor (1T-1MR) spiking neurons
+    on a CMOS-compatible platform. VO_2 nanosheets are fabricated by pulsed-laser
     deposition atop dielectrically isolated silicon-on-insulator (SOI) p-type junctionless
-    field-effect transistors (JLFETs) below 430 $^\circ$C. The architecture exhibits
-    gate-tunable oscillations from 40 to 410 kHz in 60 nm-thin VO$_2$ devices with
-    a 6 $μ$m$^2$ active area, achieving 18 pJ per spike and 8 $μ$W at room temperature,
-    with potential for sub-3 $μ$W operation. We uncover a non-monotonic dependence
-    of oscillation frequency on bias current and temperature and analyze bias-dependent
-    stochastic firing, revealing the nonlinear physics of integrated VO$_2$ thin-film
-    memristors. Finally, we demonstrate voltage-controlled oscillator functionality
-    and on-chip resistive coupling between two nano-oscillators mediated by a JLFET.
-    These results establish a pathway toward dense, energy-efficient, monolithically
-    integrated Mott neuromorphic hardware compatible with future computing and spiking
-    sensing systems.
+    field-effect transistors (JLFETs) below 430 ^\circC. The architecture exhibits
+    gate-tunable oscillations from 40 to 410 kHz in 60 nm-thin VO_2 devices with a
+    6 μm^2 active area, achieving 18 pJ per spike and 8 μW at room temperature, with
+    potential for sub-3 μW operation. We uncover a non-monotonic dependence of oscillation
+    frequency on bias current and temperature and analyze bias-dependent stochastic
+    firing, revealing the nonlinear physics of integrated VO_2 thin-film memristors.
+    Finally, we demonstrate voltage-controlled oscillator functionality and on-chip
+    resistive coupling between two nano-oscillators mediated by a JLFET. These results
+    establish a pathway toward dense, energy-efficient, monolithically integrated
+    Mott neuromorphic hardware compatible with future computing and spiking sensing
+    systems.
 - title: Mixed Potential Approach to Convergence of Nonlinear RLC Circuits with Memristors
   date: 2026-06
-  url: https://arxiv.org/abs/2606.05851v1
+  url: https://arxiv.org/abs/2606.05851
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15694,7 +15687,7 @@ papers:
 - title: An Asynchronous Delta Modulator for Spike Encoding in Event-Driven Brain-Machine
     Interface
   date: 2026-04
-  url: https://arxiv.org/abs/2604.08758v2
+  url: https://arxiv.org/abs/2604.08758
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15715,10 +15708,10 @@ papers:
     decoding in closed-loop brain-machine interfaces (BMIs). Measurement results from
     silicon demonstrate an energy consumption of 60.73 nJ/spike, an F1-score of 80%
     compared to a behavioral model of the asynchronous delta modulator, and a compact
-    pixel area of 73.45 um $\times$ 73.64 um.
+    pixel area of 73.45 um \times 73.64 um.
 - title: Ultra-Low-Energy Open-Circuit Fault Diagnosis for Three-Phase Inverters
   date: 2026-07
-  url: https://arxiv.org/abs/2607.25037v1
+  url: https://arxiv.org/abs/2607.25037
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15745,7 +15738,7 @@ papers:
 - title: 'Fuelling fusion plasmas with pellets: Can neuromorphic control outperform
     Sigma-Delta modulation?'
   date: 2026-04
-  url: https://arxiv.org/abs/2604.26476v1
+  url: https://arxiv.org/abs/2604.26476
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15777,7 +15770,7 @@ papers:
     theoretical results.
 - title: State-space fading memory
   date: 2026-03
-  url: https://arxiv.org/abs/2603.23814v2
+  url: https://arxiv.org/abs/2603.23814
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15795,19 +15788,19 @@ papers:
     connection with state-space notions of nonlinear stability, especially incremental
     ones, remains understudied. This paper introduces a state-space definition of
     FM. In state-space, FM can be interpreted as an extension of incremental input-to-output
-    stability ($δ$IOS) that explicitly incorporates a memory kernel upper-bounding
-    the decay of past input differences. It is also closely related to Boyd and Chua's
+    stability (δIOS) that explicitly incorporates a memory kernel upper-bounding the
+    decay of past input differences. It is also closely related to Boyd and Chua's
     FM definition, with the sole difference of requiring uniform, instead of general,
     continuity of the memory functional with respect to an input-fading norm. We demonstrate
-    that incremental input-to-state stability ($δ$ISS) implies FM semi-globally for
+    that incremental input-to-state stability (δISS) implies FM semi-globally for
     time-invariant systems under an equibounded input assumption. Notably, Boyd and
-    Chua's approximation theorems apply to $δ$ISS state-space models. As a closing
-    application, we show that, under mild assumptions, the state-space model of current-driven
+    Chua's approximation theorems apply to δISS state-space models. As a closing application,
+    we show that, under mild assumptions, the state-space model of current-driven
     memristors possess the FM property.
 - title: An Ultra-Low-Power Synthesizable Asynchronous AER Encoder for Neuromorphic
     Edge Devices
   date: 2026-04
-  url: https://arxiv.org/abs/2604.05313v1
+  url: https://arxiv.org/abs/2604.05313
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15832,7 +15825,7 @@ papers:
     only 435 fJ per encoded event.
 - title: Dynamical principles of habituation across substrates and scales
   date: 2026-07
-  url: https://arxiv.org/abs/2608.00249v1
+  url: https://arxiv.org/abs/2608.00249
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15858,7 +15851,7 @@ papers:
     realizations, from analog circuits to transient computation in machine learning.'
 - title: Efficient and robust control with spikes that constrain free energy
   date: 2026-03
-  url: https://arxiv.org/abs/2603.09729v1
+  url: https://arxiv.org/abs/2603.09729
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -15891,7 +15884,7 @@ papers:
 - title: Event-triggered Implicit Perturbation for Zeroth-Order Fine-Tuning of Spiking
     Transformers
   date: 2026-08
-  url: https://arxiv.org/abs/2608.21223v1
+  url: https://arxiv.org/abs/2608.21223
   category: neuromorphic-algorithms
   subcategory: method
   authors:
@@ -15930,7 +15923,7 @@ papers:
 - title: 'Spiking Neural Networks for Continuous Control: Neuromorphic Reinforcement
     Learning in Conventional Computing'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.22729v1
+  url: https://arxiv.org/abs/2608.22729
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15960,7 +15953,7 @@ papers:
 - title: 'ORBITALIF: An Efficient Spiking Federated Learning Framework for Onboard
     Cloud Removal'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.24073v1
+  url: https://arxiv.org/abs/2608.24073
   category: spiking-neural-networks
   subcategory: method
   authors:
@@ -15988,7 +15981,7 @@ papers:
     neural network (ANN).
 - title: Small-World Communication Fabrics for Neuromorphic Multicore-SoCs
   date: 2026-08
-  url: https://arxiv.org/abs/2608.24351v1
+  url: https://arxiv.org/abs/2608.24351
   category: neuromorphic-hardware
   subcategory: systems
   authors:
@@ -16016,7 +16009,7 @@ papers:
     neural connectivity, task performance, and hardware mappability.
 - title: 'On Scaling Coordinate-Based Neuroevolution: The Quadtree Bottleneck in ES-HyperNEAT'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.24480v1
+  url: https://arxiv.org/abs/2608.24480
   category: survey
   subcategory: review
   authors:
@@ -16051,7 +16044,7 @@ papers:
 - title: 'Coronavirus Optimization Algorithm: A Success-History Adaptive Evolutionary
     Framework with Archive-Assisted Search and Stagnation Recovery for Global Optimization'
   date: 2026-08
-  url: https://arxiv.org/abs/2608.23847v1
+  url: https://arxiv.org/abs/2608.23847
   category: survey
   subcategory: review
   authors:
