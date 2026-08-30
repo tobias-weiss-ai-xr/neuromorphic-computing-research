@@ -138,25 +138,25 @@
   {
    "id": "spiking-neural-networks",
    "name": "Spiking Neural Networks",
-   "count": 673,
+   "count": 672,
    "trajectory": {
     "2019": 1,
     "2021": 1,
     "2023": 45,
     "2024": 169,
     "2025": 212,
-    "2026": 245
+    "2026": 244
    },
    "momentum": {
     "id": "spiking-neural-networks",
     "name": "Spiking Neural Networks",
-    "total": 673,
-    "recent": 337,
+    "total": 672,
+    "recent": 336,
     "prior": 208,
-    "growth_pct": 62.0,
-    "recent_share": 0.501,
-    "papers_per_month": 28.1,
-    "score": 112.1
+    "growth_pct": 61.5,
+    "recent_share": 0.5,
+    "papers_per_month": 28.0,
+    "score": 111.5
    }
   },
   {
@@ -201,7 +201,7 @@
   {
    "id": "method",
    "name": "Method",
-   "count": 636
+   "count": 635
   },
   {
    "id": "review",
@@ -6063,11 +6063,6 @@
   [
    "2026-01",
    "spiking-neural-networks",
-   "method"
-  ],
-  [
-   "2026-01",
-   "spiking-neural-networks",
    "theory"
   ],
   [
@@ -9126,10 +9121,10 @@
  "keyword_bursts": [
   {
    "keyword": "benchmark",
-   "recent": 216,
-   "total": 328,
+   "recent": 215,
+   "total": 327,
    "burst_score": 1.28,
-   "recent_share": 0.2374
+   "recent_share": 0.2365
   },
   {
    "keyword": "neural dynamics",
@@ -9157,21 +9152,21 @@
    "recent": 158,
    "total": 261,
    "burst_score": 1.18,
-   "recent_share": 0.1736
+   "recent_share": 0.1738
   },
   {
    "keyword": "energy-efficient",
    "recent": 245,
    "total": 441,
    "burst_score": 1.08,
-   "recent_share": 0.2692
+   "recent_share": 0.2695
   },
   {
    "keyword": "low-power",
    "recent": 171,
    "total": 310,
    "burst_score": 1.07,
-   "recent_share": 0.1879
+   "recent_share": 0.1881
   },
   {
    "keyword": "cortical",
@@ -9185,7 +9180,7 @@
    "recent": 496,
    "total": 972,
    "burst_score": 0.99,
-   "recent_share": 0.5451
+   "recent_share": 0.5457
   },
   {
    "keyword": "local learning",
@@ -9199,7 +9194,7 @@
    "recent": 66,
    "total": 132,
    "burst_score": 0.97,
-   "recent_share": 0.0725
+   "recent_share": 0.0726
   },
   {
    "keyword": "event-based vision",
@@ -9210,10 +9205,10 @@
   },
   {
    "keyword": "spiking neural network",
-   "recent": 433,
-   "total": 929,
-   "burst_score": 0.91,
-   "recent_share": 0.4758
+   "recent": 432,
+   "total": 928,
+   "burst_score": 0.9,
+   "recent_share": 0.4752
   },
   {
    "keyword": "in-memory computing",
