@@ -24578,7 +24578,6 @@ papers:
   venue: theses.fr (ABES)
 - title: SpiNNaker Spatial Learning Code And Dataset
   date: 2024-06
-  url: https://doi.org/10.83056/mmu.32483124.v1
   category: spiking-neural-networks
   subcategory: theory
   authors:
