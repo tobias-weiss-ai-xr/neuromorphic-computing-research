@@ -54173,3 +54173,188 @@ papers:
     numerical solver - a spikeless neuromorphic system - for continuously-coupled
     neuronal models. We thereby demonstrate that our theoretical considerations indeed
     translate into practical advantages, namely reduced energy consumption and delay.
+- title: Event-Driven Language Models with Sparse Neural Activity for Neuromorphic
+    Hardware
+  date: 2026-08
+  url: https://arxiv.org/abs/2608.30439v1
+  category: neuromorphic-algorithms
+  subcategory: method
+  authors:
+  - Simon Richter
+  - Ruhai Lin
+  - Jason Yik
+  - Taylor Kergan
+  - Rui-Jie Zhu
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Inference with transformer-based large language models (LLMs) is often
+    limited by the memory-bound KV cache and quadratic attention cost. State-space
+    models (SSMs) mitigate this through linear attention and fixed-size recurrent
+    states, but their large dense linear projections remain computationally expensive
+    even after quantization. We introduce a method that induces sparse neural activity
+    in heavily quantized linear-attention models with minimal performance loss. Activations
+    below a per-projection trainable threshold ($\pm Δ$) are nullified while preserving
+    crucial outliers, achieving comparable performance to dense models with up to
+    4$\times$ fewer effective arithmetic operations. Targeting a multi-core, multi-chip
+    neuromorphic platform, where event-driven execution converts unstructured sparsity
+    into throughput at both the compute and communication levels, a capability GPU
+    architectures fundamentally lack, we project up to 37$\times$ higher throughput
+    and 16$\times$ lower power versus edge GPU inference of a comparable transformer-based
+    model, and up to 5.4$\times$ improvements over the non-sparsified baseline. These
+    results position sparse, quantized linear-attention models as a natural fit for
+    deploying LLMs on event-driven multi-core platforms.
+- title: 'Comparative Evaluation of Memory Technologies for Synaptic Crossbar Arrays-
+    Part 2: Design Knobs and DNN Accuracy Trends'
+  date: 2024-08
+  url: https://arxiv.org/abs/2408.05857v1
+  category: memristive
+  subcategory: systems
+  authors:
+  - Jeffry Victor
+  - Chunguang Wang
+  - Sumeet K. Gupta
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Crossbar memory arrays have been touted as the workhorse of in-memory
+    computing (IMC)-based acceleration of Deep Neural Networks (DNNs), but the associated
+    hardware non-idealities limit their efficacy. To address this, cross-layer design
+    solutions that reduce the impact of hardware non-idealities on DNN accuracy are
+    needed. In Part 1 of this paper, we established the co-optimization strategies
+    for various memory technologies and their crossbar arrays, and conducted a comparative
+    technology evaluation in the context of IMC robustness. In this part, we analyze
+    various design knobs such as array size and bit-slice (number of bits per device)
+    and their impact on the performance of 8T SRAM, ferroelectric transistor (FeFET),
+    Resistive RAM (ReRAM) and spin-orbit-torque magnetic RAM (SOT-MRAM) in the context
+    of inference accuracy at 7nm technology node. Further, we study the effect of
+    circuit design solutions such as Partial Wordline Activation (PWA) and custom
+    ADC reference levels that reduce the hardware non-idealities and comparatively
+    analyze the response of each technology to such accuracy enhancing techniques.
+    Our results on ResNet-20 (with CIFAR-10) show that PWA increases accuracy by up
+    to 32.56% while custom ADC reference levels yield up to 31.62% accuracy enhancement.
+    We observe that compared to the other technologies, FeFET, by virtue of its small
+    layout height and high distinguishability of its memory states, is best suited
+    for large arrays. For higher bit-slices and a more complex dataset (ResNet-50
+    with Cifar-100) we found that ReRAM matches the performance of FeFET.
+- title: Conjoint Audio-to-Spikes Encoding and Processing for Efficient Neuromorphic
+    Speech Recognition
+  date: 2026-08
+  url: https://arxiv.org/abs/2608.30792v1
+  category: neuromorphic-sensors
+  subcategory: application
+  authors:
+  - Valentin M. Meunier
+  - Amélie Gruel
+  - Pierre Lewden
+  - Adrien F. Vincent
+  - Sylvain Saïghi
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'Obtaining data from neuromorphic sensors and processing it with Spiking
+    Neural Networks is a promising solution to lower the energy cost of artificial
+    intelligence. The current rarity of natively neuromorphic datasets promotes the
+    development of software tools to translate input sensory data into spikes. However,
+    highly bio-mimetic simulators can be challenging to implement on digital hardware.
+    In this work, we evaluate the neuromorphic encoding and subsequent classification
+    of audio into spikes using a non-learnable, high-level, programmable encoder targeting
+    hardware implementation on FPGA. We quantify the pipeline''s efficiency with hardware-agnostic
+    metrics based on the quantitative spiking activity. Our study focuses on the simultaneous
+    optimisation of encoder and classifier: the first provides efficient and informative
+    data so that the latter achieves a better performance with an overall lower energy
+    cost at learning and inference. This work introduces the first end-to-end neuromorphic
+    spike-encoding and evaluation of the TIMIT dataset. Our simple feedforward network
+    reaches a classification accuracy of 99.77% on a spike-encoded Heidelberg Digits,
+    overcoming the neuromorphic state of the art on this benchmark dataset.'
+- title: 'Large Language Models and Evolutionary Computation: A Critical Review of
+    Bidirectional Interaction, Automated Algorithm Design, and Co-Adaptive Systems'
+  date: 2025-05
+  url: https://arxiv.org/abs/2505.15741v3
+  category: survey
+  subcategory: review
+  authors:
+  - Dikshit Chauhan
+  - Bapi Dutta
+  - Indu Bala
+  - Niki van Stein
+  - Thomas Bäck
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Large Language Models (LLMs) and Evolutionary Computation (EC) are increasingly
+    being combined to support automated optimization, algorithm design, and adaptive
+    decision-making. This survey reviews the bidirectional interaction between these
+    two paradigms and examines how their complementary strengths can be leveraged
+    in hybrid intelligent systems. First, we analyze how EC can enhance LLM-based
+    systems through prompt optimization, hyperparameter tuning, and architecture search.
+    Second, we review how LLMs can im- prove EC by supporting metaheuristic design,
+    surrogate reasoning, adaptive operator control, and heuristic generation. We further
+    discuss emerging co-adaptive frameworks in which LLMs and EC interact through
+    iterative feedback loops. Beyond summarizing recent developments, the survey provides
+    a structured perspec- tive on interaction mechanisms, application patterns, and
+    methodological challenges, including computational cost, reproducibility, interpretability,
+    benchmarking, and generalization. The paper concludes by outlining open research
+    questions and future directions for developing more robust, transparent, and scalable
+    LLM-EC systems.
+- title: Neuromorphic Computing with Spiking Neural Networks and Memristor Arrays
+  date: 2026-08
+  url: https://doi.org/10.5281/zenodo.22152655
+  category: spiking-neural-networks
+  subcategory: theory
+  authors:
+  - Jincheng Zhang
+  abstract: This paper explores the potential of neuromorphic computing, specifically
+    utilizing Spiking Neural Networks (SNNs) implemented on memristor arrays, as a
+    fundamentally more efficient approach to computation compared to conventional
+    digital architectures. The core claim presented here is that traditional computing
+    paradigms are inherently inefficient when mimicking the brain's processing capabilities.
+    This inefficiency stems from their reliance on continuous-valued data and constant
+    energy consumption. SNNs, with their event-driven nature and inherent biological
+    realism, coupled with the energy-saving properties of memristor arrays, provide
+    a compelling alternative. This work details the theoretical framework for such
+    a system, outlining the key components and their interactions. The architecture
+    utilizes SNNs to process information based on the timing of spikes, while memristor
+    arrays provide the hardware to efficiently represent and process these temporal
+    signals. The paper focuses on the mathematical modeling of this system, presenting
+    equations describing the dynamics of SNNs and the resistive switching behavior
+    of memristors. A key area of investigation involves the mapping of traditional
+    computational tasks onto SNNs, highlighting potential performance gains and energy
+    reductions. The ultimate goal is to demonstrate a pathway towards creating truly
+    brain-inspired computing systems capable of tackling complex problems with minimal
+    energy expenditure.
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+- title: An energy-efficient spiking neural network accelerator on FPGA for real-time
+    health monitoring of rotating machinery
+  date: 2026-08
+  url: https://doi.org/10.1177/14759217261478595
+  category: spiking-neural-networks
+  subcategory: method
+  authors:
+  - Kehui Zhu
+  - Jinrui Zhang
+  - Xinming Li
+  abstract: Real-time health monitoring of rotating machinery is critical for ensuring
+    the safe operation of industrial systems. However, intelligent diagnostic algorithms
+    with high computational complexity typically rely on high-performance computing
+    platforms, limiting their deployment on resource-constrained edge devices and
+    resulting in high diagnostic latency and energy consumption. Spiking neural networks
+    (SNNs) benefit from their event-driven computational mechanism and exhibit potential
+    energy-efficiency advantages in long-term health monitoring. Therefore, this article
+    proposes an efficient diagnostic framework based on a field-programmable gate
+    array (FPGA)-accelerated SNN. To enhance feature representation from dynamic measurement
+    signals, a hybrid learning strategy for SNNs integrating local spike-timing-dependent
+    plasticity and global backpropagation through time is introduced. At the hardware
+    architecture level, a fully parallel Poisson encoding array is designed to achieve
+    single-cycle spike conversion of sensing signals. Furthermore, a distributed addition
+    engine based on near-memory computing and a neuron computation unit developed
+    with shift logic are introduced to minimize off-chip memory access and eliminate
+    the use of digital signal processor blocks. Experimental results on the Zynq-7020
+    platform demonstrate that the proposed accelerator achieves a power consumption
+    of 175 mW, outperforming existing lightweight convolutional neural network-FPGA
+    acceleration schemes. The diagnosis latency for each signal sample is 0.209 ms,
+    which is 3.1× lower than that of GPU-based implementations. In addition, on our
+    independently collected fault dataset, the performance degradation in terms of
+    F1-score, precision, and accuracy is maintained within 0.3%, demonstrating the
+    reliability of the proposed framework for practical health monitoring deployment.
+  venue: Structural Health Monitoring
